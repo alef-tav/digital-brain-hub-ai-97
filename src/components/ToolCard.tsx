@@ -1,8 +1,7 @@
 
 import { useState } from 'react';
-import { Heart, ExternalLink, Play } from 'lucide-react';
+import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 
 interface ToolCardProps {
   title: string;
@@ -19,67 +18,81 @@ const ToolCard = ({ title, description, icon, category, isFavorited = false, isN
 
   return (
     <div 
-      className="group relative min-w-[280px] h-[160px] transition-all duration-300 hover:scale-105 cursor-pointer"
+      className="group relative min-w-[200px] w-[200px] h-[300px] transition-all duration-300 hover:scale-110 hover:z-10 cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Card className="w-full h-full overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 hover:border-red-500 transition-all duration-300">
-        <CardContent className="p-0 relative h-full">
-          {/* Background gradient */}
-          <div className="absolute inset-0 netflix-gradient opacity-20" />
-          
-          {/* Content */}
-          <div className="relative h-full p-4 flex flex-col justify-between">
-            {/* Top section */}
-            <div className="flex items-start justify-between">
-              <div className="text-3xl">{icon}</div>
-              {isNew && (
-                <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full">
-                  NOVO
-                </span>
-              )}
-            </div>
+      {/* Main Card */}
+      <div className="w-full h-full overflow-hidden rounded-md bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 border border-gray-600 relative">
+        {/* Background with icon */}
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-700 to-gray-900">
+          <span className="text-6xl opacity-80">{icon}</span>
+        </div>
+        
+        {/* Title overlay at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-3">
+          <h3 className="text-white font-semibold text-sm line-clamp-2">
+            {title}
+          </h3>
+        </div>
 
-            {/* Middle section */}
-            <div className="flex-1 flex flex-col justify-center">
-              <h3 className="text-white font-semibold text-lg mb-2 line-clamp-2">
+        {/* New badge */}
+        {isNew && (
+          <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded">
+            NOVO
+          </div>
+        )}
+
+        {/* Hover overlay */}
+        {isHovered && (
+          <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-4 transition-all duration-300">
+            <div className="transform translate-y-0">
+              <h3 className="text-white font-bold text-base mb-2">
                 {title}
               </h3>
-              <p className="text-gray-400 text-sm line-clamp-2">
+              <p className="text-gray-300 text-xs mb-3 line-clamp-3">
                 {description}
               </p>
-            </div>
-
-            {/* Bottom section - appears on hover */}
-            <div className={`flex items-center space-x-2 transition-all duration-300 ${
-              isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
-            }`}>
-              <Button size="sm" className="netflix-gradient text-white hover:scale-105 transition-transform">
-                <Play className="w-4 h-4 mr-1" />
-                Acessar
-              </Button>
-              <Button
-                size="sm"
-                variant="outline"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setFavorited(!favorited);
-                }}
-                className={`border-gray-600 hover:border-red-500 ${
-                  favorited ? 'bg-red-500 text-white' : 'bg-transparent text-white'
-                }`}
-              >
-                <Heart className={`w-4 h-4 ${favorited ? 'fill-current' : ''}`} />
-              </Button>
+              
+              {/* Action buttons */}
+              <div className="flex items-center space-x-2">
+                <Button 
+                  size="sm" 
+                  className="bg-white text-black hover:bg-gray-200 rounded-full w-8 h-8 p-0"
+                >
+                  <Play className="w-4 h-4 fill-current" />
+                </Button>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setFavorited(!favorited);
+                  }}
+                  className={`rounded-full w-8 h-8 p-0 border-2 ${
+                    favorited 
+                      ? 'bg-white border-white text-black' 
+                      : 'bg-transparent border-gray-400 text-white hover:border-white'
+                  }`}
+                >
+                  {favorited ? (
+                    <Heart className="w-4 h-4 fill-current" />
+                  ) : (
+                    <Plus className="w-4 h-4" />
+                  )}
+                </Button>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="rounded-full w-8 h-8 p-0 bg-transparent border-gray-400 text-white hover:border-white ml-auto"
+                >
+                  <ChevronDown className="w-4 h-4" />
+                </Button>
+              </div>
             </div>
           </div>
-
-          {/* Hover overlay */}
-          <div className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${
-            isHovered ? 'opacity-100' : 'opacity-0'
-          }`} />
-        </CardContent>
-      </Card>
+        )}
+      </div>
     </div>
   );
 };
