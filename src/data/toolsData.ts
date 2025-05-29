@@ -7,9 +7,7 @@ export const categoriesData = [
       { title: "Monday.com", description: "Gestão de projetos e equipes com automações", icon: "📊" },
       { title: "Trello Power-Ups", description: "Boards inteligentes com funcionalidades IA", icon: "📋" },
       { title: "Asana Intelligence", description: "Gerenciamento de tarefas com insights de IA", icon: "✅" },
-      { title: "ClickUp AI", description: "Plataforma completa de produtividade com IA", icon: "🚀" },
-      { title: "Todoist", description: "Lista de tarefas inteligente com IA", icon: "📝" },
-      { title: "Zapier", description: "Automações entre diferentes aplicativos", icon: "⚡" }
+      { title: "ClickUp AI", description: "Plataforma completa de produtividade com IA", icon: "🚀" }
     ]
   },
   {
@@ -18,9 +16,7 @@ export const categoriesData = [
       { title: "There's An AI For That", description: "Diretório completo de ferramentas de IA", icon: "🔍", isNew: true },
       { title: "AI Tools Directory", description: "Catálogo organizado de soluções IA", icon: "🗂️" },
       { title: "Futurepedia", description: "Base de dados de ferramentas IA atualizadas", icon: "🔮" },
-      { title: "ToolScout", description: "Descobridor de ferramentas IA por categoria", icon: "🎯" },
-      { title: "AI Hunt", description: "Comunidade de descoberta de IAs", icon: "🏹" },
-      { title: "Product Hunt AI", description: "Novidades em IA e tecnologia", icon: "🚀" }
+      { title: "ToolScout", description: "Descobridor de ferramentas IA por categoria", icon: "🎯" }
     ]
   },
   {
@@ -29,9 +25,7 @@ export const categoriesData = [
       { title: "Hugging Face", description: "Plataforma de modelos de IA open source", icon: "🤗" },
       { title: "GitHub Copilot", description: "Assistente de código com IA", icon: "👨‍💻" },
       { title: "Ollama", description: "Execute modelos de linguagem localmente", icon: "🦙" },
-      { title: "LangChain", description: "Framework para aplicações LLM", icon: "⛓️" },
-      { title: "AutoGPT", description: "IA autônoma para automação de tarefas", icon: "🤖" },
-      { title: "LocalAI", description: "IA executada localmente", icon: "🏠" }
+      { title: "LangChain", description: "Framework para aplicações LLM", icon: "⛓️" }
     ]
   },
   {
@@ -40,9 +34,7 @@ export const categoriesData = [
       { title: "Buffer AI", description: "Agendamento inteligente para redes sociais", icon: "📱" },
       { title: "Hootsuite Insights", description: "Análise de redes sociais com IA", icon: "📈" },
       { title: "Canva Magic Write", description: "Criação de posts com IA", icon: "✨" },
-      { title: "Later Influence", description: "Marketing de influenciadores automatizado", icon: "🌟" },
-      { title: "Sprout Social", description: "Gestão completa de mídias sociais", icon: "🌱" },
-      { title: "SocialBee", description: "Automação para redes sociais", icon: "🐝" }
+      { title: "Later Influence", description: "Marketing de influenciadores automatizado", icon: "🌟" }
     ]
   },
   {
@@ -51,8 +43,7 @@ export const categoriesData = [
       { title: "Google Trends", description: "Tendências de busca em tempo real", icon: "📊" },
       { title: "BuzzSumo", description: "Descoberta de conteúdo viral", icon: "🔥" },
       { title: "AnswerThePublic", description: "Perguntas que as pessoas fazem", icon: "❓" },
-      { title: "Exploding Topics", description: "Tendências emergentes", icon: "💥" },
-      { title: "Social Mention", description: "Monitoramento de menções sociais", icon: "👥" }
+      { title: "Exploding Topics", description: "Tendências emergentes", icon: "💥" }
     ]
   },
   {
@@ -61,8 +52,7 @@ export const categoriesData = [
       { title: "MindMeister AI", description: "Mapas mentais inteligentes colaborativos", icon: "🧠" },
       { title: "Lucidchart", description: "Diagramas e mapas com sugestões IA", icon: "💡" },
       { title: "XMind AI", description: "Mapas mentais com geração automática", icon: "🗺️" },
-      { title: "Coggle", description: "Mapas mentais simples e inteligentes", icon: "🔗" },
-      { title: "GitMind", description: "Mapas mentais gratuitos com IA", icon: "🎨" }
+      { title: "Coggle", description: "Mapas mentais simples e inteligentes", icon: "🔗" }
     ]
   },
   {
@@ -80,8 +70,7 @@ export const categoriesData = [
       { title: "Gamma", description: "Apresentações geradas por IA em segundos", icon: "📊", isNew: true },
       { title: "Beautiful.ai", description: "Slides inteligentes com design automático", icon: "🎨" },
       { title: "Tome", description: "Storytelling com IA para apresentações", icon: "📖" },
-      { title: "Slidebean", description: "Pitch decks profissionais com IA", icon: "🚀" },
-      { title: "Presentations.ai", description: "Templates inteligentes para apresentações", icon: "📑" }
+      { title: "Slidebean", description: "Pitch decks profissionais com IA", icon: "🚀" }
     ]
   },
   {
@@ -90,9 +79,7 @@ export const categoriesData = [
       { title: "ChatGPT", description: "Assistente de IA conversacional avançado", icon: "💬" },
       { title: "Claude", description: "IA da Anthropic para tarefas complexas", icon: "🤖" },
       { title: "Bard", description: "IA do Google para pesquisa e criação", icon: "🎭" },
-      { title: "Perplexity", description: "Motor de busca com IA", icon: "🔍" },
-      { title: "You.com", description: "Busca inteligente personalizada", icon: "🌐" },
-      { title: "Poe", description: "Acesso a múltiplas IAs", icon: "🎪" }
+      { title: "Perplexity", description: "Motor de busca com IA", icon: "🔍" }
     ]
   },
   {
@@ -101,8 +88,7 @@ export const categoriesData = [
       { title: "Namelix", description: "Nomes de marca gerados por IA", icon: "🏷️" },
       { title: "Business Name Generator", description: "Sugestões inteligentes de nomes", icon: "💼" },
       { title: "Brandroot", description: "Nomes premium com domínios disponíveis", icon: "🌟" },
-      { title: "Squadhelp", description: "Concursos de naming com IA", icon: "👥" },
-      { title: "NameMesh", description: "Combinações criativas de nomes", icon: "🕸️" }
+      { title: "Squadhelp", description: "Concursos de naming com IA", icon: "👥" }
     ]
   },
   {
@@ -111,8 +97,7 @@ export const categoriesData = [
       { title: "Looka", description: "Logos profissionais gerados por IA", icon: "🎨" },
       { title: "Tailor Brands", description: "Identidade visual completa com IA", icon: "✂️" },
       { title: "Hatchful", description: "Gerador gratuito de logos do Shopify", icon: "🥚" },
-      { title: "Designs.ai", description: "Suite completa de design com IA", icon: "🎯" },
-      { title: "Logojoy", description: "Logos personalizados com algoritmos", icon: "😊" }
+      { title: "Designs.ai", description: "Suite completa de design com IA", icon: "🎯" }
     ]
   },
   {
@@ -181,8 +166,7 @@ export const categoriesData = [
       { title: "DALL-E 3", description: "Gerador de imagens da OpenAI", icon: "🖼️", isNew: true },
       { title: "Midjourney", description: "Arte digital de alta qualidade", icon: "🎨" },
       { title: "Stable Diffusion", description: "Geração de imagens open source", icon: "🌊" },
-      { title: "Leonardo.ai", description: "Criação de arte e imagens para games", icon: "🎮" },
-      { title: "Firefly", description: "IA generativa da Adobe", icon: "🔥" }
+      { title: "Leonardo.ai", description: "Criação de arte e imagens para games", icon: "🎮" }
     ]
   },
   {
