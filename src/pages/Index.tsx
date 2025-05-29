@@ -1,8 +1,8 @@
 
 import Header from '@/components/Header';
-import CategorySection from '@/components/CategorySection';
 import Footer from '@/components/Footer';
-import { categoriesData } from '@/data/toolsData';
+import CategoryCard from '@/components/CategoryCard';
+import { categoriesData } from '@/data/categoriesData';
 
 const Index = () => {
   return (
@@ -25,15 +25,24 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Categories */}
-      <main>
-        {categoriesData.map((category, index) => (
-          <CategorySection
-            key={index}
-            title={category.title}
-            tools={category.tools}
-          />
-        ))}
+      {/* Categories Grid */}
+      <main className="px-4 md:px-12 pb-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-white text-2xl md:text-3xl font-bold mb-8">Todas as Categorias</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+            {categoriesData.map((category) => (
+              <CategoryCard
+                key={category.id}
+                id={category.id}
+                title={category.title}
+                description={category.description}
+                icon={category.icon}
+                image={category.image}
+                isNew={category.id <= 3} // Primeiras 3 categorias marcadas como "NOVO"
+              />
+            ))}
+          </div>
+        </div>
       </main>
 
       <Footer />
