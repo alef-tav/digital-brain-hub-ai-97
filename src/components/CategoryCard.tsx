@@ -19,12 +19,12 @@ const CategoryCard = ({ id, title, description, icon, image, isFavorited = false
 
   return (
     <div 
-      className="group relative min-w-[140px] w-[140px] h-[210px] transition-all duration-300 hover:scale-110 hover:z-10 cursor-pointer"
+      className="group relative w-full aspect-[2/3] transition-all duration-300 hover:scale-105 hover:z-10 cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Main Card - Estilo cartaz de cinema */}
-      <div className="w-full h-full overflow-hidden rounded-md relative shadow-lg">
+      <div className="w-full h-full overflow-hidden rounded-lg relative shadow-2xl">
         {/* Imagem de fundo */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -36,47 +36,42 @@ const CategoryCard = ({ id, title, description, icon, image, isFavorited = false
         />
         
         {/* Overlay gradient para melhor legibilidade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-        
-        {/* Ícone no centro */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-4xl opacity-90 drop-shadow-lg">{icon}</span>
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
         
         {/* Título na parte inferior */}
-        <div className="absolute bottom-0 left-0 right-0 p-2">
-          <h3 className="text-white font-semibold text-xs line-clamp-2 drop-shadow-lg">
+        <div className="absolute bottom-0 left-0 right-0 p-4">
+          <h3 className="text-white font-bold text-sm md:text-base lg:text-lg line-clamp-3 drop-shadow-lg text-center">
             {title}
           </h3>
         </div>
 
         {/* Badge "NOVO" */}
         {isNew && (
-          <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-0.5 rounded">
+          <div className="absolute top-3 right-3 bg-red-600 text-white text-xs px-2 py-1 rounded-md font-semibold">
             NOVO
           </div>
         )}
 
         {/* Hover overlay expandido - estilo Netflix */}
         {isHovered && (
-          <div className="absolute inset-0 bg-black/90 flex flex-col justify-between p-3 transition-all duration-300 z-20">
+          <div className="absolute inset-0 bg-black/95 flex flex-col justify-between p-4 transition-all duration-300 z-20">
             <div>
-              <h3 className="text-white font-bold text-sm mb-2">
+              <h3 className="text-white font-bold text-lg mb-3">
                 {title}
               </h3>
-              <p className="text-gray-300 text-xs mb-3 line-clamp-4">
+              <p className="text-gray-300 text-sm mb-4 line-clamp-6">
                 {description}
               </p>
             </div>
             
             {/* Botões de ação */}
             <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-1">
+              <div className="flex items-center space-x-2">
                 <Button 
                   size="sm" 
-                  className="bg-white text-black hover:bg-gray-200 rounded-full w-6 h-6 p-0"
+                  className="bg-white text-black hover:bg-gray-200 rounded-full w-8 h-8 p-0"
                 >
-                  <Play className="w-3 h-3 fill-current" />
+                  <Play className="w-4 h-4 fill-current" />
                 </Button>
                 <Button
                   size="sm"
@@ -85,25 +80,25 @@ const CategoryCard = ({ id, title, description, icon, image, isFavorited = false
                     e.stopPropagation();
                     setFavorited(!favorited);
                   }}
-                  className={`rounded-full w-6 h-6 p-0 border ${
+                  className={`rounded-full w-8 h-8 p-0 border ${
                     favorited 
                       ? 'bg-white border-white text-black' 
                       : 'bg-transparent border-gray-400 text-white hover:border-white'
                   }`}
                 >
                   {favorited ? (
-                    <Heart className="w-3 h-3 fill-current" />
+                    <Heart className="w-4 h-4 fill-current" />
                   ) : (
-                    <Plus className="w-3 h-3" />
+                    <Plus className="w-4 h-4" />
                   )}
                 </Button>
               </div>
               <Button
                 size="sm"
                 variant="outline"
-                className="rounded-full w-6 h-6 p-0 bg-transparent border-gray-400 text-white hover:border-white"
+                className="rounded-full w-8 h-8 p-0 bg-transparent border-gray-400 text-white hover:border-white"
               >
-                <ChevronDown className="w-3 h-3" />
+                <ChevronDown className="w-4 h-4" />
               </Button>
             </div>
           </div>

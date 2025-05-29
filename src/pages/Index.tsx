@@ -10,15 +10,12 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-8 px-4 md:px-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-6">
-            <span className="text-4xl md:text-6xl">🧠</span>
-            <h1 className="text-3xl md:text-5xl font-bold text-white">
-              Cérebro Digital
-            </h1>
-          </div>
-          <p className="text-lg md:text-xl text-gray-400 max-w-4xl">
+      <section className="pt-24 pb-12 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+            Cérebro Digital
+          </h1>
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
             Sua central definitiva de ferramentas de Inteligência Artificial e automações. 
             Explore uma vasta biblioteca de soluções inovadoras para transformar seu trabalho.
           </p>
@@ -26,10 +23,12 @@ const Index = () => {
       </section>
 
       {/* Categories Grid */}
-      <main className="px-4 md:px-12 pb-8">
+      <main className="px-4 md:px-8 pb-12">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-white text-2xl md:text-3xl font-bold mb-8">Todas as Categorias</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+          <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center">
+            Todas as Categorias
+          </h2>
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
             {categoriesData.map((category) => (
               <CategoryCard
                 key={category.id}
@@ -38,7 +37,7 @@ const Index = () => {
                 description={category.description}
                 icon={category.icon}
                 image={category.image}
-                isNew={category.id <= 3} // Primeiras 3 categorias marcadas como "NOVO"
+                isNew={category.id <= 3}
               />
             ))}
           </div>
