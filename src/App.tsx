@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -16,6 +15,7 @@ import CriacaoMapasMentais from "./pages/CriacaoMapasMentais";
 import GeradoresApresentacoes from "./pages/GeradoresApresentacoes";
 import Favoritos from "./pages/Favoritos";
 import NotFound from "./pages/NotFound";
+import InteligenciasArtificiais from "./pages/InteligenciasArtificiais";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +36,7 @@ const App = () => (
             <Route path="/geradores-mapas-mentais" element={<GeradoresMapasMentais />} />
             <Route path="/criacao-mapas-mentais" element={<CriacaoMapasMentais />} />
             <Route path="/geradores-apresentacoes" element={<GeradoresApresentacoes />} />
+            <Route path="/inteligencias-artificiais" element={<InteligenciasArtificiais />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
