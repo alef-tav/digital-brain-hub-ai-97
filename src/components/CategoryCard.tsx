@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -13,15 +14,36 @@ interface CategoryCardProps {
   isNew?: boolean;
 }
 
+// Mapeamento de categorias para rotas
+const getCategoryRoute = (id: number, title: string) => {
+  const routes: { [key: number]: string } = {
+    1: '/organizacao-processo-produtividade',
+    // Adicione aqui as outras rotas conforme criar as páginas
+    2: '/buscadores-ias',
+    3: '/ias-codigo-aberto',
+    4: '/midias-sociais',
+    // ... outras categorias
+  };
+  
+  return routes[id] || '/';
+};
+
 const CategoryCard = ({ id, title, description, icon, image, isFavorited = false, isNew = false }: CategoryCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [favorited, setFavorited] = useState(isFavorited);
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    const route = getCategoryRoute(id, title);
+    navigate(route);
+  };
 
   return (
     <div 
       className="group relative w-full aspect-[2/3] transition-all duration-300 hover:scale-105 hover:z-10 cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleCardClick}
     >
       {/* Main Card - Estilo cartaz de cinema */}
       <div className="w-full h-full overflow-hidden rounded-lg relative shadow-2xl">
@@ -70,6 +92,10 @@ const CategoryCard = ({ id, title, description, icon, image, isFavorited = false
                 <Button 
                   size="sm" 
                   className="bg-white text-black hover:bg-gray-200 rounded-full w-8 h-8 p-0"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleCardClick();
+                  }}
                 >
                   <Play className="w-4 h-4 fill-current" />
                 </Button>
@@ -97,6 +123,7 @@ const CategoryCard = ({ id, title, description, icon, image, isFavorited = false
                 size="sm"
                 variant="outline"
                 className="rounded-full w-8 h-8 p-0 bg-transparent border-gray-400 text-white hover:border-white"
+                onClick={(e) => e.stopPropagation()}
               >
                 <ChevronDown className="w-4 h-4" />
               </Button>
