@@ -26,6 +26,7 @@ const getCategoryRoute = (id: number, title: string) => {
     7: '/criacao-mapas-mentais',
     8: '/geradores-apresentacoes',
     9: '/inteligencias-artificiais',
+    10: '/geradores-nomes-negocios',
     // ... outras categorias
   };
   
