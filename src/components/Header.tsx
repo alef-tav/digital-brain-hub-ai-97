@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Search, Heart, Star, Grid3X3, Bell, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -12,17 +13,17 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-8 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3">
             <div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center">
               <span className="text-white font-bold text-lg">C</span>
             </div>
             <h1 className="text-xl md:text-2xl font-bold text-white">Cérebro Digital</h1>
-          </div>
+          </Link>
 
           {/* Navigation - Centro */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Button variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
-              Início
+            <Button asChild variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
+              <Link to="/">Início</Link>
             </Button>
             <Button variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
               Favoritas
