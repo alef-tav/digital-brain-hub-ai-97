@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import OrganizacaoProcessoProdutividade from "./pages/OrganizacaoProcessoProdutividade";
 import BuscadoresIAs from "./pages/BuscadoresIAs";
 import IAsCódigosAbertos from "./pages/IAsCódigosAbertos";
+import MidiasSociais from "./pages/MidiasSociais";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/organizacao-processo-produtividade" element={<OrganizacaoProcessoProdutividade />} />
           <Route path="/buscadores-ias" element={<BuscadoresIAs />} />
           <Route path="/ias-codigos-abertos" element={<IAsCódigosAbertos />} />
+          <Route path="/midias-sociais" element={<MidiasSociais />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
