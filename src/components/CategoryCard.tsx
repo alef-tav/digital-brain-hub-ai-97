@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
@@ -18,9 +17,8 @@ interface CategoryCardProps {
 const getCategoryRoute = (id: number, title: string) => {
   const routes: { [key: number]: string } = {
     1: '/organizacao-processo-produtividade',
-    // Adicione aqui as outras rotas conforme criar as páginas
     2: '/buscadores-ias',
-    3: '/ias-codigo-aberto',
+    3: '/ias-codigos-abertos', // Corrigido para a rota correta
     4: '/midias-sociais',
     // ... outras categorias
   };
