@@ -18,8 +18,9 @@ const getCategoryRoute = (id: number, title: string) => {
   const routes: { [key: number]: string } = {
     1: '/organizacao-processo-produtividade',
     2: '/buscadores-ias',
-    3: '/ias-codigos-abertos', // Corrigido para a rota correta
+    3: '/ias-codigos-abertos',
     4: '/midias-sociais',
+    5: '/buscadores-interesses',
     // ... outras categorias
   };
   

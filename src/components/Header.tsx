@@ -25,8 +25,8 @@ const Header = () => {
             <Button asChild variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
               <Link to="/">Início</Link>
             </Button>
-            <Button variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
-              Favoritas
+            <Button asChild variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
+              <Link to="/favoritos">Favoritas</Link>
             </Button>
             <Button variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
               Novidades

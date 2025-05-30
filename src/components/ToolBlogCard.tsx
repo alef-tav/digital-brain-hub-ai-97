@@ -1,8 +1,8 @@
 
-import { useState } from 'react';
 import { ExternalLink, Star } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useFavorites } from '@/contexts/FavoritesContext';
 
 interface ToolBlogCardProps {
   title: string;
@@ -11,6 +11,7 @@ interface ToolBlogCardProps {
   icon: string;
   image: string;
   link: string;
+  category?: string;
   isNew?: boolean;
 }
 
@@ -20,15 +21,27 @@ const ToolBlogCard = ({
   detailedDescription, 
   icon, 
   image, 
-  link, 
+  link,
+  category = "Geral",
   isNew = false 
 }: ToolBlogCardProps) => {
-  const [isFavorited, setIsFavorited] = useState(false);
+  const { addToFavorites, removeFromFavorites, isFavorite } = useFavorites();
+  const isFavorited = isFavorite(title);
 
   const handleFavorite = () => {
-    setIsFavorited(!isFavorited);
-    // TODO: Add to favorites context/localStorage
-    console.log(`${title} ${isFavorited ? 'removed from' : 'added to'} favorites`);
+    if (isFavorited) {
+      removeFromFavorites(title);
+    } else {
+      addToFavorites({
+        title,
+        description,
+        detailedDescription,
+        icon,
+        image,
+        link,
+        category
+      });
+    }
   };
 
   return (

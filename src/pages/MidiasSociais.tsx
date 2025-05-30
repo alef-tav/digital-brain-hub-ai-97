@@ -118,6 +118,7 @@ const MidiasSociais = () => {
                 icon={tool.icon}
                 image={tool.image}
                 link={tool.link}
+                category="Mídias Sociais"
                 isNew={tool.isNew}
               />
             ))}
