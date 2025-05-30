@@ -23,6 +23,7 @@ const getCategoryRoute = (id: number, title: string) => {
     4: '/midias-sociais',
     5: '/buscadores-interesses',
     6: '/geradores-mapas-mentais',
+    7: '/criacao-mapas-mentais',
     // ... outras categorias
   };
   
