@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolBlogCard from '@/components/ToolBlogCard';
@@ -30,6 +29,14 @@ const BuscadoresIAs = () => {
       image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop",
       link: "https://theresanaiforthat.com/",
       isNew: true
+    },
+    {
+      title: "Hugging Face",
+      description: "Plataforma líder em modelos de IA open source e machine learning colaborativo.",
+      detailedDescription: "Hugging Face é a principal plataforma para descobrir, usar e contribuir com modelos de inteligência artificial open source. Oferece milhares de modelos pré-treinados para processamento de linguagem natural, visão computacional e áudio. A plataforma inclui ferramentas para fine-tuning, hospedagem de modelos, datasets e uma comunidade ativa de desenvolvedores e pesquisadores de IA.",
+      icon: "🤗",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+      link: "https://huggingface.co/"
     }
   ];
 
