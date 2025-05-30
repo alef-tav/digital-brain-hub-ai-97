@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
@@ -27,8 +26,21 @@ const getCategoryRoute = (id: number, title: string) => {
     8: '/geradores-apresentacoes',
     9: '/inteligencias-artificiais',
     10: '/geradores-nomes-negocios',
-    // ... outras categorias
+    11: '/geradores-logomarcas',
   };
+  
+  // Fallback baseado no título se não encontrar por ID
+  if (!routes[id]) {
+    if (title.toLowerCase().includes('logomarcas') || title.toLowerCase().includes('logo')) {
+      return '/geradores-logomarcas';
+    }
+    if (title.toLowerCase().includes('nomes') && title.toLowerCase().includes('negócios')) {
+      return '/geradores-nomes-negocios';
+    }
+    if (title.toLowerCase().includes('inteligências artificiais')) {
+      return '/inteligencias-artificiais';
+    }
+  }
   
   return routes[id] || '/';
 };
@@ -40,6 +52,7 @@ const CategoryCard = ({ id, title, description, icon, image, isFavorited = false
 
   const handleCardClick = () => {
     const route = getCategoryRoute(id, title);
+    console.log(`Navigating to: ${route} for category: ${title} (ID: ${id})`);
     navigate(route);
   };
 
