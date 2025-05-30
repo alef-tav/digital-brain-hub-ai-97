@@ -11,6 +11,7 @@ import BuscadoresIAs from "./pages/BuscadoresIAs";
 import IAsCódigosAbertos from "./pages/IAsCódigosAbertos";
 import MidiasSociais from "./pages/MidiasSociais";
 import BuscadoresInteresses from "./pages/BuscadoresInteresses";
+import GeradoresMapasMentais from "./pages/GeradoresMapasMentais";
 import Favoritos from "./pages/Favoritos";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/ias-codigos-abertos" element={<IAsCódigosAbertos />} />
             <Route path="/midias-sociais" element={<MidiasSociais />} />
             <Route path="/buscadores-interesses" element={<BuscadoresInteresses />} />
+            <Route path="/geradores-mapas-mentais" element={<GeradoresMapasMentais />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
