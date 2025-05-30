@@ -18,6 +18,7 @@ import Favoritos from "./pages/Favoritos";
 import NotFound from "./pages/NotFound";
 import InteligenciasArtificiais from "./pages/InteligenciasArtificiais";
 import GeradoresNomesNegocios from "./pages/GeradoresNomesNegocios";
+import GeradoresLogomarcas from "./pages/GeradoresLogomarcas";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/geradores-apresentacoes" element={<GeradoresApresentacoes />} />
             <Route path="/inteligencias-artificiais" element={<InteligenciasArtificiais />} />
             <Route path="/geradores-nomes-negocios" element={<GeradoresNomesNegocios />} />
+            <Route path="/geradores-logomarcas" element={<GeradoresLogomarcas />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
