@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
@@ -21,6 +22,7 @@ const getCategoryRoute = (id: number, title: string) => {
     3: '/ias-codigos-abertos',
     4: '/midias-sociais',
     5: '/buscadores-interesses',
+    6: '/geradores-mapas-mentais',
     // ... outras categorias
   };
   

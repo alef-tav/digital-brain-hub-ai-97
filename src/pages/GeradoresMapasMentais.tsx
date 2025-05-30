@@ -6,6 +6,14 @@ import ToolBlogCard from '@/components/ToolBlogCard';
 const GeradoresMapasMentais = () => {
   const tools = [
     {
+      title: "Map This",
+      description: "PDF To Mind Map",
+      detailedDescription: "Ferramenta inovadora que converte PDFs em mapas mentais automaticamente. Transforme documentos complexos em visualizações claras e organizadas para melhor compreensão e memorização.",
+      icon: "📄",
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=600&fit=crop&auto=format",
+      link: "https://www.map-this.com/"
+    },
+    {
       title: "Tome",
       description: "Gera Mapa mental por I.A",
       detailedDescription: "Plataforma de apresentações com IA que permite criar mapas mentais profissionais e polidos. Oferece templates inteligentes e geração automática de conteúdo visual para suas ideias.",
