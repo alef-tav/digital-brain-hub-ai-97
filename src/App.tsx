@@ -20,6 +20,7 @@ import InteligenciasArtificiais from "./pages/InteligenciasArtificiais";
 import GeradoresNomesNegocios from "./pages/GeradoresNomesNegocios";
 import GeradoresLogomarcas from "./pages/GeradoresLogomarcas";
 import PaletasCores from "./pages/PaletasCores";
+import FerramentasTextos from "./pages/FerramentasTextos";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/geradores-nomes-negocios" element={<GeradoresNomesNegocios />} />
             <Route path="/geradores-logomarcas" element={<GeradoresLogomarcas />} />
             <Route path="/paletas-cores" element={<PaletasCores />} />
+            <Route path="/ferramentas-textos" element={<FerramentasTextos />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
