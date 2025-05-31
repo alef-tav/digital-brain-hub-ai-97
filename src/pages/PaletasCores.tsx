@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolBlogCard from '@/components/ToolBlogCard';
@@ -121,7 +120,7 @@ const PaletasCores = () => {
       detailedDescription: "PineTools Color Picker permite extrair cores específicas de imagens, fornecendo códigos hexadecimais, RGB e HSL para uso em projetos de design.",
       icon: "🖼️",
       image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop",
-      link: "https://pinetools.com/color-picker-image",
+      link: "https://pinetools.com/",
       category: "Paletas de Cores"
     },
     {
