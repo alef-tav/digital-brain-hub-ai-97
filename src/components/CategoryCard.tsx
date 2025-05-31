@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
@@ -28,10 +29,14 @@ const getCategoryRoute = (id: number, title: string) => {
     10: '/geradores-nomes-negocios',
     11: '/geradores-logomarcas',
     12: '/paletas-cores',
+    13: '/ferramentas-textos',
   };
   
   // Fallback baseado no título se não encontrar por ID
   if (!routes[id]) {
+    if (title.toLowerCase().includes('ferramentas') && title.toLowerCase().includes('textos')) {
+      return '/ferramentas-textos';
+    }
     if (title.toLowerCase().includes('paletas') && title.toLowerCase().includes('cores')) {
       return '/paletas-cores';
     }
