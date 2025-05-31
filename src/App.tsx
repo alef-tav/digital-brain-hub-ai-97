@@ -21,6 +21,7 @@ import GeradoresNomesNegocios from "./pages/GeradoresNomesNegocios";
 import GeradoresLogomarcas from "./pages/GeradoresLogomarcas";
 import PaletasCores from "./pages/PaletasCores";
 import FerramentasTextos from "./pages/FerramentasTextos";
+import BancosImagens from "./pages/BancosImagens";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,7 @@ const App = () => (
             <Route path="/geradores-logomarcas" element={<GeradoresLogomarcas />} />
             <Route path="/paletas-cores" element={<PaletasCores />} />
             <Route path="/ferramentas-textos" element={<FerramentasTextos />} />
+            <Route path="/bancos-imagens" element={<BancosImagens />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

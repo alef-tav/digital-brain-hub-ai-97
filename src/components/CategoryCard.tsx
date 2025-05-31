@@ -30,10 +30,14 @@ const getCategoryRoute = (id: number, title: string) => {
     11: '/geradores-logomarcas',
     12: '/paletas-cores',
     13: '/ferramentas-textos',
+    14: '/bancos-imagens',
   };
   
   // Fallback baseado no título se não encontrar por ID
   if (!routes[id]) {
+    if (title.toLowerCase().includes('bancos') && title.toLowerCase().includes('imagens')) {
+      return '/bancos-imagens';
+    }
     if (title.toLowerCase().includes('ferramentas') && title.toLowerCase().includes('textos')) {
       return '/ferramentas-textos';
     }
