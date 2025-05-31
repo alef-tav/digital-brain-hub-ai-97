@@ -27,10 +27,14 @@ const getCategoryRoute = (id: number, title: string) => {
     9: '/inteligencias-artificiais',
     10: '/geradores-nomes-negocios',
     11: '/geradores-logomarcas',
+    12: '/paletas-cores',
   };
   
   // Fallback baseado no título se não encontrar por ID
   if (!routes[id]) {
+    if (title.toLowerCase().includes('paletas') && title.toLowerCase().includes('cores')) {
+      return '/paletas-cores';
+    }
     if (title.toLowerCase().includes('logomarcas') || title.toLowerCase().includes('logo')) {
       return '/geradores-logomarcas';
     }
