@@ -1,4 +1,3 @@
-
 export const categoriesData = [
   {
     id: 1,
@@ -306,7 +305,7 @@ export const categoriesData = [
     title: "Baixadores Universais",
     description: "Ferramentas para download de vídeos, áudios e conteúdo de diversas plataformas.",
     icon: "⬇️",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=600&fit=crop&auto=format"
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=600&fit=crop&auto=format"
   },
   {
     id: 45,
