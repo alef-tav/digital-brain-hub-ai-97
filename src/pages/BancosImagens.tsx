@@ -6,87 +6,125 @@ import ToolBlogCard from '@/components/ToolBlogCard';
 const BancosImagens = () => {
   const tools = [
     {
-      title: "Free Stock Photos (123RF)",
-      description: "Download de imagens gratuitas",
-      detailedDescription: "123RF oferece uma coleção de fotos e imagens gratuitas de alta qualidade para download, permitindo usar imagens profissionais sem custos em seus projetos.",
-      icon: "📷",
-      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop",
-      link: "https://br.123rf.com/imagens-gratuitas/",
-      category: "Bancos de Imagens",
-      isNew: true
-    },
-    {
-      title: "Burst (Shopify)",
-      description: "Banco de imagens da própria Shopify",
-      detailedDescription: "Burst é o banco de imagens oficial da Shopify, oferecendo fotos gratuitas de alta resolução, especialmente focadas em e-commerce e negócios.",
-      icon: "🛍️",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop",
-      link: "https://www.shopify.com/br/stock-photos/photos/search?q=family&button=",
-      category: "Bancos de Imagens"
-    },
-    {
-      title: "Pexels",
-      description: "Fotos e vídeos gratuitos de alta qualidade",
-      detailedDescription: "Pexels é uma das maiores plataformas de imagens e vídeos gratuitos, oferecendo milhões de fotos de alta qualidade para uso comercial e pessoal.",
-      icon: "🎯",
-      image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=400&h=300&fit=crop",
-      link: "https://www.pexels.com/pt-br/",
-      category: "Bancos de Imagens",
-      isNew: true
-    },
-    {
-      title: "Unsplash",
-      description: "Lindas imagens e fotos gratuitas",
-      detailedDescription: "Unsplash oferece uma vasta coleção de fotografias gratuitas de alta resolução, contribuídas por fotógrafos do mundo todo, ideais para projetos criativos.",
-      icon: "🌟",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop",
-      link: "https://unsplash.com/pt-br",
-      category: "Bancos de Imagens"
-    },
-    {
-      title: "StockSnap",
-      description: "Fotos gratuitas de alta qualidade",
-      detailedDescription: "StockSnap.io disponibiliza fotos de stock gratuitas e de alta qualidade, todas liberadas sob Creative Commons CC0, permitindo uso comercial sem restrições.",
-      icon: "📸",
-      image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=300&fit=crop",
-      link: "https://stocksnap.io/",
-      category: "Bancos de Imagens"
-    },
-    {
-      title: "Reshot",
-      description: "Ícones e ilustrações gratuitos",
-      detailedDescription: "Reshot oferece uma coleção curada de ícones SVG gratuitos e ilustrações vetoriais, perfeitos para design de interfaces e projetos gráficos.",
+      title: "Leonardo AI",
+      description: "IA de geração de imagens avançada",
+      detailedDescription: "Leonardo AI oferece ferramentas de IA para geração de imagens com alta qualidade, permitindo criar arte digital, ilustrações e designs únicos através de prompts de texto.",
       icon: "🎨",
-      image: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=400&h=300&fit=crop",
-      link: "https://www.reshot.com/",
+      image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=300&fit=crop",
+      link: "https://app.leonardo.ai/",
       category: "Bancos de Imagens",
       isNew: true
     },
     {
-      title: "Rawpixel",
-      description: "Imagens de alta qualidade e mockups",
-      detailedDescription: "Rawpixel oferece fotos de stock, PNGs, templates e mockups gratuitos de alta qualidade, além de recursos premium para projetos profissionais.",
+      title: "Lexica",
+      description: "Plataforma de geração de imagens por IA",
+      detailedDescription: "Lexica é uma plataforma especializada em geração de imagens através de IA, oferecendo uma interface intuitiva para criar arte digital a partir de descrições de texto.",
       icon: "🖼️",
+      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop",
+      link: "https://lexica.art/",
+      category: "Bancos de Imagens",
+      isNew: true
+    },
+    {
+      title: "Ideogram.ai",
+      description: "Geração de imagens para todos",
+      detailedDescription: "Ideogram.ai é uma ferramenta de geração de imagens por IA acessível a todos, permitindo criar designs únicos e personalizados com facilidade e precisão.",
+      icon: "💡",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop",
+      link: "https://ideogram.ai/t/explore",
+      category: "Bancos de Imagens"
+    },
+    {
+      title: "Renderforest",
+      description: "Todas suas ferramentas de design em um lugar",
+      detailedDescription: "Renderforest oferece uma suíte completa de ferramentas de design, incluindo criação de vídeos, logos, mockups e websites, tudo em uma plataforma integrada.",
+      icon: "🛠️",
+      image: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=400&h=300&fit=crop",
+      link: "https://www.renderforest.com/",
+      category: "Bancos de Imagens"
+    },
+    {
+      title: "Banco de Imagens Grátis (123RF)",
+      description: "Download de imagens gratuitas",
+      detailedDescription: "123RF oferece uma vasta coleção de fotos e imagens gratuitas de alta qualidade para download, permitindo usar recursos visuais profissionais sem custos.",
+      icon: "📷",
+      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop",
+      link: "https://br.123rf.com/imagens-gratuitas/",
+      category: "Bancos de Imagens"
+    },
+    {
+      title: "Penpot Design Tool",
+      description: "Ferramenta de design para colaboração",
+      detailedDescription: "Penpot é uma plataforma de design open-source que facilita a colaboração entre designers e desenvolvedores, oferecendo ferramentas modernas de prototipagem.",
+      icon: "✏️",
       image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=300&fit=crop",
-      link: "https://www.rawpixel.com/",
-      category: "Bancos de Imagens"
+      link: "https://penpot.app/",
+      category: "Bancos de Imagens",
+      isNew: true
     },
     {
-      title: "Depositphotos",
-      description: "Imagens, vídeos e música royalty-free",
-      detailedDescription: "Depositphotos é um banco de mídia premium que oferece imagens, vídeos e música livres de royalties para uso comercial e criativo.",
-      icon: "💎",
+      title: "FLUX LoRA",
+      description: "Treinamento FLUX LoRA para retratos",
+      detailedDescription: "Treinamento FLUX LoRA otimizado especificamente para geração de retratos, com realces brilhantes, excelente acompanhamento de prompts e resultados altamente detalhados.",
+      icon: "🎯",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      link: "https://fal.ai/models/fal-ai/flux-lora-portrait-trainer/playground",
+      category: "Bancos de Imagens",
+      isNew: true
+    },
+    {
+      title: "Microsoft Designer",
+      description: "Designs impressionantes rapidamente",
+      detailedDescription: "Microsoft Designer oferece ferramentas de IA para criar designs profissionais rapidamente, integrando-se perfeitamente com o ecossistema Microsoft.",
+      icon: "🏢",
       image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop",
-      link: "https://depositphotos.com/",
+      link: "https://designer.microsoft.com/",
       category: "Bancos de Imagens"
     },
     {
-      title: "Freepik",
-      description: "Crie designs incríveis mais rapidamente",
-      detailedDescription: "Freepik é uma plataforma completa de recursos gráficos oferecendo vetores, fotos, PSD e ícones para criar designs profissionais de forma rápida e eficiente.",
-      icon: "🚀",
+      title: "Creative Automation",
+      description: "Plataforma de automação criativa",
+      detailedDescription: "Plataforma que automatiza processos criativos, permitindo criar campanhas publicitárias e materiais de marketing de forma eficiente e escalável.",
+      icon: "⚡",
       image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop",
-      link: "https://www.freepik.com/",
+      link: "https://app.creatopy.com/team/1450550/dashboard",
+      category: "Bancos de Imagens"
+    },
+    {
+      title: "Infinite Recraft",
+      description: "Artboard infinito de IA",
+      detailedDescription: "Recraft oferece uma tela infinita para criação artística com IA, permitindo gerar e editar imagens vetoriais com precisão e criatividade ilimitada.",
+      icon: "♾️",
+      image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=300&fit=crop",
+      link: "https://www.recraft.ai/",
+      category: "Bancos de Imagens",
+      isNew: true
+    },
+    {
+      title: "Adcreative.ai",
+      description: "IA para todas as necessidades de publicidade",
+      detailedDescription: "Adcreative.ai é sua central de IA para criar materiais publicitários eficazes, otimizando campanhas e gerando conteúdo visual impactante automaticamente.",
+      icon: "📢",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+      link: "https://pt.adcreative.ai/?_gl=1*hmpliz*_up*MQ..&gclid=Cj0KCQjw1Yy5BhD-ARIsAI0RbXY7M6Nw4oM1CPF_HND-eftkS3InvtSkGVQrV_BW4RCudUmq3WBQTssaAgBSEALw_wcB",
+      category: "Bancos de Imagens"
+    },
+    {
+      title: "MoeWalls",
+      description: "Wallpapers animados gratuitos",
+      detailedDescription: "MoeWalls oferece uma coleção de wallpapers animados e dinâmicos gratuitos, permitindo personalizar seu desktop com animações de alta qualidade.",
+      icon: "🌟",
+      image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&h=300&fit=crop",
+      link: "https://moewalls.com/page/22/#google_vignette",
+      category: "Bancos de Imagens"
+    },
+    {
+      title: "Glif",
+      description: "Mini-apps de IA e chatbots",
+      detailedDescription: "Glif permite construir mini-aplicativos de IA e chatbots usando LLMs, geradores de imagens, ComfyUI e outras ferramentas avançadas de inteligência artificial.",
+      icon: "🤖",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop",
+      link: "https://glif.app/glifs",
       category: "Bancos de Imagens",
       isNew: true
     }
@@ -103,8 +141,8 @@ const BancosImagens = () => {
               Bancos de Imagens
             </h1>
             <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Descubra as melhores fontes de imagens gratuitas e pagas para seus projetos. 
-              De fotos de stock a ícones e ilustrações, encontre recursos visuais de alta qualidade.
+              Descubra as melhores ferramentas de IA para geração e edição de imagens. 
+              De geradores de arte por IA a bancos de imagens gratuitos, encontre recursos visuais de alta qualidade.
             </p>
           </div>
 
