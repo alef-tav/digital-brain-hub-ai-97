@@ -1,4 +1,3 @@
-
 export const categoriesData = [
   {
     id: 1,
@@ -328,5 +327,12 @@ export const categoriesData = [
     description: "Ferramentas completas para criação, edição e otimização de vídeos profissionais.",
     icon: "🎥",
     image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=600&fit=crop&auto=format"
+  },
+  {
+    id: 48,
+    title: "Bancos de Vídeos",
+    description: "Bibliotecas de vídeos livres de direitos autorais para uso comercial e criativo.",
+    icon: "📹",
+    image: "https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?w=400&h=600&fit=crop&auto=format"
   }
 ];

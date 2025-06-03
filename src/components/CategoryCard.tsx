@@ -37,6 +37,7 @@ const getCategoryRoute = (id: number, title: string) => {
     19: '/geracao-imagens-texto-ia',
     20: '/edicao-videos-ia',
     47: '/ferramentas-video',
+    48: '/bancos-videos',
   };
   
   // Fallback baseado no título se não encontrar por ID
@@ -79,6 +80,9 @@ const getCategoryRoute = (id: number, title: string) => {
     }
     if (title.toLowerCase().includes('ferramentas') && title.toLowerCase().includes('vídeo')) {
       return '/ferramentas-video';
+    }
+    if (title.toLowerCase().includes('bancos') && title.toLowerCase().includes('vídeos')) {
+      return '/bancos-videos';
     }
   }
   
