@@ -26,6 +26,7 @@ import DesignGeral from "./pages/DesignGeral";
 import IdentidadeMarca from "./pages/IdentidadeMarca";
 import DesignProdutosIA from "./pages/DesignProdutosIA";
 import ImagensProdutoIA from "./pages/ImagensProdutoIA";
+import GeracaoImagensTextoIA from "./pages/GeracaoImagensTextoIA";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +57,7 @@ const App = () => (
             <Route path="/identidade-marca" element={<IdentidadeMarca />} />
             <Route path="/design-produtos-ia" element={<DesignProdutosIA />} />
             <Route path="/imagens-produto-ia" element={<ImagensProdutoIA />} />
+            <Route path="/geracao-imagens-texto-ia" element={<GeracaoImagensTextoIA />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

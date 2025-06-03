@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
@@ -35,10 +34,14 @@ const getCategoryRoute = (id: number, title: string) => {
     16: '/identidade-marca',
     17: '/design-produtos-ia',
     18: '/imagens-produto-ia',
+    19: '/geracao-imagens-texto-ia',
   };
   
   // Fallback baseado no título se não encontrar por ID
   if (!routes[id]) {
+    if (title.toLowerCase().includes('geração') && title.toLowerCase().includes('imagens') && title.toLowerCase().includes('texto')) {
+      return '/geracao-imagens-texto-ia';
+    }
     if (title.toLowerCase().includes('imagens') && title.toLowerCase().includes('produto') && title.toLowerCase().includes('ia')) {
       return '/imagens-produto-ia';
     }
