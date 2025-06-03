@@ -1,4 +1,3 @@
-
 import { Category } from '@/types';
 import { organizacaoTools } from './categories/organizacao';
 import { buscadoresIAsTools, buscadoresInteressesTools } from './categories/buscadores';
@@ -21,6 +20,7 @@ import { criacaoSaasIATools } from './categories/saas-ia';
 import { mineracaoProdutosOfertasTools } from './categories/mineracao-produtos';
 import { plataformasFreelancersTools } from './categories/plataformas-freelancers';
 import { marketplacesTools } from './categories/marketplaces';
+import { vozesGeradasIATools } from './categories/vozes-geradas-ia';
 
 export const categoriesData: Category[] = [
   {
@@ -174,5 +174,9 @@ export const categoriesData: Category[] = [
   {
     title: "Marketplaces (Facebook, Google, TikTok)",
     tools: marketplacesTools
+  },
+  {
+    title: "Vozes Geradas por IA",
+    tools: vozesGeradasIATools
   }
 ];
