@@ -38,10 +38,14 @@ const getCategoryRoute = (id: number, title: string) => {
     20: '/edicao-videos-ia',
     47: '/ferramentas-video',
     48: '/bancos-videos',
+    49: '/ferramentas-meta-ads',
   };
   
   // Fallback baseado no título se não encontrar por ID
   if (!routes[id]) {
+    if (title.toLowerCase().includes('ferramentas') && title.toLowerCase().includes('meta') && title.toLowerCase().includes('ads')) {
+      return '/ferramentas-meta-ads';
+    }
     if (title.toLowerCase().includes('edição') && title.toLowerCase().includes('vídeos') && title.toLowerCase().includes('ia')) {
       return '/edicao-videos-ia';
     }

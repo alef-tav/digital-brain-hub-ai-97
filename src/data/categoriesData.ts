@@ -156,7 +156,7 @@ export const categoriesData = [
   {
     id: 23,
     title: "Ferramentas para Meta Ads",
-    description: "Soluções especializadas para criar e otimizar campanhas publicitárias no Meta.",
+    description: "Soluções especializadas para criar e otimizar campanhas publicitárias no Meta (Facebook e Instagram).",
     icon: "📢",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop&auto=format"
   },
