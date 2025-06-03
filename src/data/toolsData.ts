@@ -22,6 +22,7 @@ import { mineracaoProdutosOfertasTools } from './categories/mineracao-produtos';
 import { plataformasFreelancersTools } from './categories/plataformas-freelancers';
 import { marketplacesTools } from './categories/marketplaces';
 import { ferramentasFaceSwapTools } from './categories/faceswap';
+import { ferramentasSMSTools } from './categories/sms';
 
 export const categoriesData: Category[] = [
   {
@@ -179,5 +180,9 @@ export const categoriesData: Category[] = [
   {
     title: "Ferramentas de FaceSwap",
     tools: ferramentasFaceSwapTools
+  },
+  {
+    title: "Ferramentas de SMS",
+    tools: ferramentasSMSTools
   }
 ];

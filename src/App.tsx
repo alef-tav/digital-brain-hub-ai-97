@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -46,6 +47,7 @@ import MineracaoProdutosOfertas from "./pages/MineracaoProdutosOfertas";
 import PlataformasFreelancers from "./pages/PlataformasFreelancers";
 import MarketplacesFacebookGoogleTikTok from "./pages/MarketplacesFacebookGoogleTikTok";
 import FerramentasFaceSwap from "./pages/FerramentasFaceSwap";
+import FerramentasSMS from "./pages/FerramentasSMS";
 
 const queryClient = new QueryClient();
 
@@ -97,6 +99,7 @@ const App = () => (
             <Route path="/plataformas-freelancers" element={<PlataformasFreelancers />} />
             <Route path="/marketplaces-facebook-google-tiktok" element={<MarketplacesFacebookGoogleTikTok />} />
             <Route path="/ferramentas-faceswap" element={<FerramentasFaceSwap />} />
+            <Route path="/ferramentas-sms" element={<FerramentasSMS />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

@@ -54,6 +54,7 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
       "Plataformas de Freelancers": "/plataformas-freelancers",
       "Marketplaces (Facebook, Google, TikTok)": "/marketplaces-facebook-google-tiktok",
       "Ferramentas de FaceSwap": "/ferramentas-faceswap",
+      "Ferramentas de SMS": "/ferramentas-sms",
     };
     
     return routes[title] || "/";
