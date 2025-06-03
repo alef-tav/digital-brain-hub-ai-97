@@ -36,6 +36,7 @@ import GeradoresLegendas from "./pages/GeradoresLegendas";
 import EmailMarketingIA from "./pages/EmailMarketingIA";
 import SEO from "./pages/SEO";
 import RastreamentoEventos from "./pages/RastreamentoEventos";
+import Mockups from "./pages/Mockups";
 
 const queryClient = new QueryClient();
 
