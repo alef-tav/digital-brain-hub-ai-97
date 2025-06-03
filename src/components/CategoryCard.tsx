@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
@@ -41,6 +40,7 @@ const getCategoryRoute = (id: number, title: string) => {
     22: '/bancos-videos',
     23: '/ferramentas-meta-ads',
     24: '/narracao-ia',
+    25: '/geradores-legendas',
   };
   
   // Fallback baseado no título se não encontrar por ID

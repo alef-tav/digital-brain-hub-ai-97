@@ -31,6 +31,7 @@ import FerramentasVideo from "./pages/FerramentasVideo";
 import BancosVideos from "./pages/BancosVideos";
 import FerramentasMetaAds from "./pages/FerramentasMetaAds";
 import NarracaoIA from "./pages/NarracaoIA";
+import GeradoresLegendas from "./pages/GeradoresLegendas";
 
 const queryClient = new QueryClient();
 
@@ -67,6 +68,7 @@ const App = () => (
             <Route path="/bancos-videos" element={<BancosVideos />} />
             <Route path="/ferramentas-meta-ads" element={<FerramentasMetaAds />} />
             <Route path="/narracao-ia" element={<NarracaoIA />} />
+            <Route path="/geradores-legendas" element={<GeradoresLegendas />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
