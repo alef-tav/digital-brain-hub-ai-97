@@ -208,14 +208,7 @@ export const categoriesData = [
     title: "Automações para Suporte",
     description: "Sistemas de IA para automatizar atendimento ao cliente e suporte técnico.",
     icon: "🤝",
-    image: "https://images.unsplash.com/photo-1553028826-f4804151e4cd?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 31,
-    title: "Música por IA",
-    description: "Geração automática de composições musicais usando inteligência artificial.",
-    icon: "🎵",
-    image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=600&fit=crop&auto=format"
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=600&fit=crop&auto=format"
   },
   {
     id: 32,
