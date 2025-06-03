@@ -23,6 +23,7 @@ import PaletasCores from "./pages/PaletasCores";
 import FerramentasTextos from "./pages/FerramentasTextos";
 import BancosImagens from "./pages/BancosImagens";
 import DesignGeral from "./pages/DesignGeral";
+import IdentidadeMarca from "./pages/IdentidadeMarca";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
             <Route path="/ferramentas-textos" element={<FerramentasTextos />} />
             <Route path="/bancos-imagens" element={<BancosImagens />} />
             <Route path="/design-geral" element={<DesignGeral />} />
+            <Route path="/identidade-marca" element={<IdentidadeMarca />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
