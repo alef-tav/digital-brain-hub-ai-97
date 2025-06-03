@@ -45,7 +45,6 @@ import CriacaoSaasIA from "./pages/CriacaoSaasIA";
 import MineracaoProdutosOfertas from "./pages/MineracaoProdutosOfertas";
 import PlataformasFreelancers from "./pages/PlataformasFreelancers";
 import MarketplacesFacebookGoogleTikTok from "./pages/MarketplacesFacebookGoogleTikTok";
-import VozesGeradasIA from "./pages/VozesGeradasIA";
 
 const queryClient = new QueryClient();
 
@@ -96,7 +95,6 @@ const App = () => (
             <Route path="/mineracao-produtos-ofertas" element={<MineracaoProdutosOfertas />} />
             <Route path="/plataformas-freelancers" element={<PlataformasFreelancers />} />
             <Route path="/marketplaces-facebook-google-tiktok" element={<MarketplacesFacebookGoogleTikTok />} />
-            <Route path="/vozes-geradas-ia" element={<VozesGeradasIA />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
