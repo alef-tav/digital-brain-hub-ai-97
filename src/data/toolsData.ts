@@ -24,7 +24,7 @@ export const categoriesData = [
       { title: "TensorFlow", description: "Framework de machine learning mantido pelo Google, amplamente utilizado para treinamento e implantação de modelos de IA", icon: "🔬" },
       { title: "Scikit-learn", description: "Biblioteca Python para aprendizado de máquina, ideal para análise preditiva de dados e prototipagem rápida", icon: "📊" },
       { title: "CodeT5", description: "Modelo de linguagem para geração e compreensão de código, com código aberto disponível no GitHub", icon: "💻", isNew: true },
-      { title: "PolyCoder", description: "Modelo de IA treinado para gerar código em múltiplas linguagens, com dados e modelo abertos para a comunidade", icon: "🔧" },
+      { title: "PolyCoder", description: "Modelo de IA treinado para gerar código em múltiplas linguagens, com dados e modelo aberto para a comunidade", icon: "🔧" },
       { title: "GPT-Neo (EleutherAI)", description: "Alternativa open-source inspirada no GPT da OpenAI, voltada para geração de texto e código", icon: "🧠" },
       { title: "Tabby", description: "Assistente de codificação de IA open-source, que pode ser hospedado localmente e integrado a IDEs como VSCode e JetBrains", icon: "🐱", isNew: true },
       { title: "Cody (Sourcegraph)", description: "Assistente de IA para revisão, explicação e geração de código, com versão open-source", icon: "👨‍💻" },
@@ -519,6 +519,24 @@ export const categoriesData = [
     title: "Geração de Conteúdo com IA",
     tools: [
       {
+        title: "Napkin AI",
+        description: "Transforme textos em visuais impressionantes automaticamente",
+        detailedDescription: "Napkin AI é uma ferramenta revolucionária que transforma qualquer texto em visuais impressionantes automaticamente. Ideal para criar infográficos, diagramas e apresentações visuais de forma rápida e eficiente.",
+        icon: "🧠",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
+        link: "https://www.napkin.ai/",
+        isNew: true
+      },
+      {
+        title: "Gamma.app",
+        description: "Cria apresentações e gera e-books",
+        detailedDescription: "Gamma.app é uma ferramenta poderosa que utiliza IA para criar apresentações profissionais e e-books de forma automática. Basta inserir o tópico e a IA gera todo o conteúdo e design.",
+        icon: "📊",
+        image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=400&fit=crop",
+        link: "https://gamma.app/",
+        isNew: false
+      },
+      {
         title: "Contents.com",
         description: "Ferramenta de geração de contéudos para redes sociais",
         detailedDescription: "Contents.com é uma plataforma completa de geração de conteúdo com IA que ajuda criadores e empresas a produzir conteúdo de qualidade para redes sociais, blogs e campanhas de marketing de forma rápida e eficiente.",
@@ -534,15 +552,6 @@ export const categoriesData = [
         icon: "🔍",
         image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=400&fit=crop",
         link: "https://www.social-searcher.com/",
-        isNew: false
-      },
-      {
-        title: "Gamma.app",
-        description: "Cria apresentações e gera e-books",
-        detailedDescription: "Gamma.app é uma ferramenta poderosa que utiliza IA para criar apresentações profissionais e e-books de forma automática. Basta inserir o tópico e a IA gera todo o conteúdo e design.",
-        icon: "📊",
-        image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=400&fit=crop",
-        link: "https://gamma.app/",
         isNew: false
       },
       {
