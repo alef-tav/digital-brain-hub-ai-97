@@ -19,6 +19,7 @@ import { geracaoConteudoIATools } from './categories/geracao-conteudo';
 import { transcricaoAudioTextoTools } from './categories/transcricao';
 import { criacaoSaasIATools } from './categories/saas-ia';
 import { mineracaoProdutosOfertasTools } from './categories/mineracao-produtos';
+import { plataformasFreelancersTools } from './categories/plataformas-freelancers';
 
 export const categoriesData: Category[] = [
   {
@@ -164,5 +165,9 @@ export const categoriesData: Category[] = [
   {
     title: "Mineração de Produtos e Ofertas",
     tools: mineracaoProdutosOfertasTools
+  },
+  {
+    title: "Plataformas de Freelancers",
+    tools: plataformasFreelancersTools
   }
 ];
