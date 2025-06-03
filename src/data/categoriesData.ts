@@ -334,5 +334,12 @@ export const categoriesData = [
     description: "Bibliotecas de vídeos livres de direitos autorais para uso comercial e criativo.",
     icon: "📹",
     image: "https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?w=400&h=600&fit=crop&auto=format"
+  },
+  {
+    id: 49,
+    title: "Narração por IA",
+    description: "Tecnologias de síntese de voz para criar narrações realistas automaticamente.",
+    icon: "🎙️",
+    image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400&h=600&fit=crop&auto=format"
   }
 ];
