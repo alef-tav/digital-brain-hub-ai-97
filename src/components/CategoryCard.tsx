@@ -36,6 +36,7 @@ const getCategoryRoute = (id: number, title: string) => {
     18: '/imagens-produto-ia',
     19: '/geracao-imagens-texto-ia',
     20: '/edicao-videos-ia',
+    47: '/ferramentas-video',
   };
   
   // Fallback baseado no título se não encontrar por ID
@@ -75,6 +76,9 @@ const getCategoryRoute = (id: number, title: string) => {
     }
     if (title.toLowerCase().includes('inteligências artificiais')) {
       return '/inteligencias-artificiais';
+    }
+    if (title.toLowerCase().includes('ferramentas') && title.toLowerCase().includes('vídeo')) {
+      return '/ferramentas-video';
     }
   }
   

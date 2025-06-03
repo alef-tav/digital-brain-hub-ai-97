@@ -1,3 +1,4 @@
+
 export const categoriesData = [
   {
     id: 1,
@@ -320,5 +321,12 @@ export const categoriesData = [
     description: "Ferramentas para desenvolver aplicações SaaS completas com auxílio de IA.",
     icon: "⚙️",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop&auto=format"
+  },
+  {
+    id: 47,
+    title: "Ferramentas de Vídeo",
+    description: "Ferramentas completas para criação, edição e otimização de vídeos profissionais.",
+    icon: "🎥",
+    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=600&fit=crop&auto=format"
   }
 ];
