@@ -35,10 +35,14 @@ const getCategoryRoute = (id: number, title: string) => {
     17: '/design-produtos-ia',
     18: '/imagens-produto-ia',
     19: '/geracao-imagens-texto-ia',
+    20: '/edicao-videos-ia',
   };
   
   // Fallback baseado no título se não encontrar por ID
   if (!routes[id]) {
+    if (title.toLowerCase().includes('edição') && title.toLowerCase().includes('vídeos') && title.toLowerCase().includes('ia')) {
+      return '/edicao-videos-ia';
+    }
     if (title.toLowerCase().includes('geração') && title.toLowerCase().includes('imagens') && title.toLowerCase().includes('texto')) {
       return '/geracao-imagens-texto-ia';
     }
