@@ -41,6 +41,7 @@ const getCategoryRoute = (id: number, title: string) => {
     23: '/ferramentas-meta-ads',
     24: '/narracao-ia',
     25: '/geradores-legendas',
+    26: '/email-marketing-ia',
   };
   
   // Fallback baseado no título se não encontrar por ID
