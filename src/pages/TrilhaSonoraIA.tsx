@@ -38,7 +38,11 @@ const TrilhaSonoraIA = () => {
                 key={index}
                 title={tool.title}
                 description={tool.description}
+                detailedDescription={tool.detailedDescription}
                 icon={tool.icon}
+                image={tool.image}
+                link={tool.link}
+                category="Trilha Sonora por IA"
                 isNew={tool.isNew}
               />
             ))}
