@@ -2,7 +2,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CategoryCard from '@/components/CategoryCard';
-import { categoriesData } from '@/data/categoriesData';
+import { categoriesData } from '@/data/toolsData';
 
 const Index = () => {
   return (
@@ -29,13 +29,13 @@ const Index = () => {
             Todas as Categorias
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
-            {categoriesData.map((category) => (
+            {categoriesData.map((category, index) => (
               <CategoryCard
-                key={category.id}
+                key={index}
                 title={category.title}
-                description={category.description}
-                icon={category.icon}
-                image={category.image}
+                description={`${category.tools.length} ferramentas disponíveis`}
+                icon="🛠️"
+                image="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop"
               />
             ))}
           </div>

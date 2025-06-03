@@ -52,7 +52,6 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
       "Mineração de Produtos e Ofertas": "/mineracao-produtos-ofertas",
       "Plataformas de Freelancers": "/plataformas-freelancers",
       "Marketplaces (Facebook, Google, TikTok)": "/marketplaces-facebook-google-tiktok",
-      "Vozes Geradas por IA": "/vozes-geradas-ia",
     };
     
     return routes[title] || "/";
