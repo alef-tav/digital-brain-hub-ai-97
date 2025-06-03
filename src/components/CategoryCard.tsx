@@ -1,237 +1,83 @@
-import { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent } from "@/components/ui/card"
+import { Category } from '@/types';
 
 interface CategoryCardProps {
-  id: number;
   title: string;
   description: string;
   icon: string;
   image: string;
-  isFavorited?: boolean;
-  isNew?: boolean;
 }
 
-// Mapeamento de categorias para rotas
-const getCategoryRoute = (id: number, title: string) => {
-  const routes: { [key: number]: string } = {
-    1: '/organizacao-processo-produtividade',
-    2: '/buscadores-ias',
-    3: '/ias-codigos-abertos',
-    4: '/midias-sociais',
-    5: '/buscadores-interesses',
-    6: '/geradores-mapas-mentais',
-    7: '/criacao-mapas-mentais',
-    8: '/geradores-apresentacoes',
-    9: '/inteligencias-artificiais',
-    10: '/geradores-nomes-negocios',
-    11: '/geradores-logomarcas',
-    12: '/paletas-cores',
-    13: '/ferramentas-textos',
-    14: '/bancos-imagens',
-    15: '/design-geral',
-    16: '/identidade-marca',
-    17: '/design-produtos-ia',
-    18: '/imagens-produto-ia',
-    19: '/geracao-imagens-texto-ia',
-    20: '/edicao-videos-ia',
-    21: '/ferramentas-video',
-    22: '/bancos-videos',
-    23: '/ferramentas-meta-ads',
-    24: '/narracao-ia',
-    25: '/geradores-legendas',
-    26: '/email-marketing-ia',
-    27: '/seo',
-    28: '/rastreamento-eventos',
-    29: '/mockups',
-    30: '/automacoes-suporte',
-    32: '/trilha-sonora-ia',
-    33: '/musicas-sem-direitos-autorais',
-    34: '/geracao-conteudo-ia',
-  };
-  
-  // Fallback baseado no título se não encontrar por ID
-  if (!routes[id]) {
-    if (title.toLowerCase().includes('mockups')) {
-      return '/mockups';
-    }
-    if (title.toLowerCase().includes('rastreamento') && title.toLowerCase().includes('eventos')) {
-      return '/rastreamento-eventos';
-    }
-    if (title.toLowerCase().includes('seo')) {
-      return '/seo';
-    }
-    if (title.toLowerCase().includes('narração') && title.toLowerCase().includes('ia')) {
-      return '/narracao-ia';
-    }
-    if (title.toLowerCase().includes('edição') && title.toLowerCase().includes('vídeos') && title.toLowerCase().includes('ia')) {
-      return '/edicao-videos-ia';
-    }
-    if (title.toLowerCase().includes('geração') && title.toLowerCase().includes('imagens') && title.toLowerCase().includes('texto')) {
-      return '/geracao-imagens-texto-ia';
-    }
-    if (title.toLowerCase().includes('imagens') && title.toLowerCase().includes('produto') && title.toLowerCase().includes('ia')) {
-      return '/imagens-produto-ia';
-    }
-    if (title.toLowerCase().includes('design') && title.toLowerCase().includes('produtos') && title.toLowerCase().includes('ia')) {
-      return '/design-produtos-ia';
-    }
-    if (title.toLowerCase().includes('identidade') && title.toLowerCase().includes('marca')) {
-      return '/identidade-marca';
-    }
-    if (title.toLowerCase().includes('design') && title.toLowerCase().includes('geral')) {
-      return '/design-geral';
-    }
-    if (title.toLowerCase().includes('bancos') && title.toLowerCase().includes('imagens')) {
-      return '/bancos-imagens';
-    }
-    if (title.toLowerCase().includes('ferramentas') && title.toLowerCase().includes('textos')) {
-      return '/ferramentas-textos';
-    }
-    if (title.toLowerCase().includes('paletas') && title.toLowerCase().includes('cores')) {
-      return '/paletas-cores';
-    }
-    if (title.toLowerCase().includes('logomarcas') || title.toLowerCase().includes('logo')) {
-      return '/geradores-logomarcas';
-    }
-    if (title.toLowerCase().includes('nomes') && title.toLowerCase().includes('negócios')) {
-      return '/geradores-nomes-negocios';
-    }
-    if (title.toLowerCase().includes('inteligências artificiais')) {
-      return '/inteligencias-artificiais';
-    }
-    if (title.toLowerCase().includes('ferramentas') && title.toLowerCase().includes('vídeo')) {
-      return '/ferramentas-video';
-    }
-    if (title.toLowerCase().includes('bancos') && title.toLowerCase().includes('vídeos')) {
-      return '/bancos-videos';
-    }
-    if (title.toLowerCase().includes('ferramentas') && title.toLowerCase().includes('meta') && title.toLowerCase().includes('ads')) {
-      return '/ferramentas-meta-ads';
-    }
-    if (title.toLowerCase().includes('automações') && title.toLowerCase().includes('suporte')) {
-      return '/automacoes-suporte';
-    }
-    if (title.toLowerCase().includes('trilha') && title.toLowerCase().includes('sonora') && title.toLowerCase().includes('ia')) {
-      return '/trilha-sonora-ia';
-    }
-    if (title.toLowerCase().includes('músicas') && title.toLowerCase().includes('sem') && title.toLowerCase().includes('direitos')) {
-      return '/musicas-sem-direitos-autorais';
-    }
-    if (title.toLowerCase().includes('geração') && title.toLowerCase().includes('conteúdo') && title.toLowerCase().includes('ia')) {
-      return '/geracao-conteudo-ia';
-    }
-  }
-  
-  return routes[id] || '/';
-};
-
-const CategoryCard = ({ id, title, description, icon, image, isFavorited = false, isNew = false }: CategoryCardProps) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [favorited, setFavorited] = useState(isFavorited);
+const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) => {
   const navigate = useNavigate();
-
-  const handleCardClick = () => {
-    const route = getCategoryRoute(id, title);
-    console.log(`Navigating to: ${route} for category: ${title} (ID: ${id})`);
-    navigate(route);
+  
+  const getRouteFromTitle = (title: string) => {
+    const routes: { [key: string]: string } = {
+      "Organização, Processo e Produtividade": "/organizacao-processo-produtividade",
+      "Buscadores de IAs": "/buscadores-ias",
+      "IAs de Códigos Abertos": "/ias-codigos-abertos",
+      "Mídias Sociais": "/midias-sociais",
+      "Buscadores de Interesses (Públicos)": "/buscadores-interesses",
+      "Geradores de Mapas Mentais por IA": "/geradores-mapas-mentais",
+      "Criação de Mapas Mentais": "/criacao-mapas-mentais",
+      "Geradores de Apresentações": "/geradores-apresentacoes",
+      "Inteligências Artificiais (geral)": "/inteligencias-artificiais",
+      "Geradores de Nomes para Negócios": "/geradores-nomes-negocios",
+      "Geradores de Logomarcas": "/geradores-logomarcas",
+      "Paletas de Cores": "/paletas-cores",
+      "Ferramentas de Textos": "/ferramentas-textos",
+      "Bancos de Imagens": "/bancos-imagens",
+      "Design Geral": "/design-geral",
+      "Identidade de Marca": "/identidade-marca",
+      "Design de Produtos com IA": "/design-produtos-ia",
+      "Imagens de Produto por IA": "/imagens-produto-ia",
+      "Geração de Imagens por Texto (Text-to-Image IA)": "/geracao-imagens-texto-ia",
+      "Edição de Vídeos com IA": "/edicao-videos-ia",
+      "Ferramentas de Vídeo": "/ferramentas-video",
+      "Bancos de Vídeos": "/bancos-videos",
+      "Ferramentas para Meta Ads": "/ferramentas-meta-ads",
+      "Narração por IA": "/narracao-ia",
+      "Geradores de Legendas": "/geradores-legendas",
+      "E-mail Marketing com IA": "/email-marketing-ia",
+      "SEO": "/seo",
+      "Rastreamento de Eventos (Meta, Google Ads)": "/rastreamento-eventos",
+      "Mockups": "/mockups",
+      "Automações para Suporte": "/automacoes-suporte",
+      "Trilha Sonora por IA": "/trilha-sonora-ia",
+      "Músicas sem Direitos Autorais": "/musicas-sem-direitos-autorais",
+      "Geração de Conteúdo com IA": "/geracao-conteudo-ia",
+      "Transcrição de Áudio em Texto": "/transcricao-audio-texto",
+    };
+    
+    return routes[title] || "/";
   };
+
+  const route = getRouteFromTitle(title);
 
   return (
-    <div 
-      className="group relative w-full aspect-[2/3] transition-all duration-300 hover:scale-105 hover:z-10 cursor-pointer"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onClick={handleCardClick}
+    <Card
+      className="bg-zinc-900 border-zinc-800 overflow-hidden hover:border-zinc-700 transition-colors cursor-pointer"
+      onClick={() => navigate(route)}
     >
-      {/* Main Card - Estilo cartaz de cinema */}
-      <div className="w-full h-full overflow-hidden rounded-lg relative shadow-2xl">
-        {/* Imagem de fundo */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
+      <div className="relative">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-48 object-cover"
         />
-        
-        {/* Overlay gradient para melhor legibilidade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
-        
-        {/* Título na parte inferior */}
-        <div className="absolute bottom-0 left-0 right-0 p-4">
-          <h3 className="text-white font-bold text-sm md:text-base lg:text-lg line-clamp-3 drop-shadow-lg text-center">
-            {title}
-          </h3>
+        <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-sm rounded-lg p-2">
+          <span className="text-2xl">{icon}</span>
         </div>
-
-        {/* Badge "NOVO" */}
-        {isNew && (
-          <div className="absolute top-3 right-3 bg-red-600 text-white text-xs px-2 py-1 rounded-md font-semibold">
-            NOVO
-          </div>
-        )}
-
-        {/* Hover overlay expandido - estilo Netflix */}
-        {isHovered && (
-          <div className="absolute inset-0 bg-black/95 flex flex-col justify-between p-4 transition-all duration-300 z-20">
-            <div>
-              <h3 className="text-white font-bold text-lg mb-3">
-                {title}
-              </h3>
-              <p className="text-gray-300 text-sm mb-4 line-clamp-6">
-                {description}
-              </p>
-            </div>
-            
-            {/* Botões de ação */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-                <Button 
-                  size="sm" 
-                  className="bg-white text-black hover:bg-gray-200 rounded-full w-8 h-8 p-0"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleCardClick();
-                  }}
-                >
-                  <Play className="w-4 h-4 fill-current" />
-                </Button>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setFavorited(!favorited);
-                  }}
-                  className={`rounded-full w-8 h-8 p-0 border ${
-                    favorited 
-                      ? 'bg-white border-white text-black' 
-                      : 'bg-transparent border-gray-400 text-white hover:border-white'
-                  }`}
-                >
-                  {favorited ? (
-                    <Heart className="w-4 h-4 fill-current" />
-                  ) : (
-                    <Plus className="w-4 h-4" />
-                  )}
-                </Button>
-              </div>
-              <Button
-                size="sm"
-                variant="outline"
-                className="rounded-full w-8 h-8 p-0 bg-transparent border-gray-400 text-white hover:border-white"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <ChevronDown className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-        )}
       </div>
-    </div>
+      <CardContent className="p-6">
+        <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
+        <p className="text-gray-400 text-sm leading-relaxed">
+          {description}
+        </p>
+      </CardContent>
+    </Card>
   );
 };
 
