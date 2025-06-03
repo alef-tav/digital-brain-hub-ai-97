@@ -1,10 +1,27 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolBlogCard from '@/components/ToolBlogCard';
 
 const EmailMarketingIA = () => {
   const tools = [
+    {
+      title: "ActiveCampaign",
+      description: "Automação de e-mail marketing com IA e experiência personalizada.",
+      detailedDescription: "ActiveCampaign combina e-mail marketing, automação e CRM em uma plataforma única. Utiliza IA para personalizar experiências, segmentar audiências e otimizar campanhas automaticamente.",
+      icon: "⚡",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop&auto=format",
+      link: "https://www.activecampaign.com/",
+      category: "E-mail Marketing com IA"
+    },
+    {
+      title: "Klaviyo",
+      description: "Plataforma de automação de marketing com IA para e-commerce e varejo.",
+      detailedDescription: "Klaviyo é uma plataforma de automação de marketing líder para e-commerce, oferecendo segmentação avançada, personalização com IA, análises preditivas e integração nativa com principais plataformas de venda online.",
+      icon: "📊",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop&auto=format",
+      link: "https://www.klaviyo.com/",
+      category: "E-mail Marketing com IA"
+    },
     {
       title: "Unroll.me",
       description: "Ferramenta para gerenciar e cancelar assinaturas de e-mail indesejadas.",
@@ -39,15 +56,6 @@ const EmailMarketingIA = () => {
       icon: "🎯",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=600&fit=crop&auto=format",
       link: "https://www.hubspot.com/",
-      category: "E-mail Marketing com IA"
-    },
-    {
-      title: "ActiveCampaign",
-      description: "Automação de e-mail marketing com IA e experiência personalizada.",
-      detailedDescription: "ActiveCampaign combina e-mail marketing, automação e CRM em uma plataforma única. Utiliza IA para personalizar experiências, segmentar audiências e otimizar campanhas automaticamente.",
-      icon: "⚡",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop&auto=format",
-      link: "https://www.activecampaign.com/",
       category: "E-mail Marketing com IA"
     },
     {
