@@ -20,6 +20,7 @@ import { transcricaoAudioTextoTools } from './categories/transcricao';
 import { criacaoSaasIATools } from './categories/saas-ia';
 import { mineracaoProdutosOfertasTools } from './categories/mineracao-produtos';
 import { plataformasFreelancersTools } from './categories/plataformas-freelancers';
+import { marketplacesTools } from './categories/marketplaces';
 
 export const categoriesData: Category[] = [
   {
@@ -169,5 +170,9 @@ export const categoriesData: Category[] = [
   {
     title: "Plataformas de Freelancers",
     tools: plataformasFreelancersTools
+  },
+  {
+    title: "Marketplaces (Facebook, Google, TikTok)",
+    tools: marketplacesTools
   }
 ];

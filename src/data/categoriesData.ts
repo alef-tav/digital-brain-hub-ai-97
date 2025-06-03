@@ -1,4 +1,3 @@
-
 export const categoriesData = [
   {
     id: 1,
@@ -321,5 +320,12 @@ export const categoriesData = [
     description: "Plataformas que permitem criar aplicações SaaS completas utilizando inteligência artificial.",
     icon: "🏗️",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop&auto=format"
+  },
+  {
+    id: 48,
+    title: "Marketplaces (Facebook, Google, TikTok)",
+    description: "Ferramentas para vender e promover produtos nos principais marketplaces digitais.",
+    icon: "🛍️",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=600&fit=crop&auto=format"
   }
 ];

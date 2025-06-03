@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card"
@@ -52,6 +51,7 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
       "Criação de SaaS por IA": "/criacao-saas-ia",
       "Mineração de Produtos e Ofertas": "/mineracao-produtos-ofertas",
       "Plataformas de Freelancers": "/plataformas-freelancers",
+      "Marketplaces (Facebook, Google, TikTok)": "/marketplaces-facebook-google-tiktok",
     };
     
     return routes[title] || "/";
