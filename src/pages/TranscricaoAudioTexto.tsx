@@ -1,30 +1,52 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import CategorySection from '@/components/CategorySection';
-import { transcricaoAudioTextoTools } from '@/data/categories/transcricao';
+import ToolBlogCard from '@/components/ToolBlogCard';
+import { categoriesData } from '@/data/toolsData';
 
 const TranscricaoAudioTexto = () => {
+  const category = categoriesData.find(cat => cat.title === "Transcrição de Áudio em Texto");
+  
+  if (!category) {
+    return <div>Categoria não encontrada</div>;
+  }
+
   return (
     <div className="min-h-screen bg-black">
       <Header />
       
-      <main className="pt-24 pb-12">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
+      {/* Hero Section */}
+      <section className="pt-24 pb-12 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Transcrição de Áudio em Texto
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+              🎧 Transcrição de Áudio em Texto
             </h1>
-            <p className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-              Converta seus arquivos de áudio e vídeo em texto de forma rápida e precisa com as melhores 
-              ferramentas de transcrição automática e manual disponíveis no mercado.
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+              Conversão automática de arquivos de áudio e vídeo em texto editável.
             </p>
           </div>
+        </div>
+      </section>
 
-          <CategorySection
-            title="Ferramentas de Transcrição de Áudio em Texto"
-            tools={transcricaoAudioTextoTools}
-          />
+      {/* Tools Grid */}
+      <main className="px-4 md:px-8 pb-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {category.tools.map((tool, index) => (
+              <ToolBlogCard
+                key={index}
+                title={tool.title}
+                description={tool.description}
+                detailedDescription={tool.detailedDescription}
+                icon={tool.icon}
+                image={tool.image}
+                link={tool.link}
+                category="Transcrição de Áudio em Texto"
+                isNew={tool.isNew}
+              />
+            ))}
+          </div>
         </div>
       </main>
 
