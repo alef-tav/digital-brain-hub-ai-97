@@ -57,6 +57,7 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
       "Ferramentas de SMS": "/ferramentas-sms",
       "Baixadores Universais": "/baixadores-universais",
       "Criação de Sites por IA": "/criacao-sites-ia",
+      "Shopify": "/shopify",
     };
     
     return routes[title] || "/";

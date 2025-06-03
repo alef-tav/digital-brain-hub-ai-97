@@ -286,5 +286,12 @@ export const categoriesData = [
     description: "Ferramentas para desenvolver aplicações SaaS completas com auxílio de IA.",
     icon: "⚙️",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop&auto=format"
+  },
+  {
+    id: 47,
+    title: "Shopify",
+    description: "Aplicativos e ferramentas essenciais para lojas Shopify, desde templates até automações.",
+    icon: "🛍️",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=600&fit=crop&auto=format"
   }
 ];

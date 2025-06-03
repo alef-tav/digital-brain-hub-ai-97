@@ -1,4 +1,3 @@
-
 import { Category } from '@/types';
 import { organizacaoTools } from './categories/organizacao';
 import { buscadoresIAsTools, buscadoresInteressesTools } from './categories/buscadores';
@@ -25,6 +24,7 @@ import { ferramentasFaceSwapTools } from './categories/faceswap';
 import { ferramentasSMSTools } from './categories/sms';
 import { baixadoresUniversaisTools } from './categories/baixadores-universais';
 import { criacaoSitesIATools } from './categories/criacao-sites-ia';
+import { shopifyTools } from './categories/shopify';
 
 export const categoriesData: Category[] = [
   {
@@ -194,5 +194,9 @@ export const categoriesData: Category[] = [
   {
     title: "Criação de Sites por IA",
     tools: criacaoSitesIATools
+  },
+  {
+    title: "Shopify",
+    tools: shopifyTools
   }
 ];
