@@ -1,3 +1,4 @@
+
 export const categoriesData = [
   {
     id: 1,
@@ -266,13 +267,6 @@ export const categoriesData = [
     image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=400&h=600&fit=crop&auto=format"
   },
   {
-    id: 40,
-    title: "Plugins para WordPress",
-    description: "Extensões e plugins essenciais para otimizar sites WordPress.",
-    icon: "🔌",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=600&fit=crop&auto=format"
-  },
-  {
     id: 41,
     title: "Ferramentas de FaceSwap",
     description: "Tecnologias para trocar rostos em vídeos e imagens de forma realista.",
@@ -313,19 +307,5 @@ export const categoriesData = [
     description: "Ferramentas para desenvolver aplicações SaaS completas com auxílio de IA.",
     icon: "⚙️",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 47,
-    title: "Criação de SaaS por IA",
-    description: "Plataformas que permitem criar aplicações SaaS completas utilizando inteligência artificial.",
-    icon: "🏗️",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 48,
-    title: "Marketplaces (Facebook, Google, TikTok)",
-    description: "Ferramentas para vender e promover produtos nos principais marketplaces digitais.",
-    icon: "🛍️",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=600&fit=crop&auto=format"
   }
 ];
