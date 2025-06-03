@@ -35,6 +35,7 @@ import NarracaoIA from "./pages/NarracaoIA";
 import GeradoresLegendas from "./pages/GeradoresLegendas";
 import EmailMarketingIA from "./pages/EmailMarketingIA";
 import SEO from "./pages/SEO";
+import RastreamentoEventos from "./pages/RastreamentoEventos";
 
 const queryClient = new QueryClient();
 
@@ -74,6 +75,7 @@ const App = () => (
             <Route path="/geradores-legendas" element={<GeradoresLegendas />} />
             <Route path="/email-marketing-ia" element={<EmailMarketingIA />} />
             <Route path="/seo" element={<SEO />} />
+            <Route path="/rastreamento-eventos" element={<RastreamentoEventos />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

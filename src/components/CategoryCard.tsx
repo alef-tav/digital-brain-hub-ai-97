@@ -43,10 +43,14 @@ const getCategoryRoute = (id: number, title: string) => {
     25: '/geradores-legendas',
     26: '/email-marketing-ia',
     27: '/seo',
+    28: '/rastreamento-eventos',
   };
   
   // Fallback baseado no título se não encontrar por ID
   if (!routes[id]) {
+    if (title.toLowerCase().includes('rastreamento') && title.toLowerCase().includes('eventos')) {
+      return '/rastreamento-eventos';
+    }
     if (title.toLowerCase().includes('seo')) {
       return '/seo';
     }
