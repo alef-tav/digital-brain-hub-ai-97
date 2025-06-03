@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Heart, Play, Plus, ChevronDown } from 'lucide-react';
@@ -36,9 +37,9 @@ const getCategoryRoute = (id: number, title: string) => {
     18: '/imagens-produto-ia',
     19: '/geracao-imagens-texto-ia',
     20: '/edicao-videos-ia',
-    47: '/ferramentas-video',
-    48: '/bancos-videos',
-    49: '/ferramentas-meta-ads',
+    21: '/ferramentas-video',
+    22: '/bancos-videos',
+    23: '/ferramentas-meta-ads',
     24: '/narracao-ia',
   };
   
