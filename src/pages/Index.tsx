@@ -32,12 +32,10 @@ const Index = () => {
             {categoriesData.map((category) => (
               <CategoryCard
                 key={category.id}
-                id={category.id}
                 title={category.title}
                 description={category.description}
                 icon={category.icon}
                 image={category.image}
-                isNew={category.id <= 3}
               />
             ))}
           </div>

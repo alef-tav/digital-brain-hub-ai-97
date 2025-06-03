@@ -314,5 +314,12 @@ export const categoriesData = [
     description: "Ferramentas para desenvolver aplicações SaaS completas com auxílio de IA.",
     icon: "⚙️",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop&auto=format"
+  },
+  {
+    id: 47,
+    title: "Criação de SaaS por IA",
+    description: "Plataformas que permitem criar aplicações SaaS completas utilizando inteligência artificial.",
+    icon: "🏗️",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop&auto=format"
   }
 ];

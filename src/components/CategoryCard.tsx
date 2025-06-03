@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card"
@@ -48,6 +49,7 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
       "Músicas sem Direitos Autorais": "/musicas-sem-direitos-autorais",
       "Geração de Conteúdo com IA": "/geracao-conteudo-ia",
       "Transcrição de Áudio em Texto": "/transcricao-audio-texto",
+      "Criação de SaaS por IA": "/criacao-saas-ia",
     };
     
     return routes[title] || "/";

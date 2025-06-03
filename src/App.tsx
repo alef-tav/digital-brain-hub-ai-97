@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -41,6 +42,7 @@ import TrilhaSonoraIA from "./pages/TrilhaSonoraIA";
 import MusicasSemDireitosAutorais from "./pages/MusicasSemDireitosAutorais";
 import GeracaoConteudoIA from "./pages/GeracaoConteudoIA";
 import TranscricaoAudioTexto from "./pages/TranscricaoAudioTexto";
+import CriacaoSaasIA from "./pages/CriacaoSaasIA";
 
 const queryClient = new QueryClient();
 
@@ -87,6 +89,7 @@ const App = () => (
             <Route path="/musicas-sem-direitos-autorais" element={<MusicasSemDireitosAutorais />} />
             <Route path="/geracao-conteudo-ia" element={<GeracaoConteudoIA />} />
             <Route path="/transcricao-audio-texto" element={<TranscricaoAudioTexto />} />
+            <Route path="/criacao-saas-ia" element={<CriacaoSaasIA />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

@@ -17,6 +17,7 @@ import { trilhaSonoraIATools } from './categories/trilha-sonora';
 import { musicasSemDireitosAutoraisTools } from './categories/musicas-sem-direitos';
 import { geracaoConteudoIATools } from './categories/geracao-conteudo';
 import { transcricaoAudioTextoTools } from './categories/transcricao';
+import { criacaoSaasIATools } from './categories/saas-ia';
 
 export const categoriesData: Category[] = [
   {
@@ -154,5 +155,9 @@ export const categoriesData: Category[] = [
   {
     title: "Transcrição de Áudio em Texto",
     tools: transcricaoAudioTextoTools
+  },
+  {
+    title: "Criação de SaaS por IA",
+    tools: criacaoSaasIATools
   }
 ];
