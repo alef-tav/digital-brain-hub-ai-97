@@ -56,6 +56,7 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
       "Ferramentas de FaceSwap": "/ferramentas-faceswap",
       "Ferramentas de SMS": "/ferramentas-sms",
       "Baixadores Universais": "/baixadores-universais",
+      "Criação de Sites por IA": "/criacao-sites-ia",
     };
     
     return routes[title] || "/";

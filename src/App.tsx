@@ -49,6 +49,7 @@ import MarketplacesFacebookGoogleTikTok from "./pages/MarketplacesFacebookGoogle
 import FerramentasFaceSwap from "./pages/FerramentasFaceSwap";
 import FerramentasSMS from "./pages/FerramentasSMS";
 import BaixadoresUniversais from "./pages/BaixadoresUniversais";
+import CriacaoSitesIA from "./pages/CriacaoSitesIA";
 
 const queryClient = new QueryClient();
 
@@ -102,6 +103,7 @@ const App = () => (
             <Route path="/ferramentas-faceswap" element={<FerramentasFaceSwap />} />
             <Route path="/ferramentas-sms" element={<FerramentasSMS />} />
             <Route path="/baixadores-universais" element={<BaixadoresUniversais />} />
+            <Route path="/criacao-sites-ia" element={<CriacaoSitesIA />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

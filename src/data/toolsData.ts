@@ -24,6 +24,7 @@ import { marketplacesTools } from './categories/marketplaces';
 import { ferramentasFaceSwapTools } from './categories/faceswap';
 import { ferramentasSMSTools } from './categories/sms';
 import { baixadoresUniversaisTools } from './categories/baixadores-universais';
+import { criacaoSitesIATools } from './categories/criacao-sites-ia';
 
 export const categoriesData: Category[] = [
   {
@@ -189,5 +190,9 @@ export const categoriesData: Category[] = [
   {
     title: "Baixadores Universais",
     tools: baixadoresUniversaisTools
+  },
+  {
+    title: "Criação de Sites por IA",
+    tools: criacaoSitesIATools
   }
 ];
