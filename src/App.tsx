@@ -24,6 +24,7 @@ import FerramentasTextos from "./pages/FerramentasTextos";
 import BancosImagens from "./pages/BancosImagens";
 import DesignGeral from "./pages/DesignGeral";
 import IdentidadeMarca from "./pages/IdentidadeMarca";
+import DesignProdutosIA from "./pages/DesignProdutosIA";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
             <Route path="/bancos-imagens" element={<BancosImagens />} />
             <Route path="/design-geral" element={<DesignGeral />} />
             <Route path="/identidade-marca" element={<IdentidadeMarca />} />
+            <Route path="/design-produtos-ia" element={<DesignProdutosIA />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
