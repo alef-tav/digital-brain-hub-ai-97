@@ -47,6 +47,7 @@ const getCategoryRoute = (id: number, title: string) => {
     29: '/mockups',
     30: '/automacoes-suporte',
     32: '/trilha-sonora-ia',
+    33: '/musicas-sem-direitos-autorais',
   };
   
   // Fallback baseado no título se não encontrar por ID
@@ -113,6 +114,9 @@ const getCategoryRoute = (id: number, title: string) => {
     }
     if (title.toLowerCase().includes('trilha') && title.toLowerCase().includes('sonora') && title.toLowerCase().includes('ia')) {
       return '/trilha-sonora-ia';
+    }
+    if (title.toLowerCase().includes('músicas') && title.toLowerCase().includes('sem') && title.toLowerCase().includes('direitos')) {
+      return '/musicas-sem-direitos-autorais';
     }
   }
   
