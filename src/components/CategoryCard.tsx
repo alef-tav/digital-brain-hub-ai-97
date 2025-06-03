@@ -45,6 +45,7 @@ const getCategoryRoute = (id: number, title: string) => {
     27: '/seo',
     28: '/rastreamento-eventos',
     29: '/mockups',
+    30: '/automacoes-suporte',
   };
   
   // Fallback baseado no título se não encontrar por ID
@@ -105,6 +106,9 @@ const getCategoryRoute = (id: number, title: string) => {
     }
     if (title.toLowerCase().includes('ferramentas') && title.toLowerCase().includes('meta') && title.toLowerCase().includes('ads')) {
       return '/ferramentas-meta-ads';
+    }
+    if (title.toLowerCase().includes('automações') && title.toLowerCase().includes('suporte')) {
+      return '/automacoes-suporte';
     }
   }
   

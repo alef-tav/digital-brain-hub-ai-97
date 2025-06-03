@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -37,6 +36,7 @@ import EmailMarketingIA from "./pages/EmailMarketingIA";
 import SEO from "./pages/SEO";
 import RastreamentoEventos from "./pages/RastreamentoEventos";
 import Mockups from "./pages/Mockups";
+import AutomacoesSuporte from "./pages/AutomacoesSuporte";
 
 const queryClient = new QueryClient();
 
@@ -78,6 +78,7 @@ const App = () => (
             <Route path="/seo" element={<SEO />} />
             <Route path="/rastreamento-eventos" element={<RastreamentoEventos />} />
             <Route path="/mockups" element={<Mockups />} />
+            <Route path="/automacoes-suporte" element={<AutomacoesSuporte />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
