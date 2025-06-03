@@ -37,6 +37,7 @@ import SEO from "./pages/SEO";
 import RastreamentoEventos from "./pages/RastreamentoEventos";
 import Mockups from "./pages/Mockups";
 import AutomacoesSuporte from "./pages/AutomacoesSuporte";
+import TrilhaSonoraIA from "./pages/TrilhaSonoraIA";
 
 const queryClient = new QueryClient();
 
@@ -79,6 +80,7 @@ const App = () => (
             <Route path="/rastreamento-eventos" element={<RastreamentoEventos />} />
             <Route path="/mockups" element={<Mockups />} />
             <Route path="/automacoes-suporte" element={<AutomacoesSuporte />} />
+            <Route path="/trilha-sonora-ia" element={<TrilhaSonoraIA />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

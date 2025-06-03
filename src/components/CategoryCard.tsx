@@ -46,6 +46,7 @@ const getCategoryRoute = (id: number, title: string) => {
     28: '/rastreamento-eventos',
     29: '/mockups',
     30: '/automacoes-suporte',
+    32: '/trilha-sonora-ia',
   };
   
   // Fallback baseado no título se não encontrar por ID
@@ -109,6 +110,9 @@ const getCategoryRoute = (id: number, title: string) => {
     }
     if (title.toLowerCase().includes('automações') && title.toLowerCase().includes('suporte')) {
       return '/automacoes-suporte';
+    }
+    if (title.toLowerCase().includes('trilha') && title.toLowerCase().includes('sonora') && title.toLowerCase().includes('ia')) {
+      return '/trilha-sonora-ia';
     }
   }
   

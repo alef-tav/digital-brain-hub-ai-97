@@ -289,9 +289,53 @@ export const categoriesData = [
   {
     title: "Trilha Sonora por IA",
     tools: [
-      { title: "Epidemic Sound", description: "Biblioteca de músicas livres", icon: "🎧" },
-      { title: "AudioJungle", description: "Trilhas sonoras premium", icon: "🎵" },
-      { title: "Artlist", description: "Música para vídeos", icon: "🎬" }
+      { title: "PremiumBeat", description: "Biblioteca premium de músicas royalty-free para produções profissionais", icon: "🎵" },
+      { title: "Bensound", description: "Música de qualidade para criadores de vídeo com licenças flexíveis", icon: "🎧" },
+      { title: "Epidemic Sound", description: "Plataforma completa de música livre de direitos autorais", icon: "🎶" },
+      { title: "AudioJungle", description: "Marketplace de trilhas sonoras e efeitos sonoros premium", icon: "🔊" },
+      { title: "Pond5", description: "Biblioteca diversificada de música e áudio para projetos criativos", icon: "🎼" },
+      { title: "Jamendo", description: "Comunidade musical com trilhas livres e licenciadas", icon: "🎸" },
+      { title: "Soundstripe", description: "Música ilimitada para criadores de conteúdo", icon: "🎹" },
+      { title: "SoundCloud (Royalty-Free)", description: "Plataforma com seção dedicada a músicas livres de direitos", icon: "☁️" },
+      { title: "Taketones", description: "Trilhas sonoras gratuitas para uso comercial e pessoal", icon: "🎚️" },
+      { title: "Filmstro", description: "Música adaptativa que se ajusta ao ritmo do seu vídeo", icon: "🎬" },
+      { title: "Free Music Archive", description: "Arquivo colaborativo de música livre e legal", icon: "📁" },
+      { title: "Mixkit", description: "Músicas gratuitas de alta qualidade para projetos", icon: "🎛️" },
+      { title: "Envato Elements", description: "Assinatura ilimitada de música e efeitos sonoros", icon: "📦" },
+      { title: "Clipchamp", description: "Editor de vídeo com biblioteca musical integrada", icon: "✂️" },
+      { title: "TikTok Commercial Music Library", description: "Biblioteca oficial de música comercial do TikTok", icon: "📱" },
+      { title: "Suno AI", description: "IA avançada para criação de músicas completas personalizadas", icon: "🤖", isNew: true },
+      { title: "Beatoven.AI", description: "Compositor de IA que cria trilhas únicas para seus projetos", icon: "🎯", isNew: true },
+      { title: "Ecrett Music", description: "IA simples para gerar música baseada no humor do vídeo", icon: "🎨", isNew: true },
+      { title: "Soundraw", description: "Gerador de música com IA totalmente personalizável", icon: "🎭", isNew: true },
+      { title: "AIVA", description: "Compositor de IA emocional especializado em trilhas cinematográficas", icon: "🎪", isNew: true },
+      { title: "Boomy", description: "Crie músicas instantâneas com IA e monetize globalmente", icon: "💥", isNew: true }
+    ]
+  },
+  {
+    title: "Trilha Sonora por IA",
+    tools: [
+      { title: "PremiumBeat", description: "Biblioteca premium de músicas royalty-free para produções profissionais", icon: "🎵" },
+      { title: "Bensound", description: "Música de qualidade para criadores de vídeo com licenças flexíveis", icon: "🎧" },
+      { title: "Epidemic Sound", description: "Plataforma completa de música livre de direitos autorais", icon: "🎶" },
+      { title: "AudioJungle", description: "Marketplace de trilhas sonoras e efeitos sonoros premium", icon: "🔊" },
+      { title: "Pond5", description: "Biblioteca diversificada de música e áudio para projetos criativos", icon: "🎼" },
+      { title: "Jamendo", description: "Comunidade musical com trilhas livres e licenciadas", icon: "🎸" },
+      { title: "Soundstripe", description: "Música ilimitada para criadores de conteúdo", icon: "🎹" },
+      { title: "SoundCloud (Royalty-Free)", description: "Plataforma com seção dedicada a músicas livres de direitos", icon: "☁️" },
+      { title: "Taketones", description: "Trilhas sonoras gratuitas para uso comercial e pessoal", icon: "🎚️" },
+      { title: "Filmstro", description: "Música adaptativa que se ajusta ao ritmo do seu vídeo", icon: "🎬" },
+      { title: "Free Music Archive", description: "Arquivo colaborativo de música livre e legal", icon: "📁" },
+      { title: "Mixkit", description: "Músicas gratuitas de alta qualidade para projetos", icon: "🎛️" },
+      { title: "Envato Elements", description: "Assinatura ilimitada de música e efeitos sonoros", icon: "📦" },
+      { title: "Clipchamp", description: "Editor de vídeo com biblioteca musical integrada", icon: "✂️" },
+      { title: "TikTok Commercial Music Library", description: "Biblioteca oficial de música comercial do TikTok", icon: "📱" },
+      { title: "Suno AI", description: "IA avançada para criação de músicas completas personalizadas", icon: "🤖", isNew: true },
+      { title: "Beatoven.AI", description: "Compositor de IA que cria trilhas únicas para seus projetos", icon: "🎯", isNew: true },
+      { title: "Ecrett Music", description: "IA simples para gerar música baseada no humor do vídeo", icon: "🎨", isNew: true },
+      { title: "Soundraw", description: "Gerador de música com IA totalmente personalizável", icon: "🎭", isNew: true },
+      { title: "AIVA", description: "Compositor de IA emocional especializado em trilhas cinematográficas", icon: "🎪", isNew: true },
+      { title: "Boomy", description: "Crie músicas instantâneas com IA e monetize globalmente", icon: "💥", isNew: true }
     ]
   },
   {
