@@ -76,6 +76,7 @@ const App = () => (
             <Route path="/email-marketing-ia" element={<EmailMarketingIA />} />
             <Route path="/seo" element={<SEO />} />
             <Route path="/rastreamento-eventos" element={<RastreamentoEventos />} />
+            <Route path="/mockups" element={<Mockups />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
