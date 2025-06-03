@@ -50,6 +50,7 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
       "Geração de Conteúdo com IA": "/geracao-conteudo-ia",
       "Transcrição de Áudio em Texto": "/transcricao-audio-texto",
       "Criação de SaaS por IA": "/criacao-saas-ia",
+      "Mineração de Produtos e Ofertas": "/mineracao-produtos-ofertas",
     };
     
     return routes[title] || "/";

@@ -18,6 +18,7 @@ import { musicasSemDireitosAutoraisTools } from './categories/musicas-sem-direit
 import { geracaoConteudoIATools } from './categories/geracao-conteudo';
 import { transcricaoAudioTextoTools } from './categories/transcricao';
 import { criacaoSaasIATools } from './categories/saas-ia';
+import { mineracaoProdutosOfertasTools } from './categories/mineracao-produtos';
 
 export const categoriesData: Category[] = [
   {
@@ -159,5 +160,9 @@ export const categoriesData: Category[] = [
   {
     title: "Criação de SaaS por IA",
     tools: criacaoSaasIATools
+  },
+  {
+    title: "Mineração de Produtos e Ofertas",
+    tools: mineracaoProdutosOfertasTools
   }
 ];
