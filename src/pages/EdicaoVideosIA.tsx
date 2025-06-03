@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolBlogCard from '@/components/ToolBlogCard';
@@ -11,7 +10,167 @@ const EdicaoVideosIA = () => {
       detailedDescription: "Gemini Veo 3 é a mais nova ferramenta do Google Labs para geração de vídeos através de texto e adição de movimentos em imagens. Uma tecnologia revolucionária que permite criar vídeos cinematográficos de alta qualidade.",
       icon: "🎬",
       image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop",
-      link: "https://labs.google/fx/pt/tools/flow",
+      link: "https://labs.google.com/fx/pt/tools/flow",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "Rubbrband",
+      description: "Ferramenta inovadora para edição de vídeos com IA",
+      detailedDescription: "Rubbrband oferece soluções criativas para edição de vídeos usando inteligência artificial, permitindo transformar ideias em conteúdo visual de forma intuitiva.",
+      icon: "🎨",
+      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=400&h=300&fit=crop",
+      link: "https://www.rubbrband.com/home",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "VidAU AI",
+      description: "Criação de anúncios de vídeo virais com IA",
+      detailedDescription: "VidAU AI é uma plataforma especializada em criar anúncios de vídeo virais usando inteligência artificial, otimizada para máximo engajamento e conversões.",
+      icon: "📺",
+      image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&h=300&fit=crop",
+      link: "https://www.vidau.ai/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "Mootion",
+      description: "Transforme ideias em histórias visuais",
+      detailedDescription: "Mootion permite transformar suas ideias em histórias visuais envolventes usando IA, criando narrativas cinematográficas de forma automatizada.",
+      icon: "📖",
+      image: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=400&h=300&fit=crop",
+      link: "https://storyteller.mootion.com/auth/login",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "Haiper",
+      description: "Gerador de vídeos IA avançado",
+      detailedDescription: "Haiper é um gerador de vídeos com IA que oferece ferramentas avançadas para criação de conteúdo visual de alta qualidade de forma rápida e eficiente.",
+      icon: "⚡",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
+      link: "https://haiper.ai/auth/signin",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "Luma Dream Machine",
+      description: "Gerador de vídeos IA de última geração",
+      detailedDescription: "Luma Dream Machine é uma tecnologia de ponta para geração de vídeos com IA, oferecendo qualidade cinematográfica e realismo impressionante.",
+      icon: "💫",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
+      link: "https://lumalabs.ai/dream-machine",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "LTX Studio",
+      description: "Visualize seus conceitos com IA",
+      detailedDescription: "LTX Studio permite visualizar e dar vida aos seus conceitos usando tecnologia avançada de IA, ideal para criadores e produtores de conteúdo.",
+      icon: "🎯",
+      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop",
+      link: "https://ltx.studio/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "VideoGen",
+      description: "Criação de vídeos em segundos com IA",
+      detailedDescription: "VideoGen é um gerador de vídeos IA que permite criar conteúdo visual profissional em questão de segundos, otimizado para produtividade máxima.",
+      icon: "🚀",
+      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=400&h=300&fit=crop",
+      link: "https://videogen.io/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "Vidu Studio",
+      description: "O que você imagina é o que o Vidu cria",
+      detailedDescription: "Vidu Studio transforma sua imaginação em realidade visual, oferecendo ferramentas de IA para criar vídeos únicos e personalizados.",
+      icon: "🌟",
+      image: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=400&h=300&fit=crop",
+      link: "https://www.vidu.studio/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "Focal",
+      description: "Crie seus próprios programas de TV e filmes com IA",
+      detailedDescription: "Focal permite criar programas de TV e filmes completos usando IA, oferecendo ferramentas profissionais para produção cinematográfica.",
+      icon: "🎭",
+      image: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?w=400&h=300&fit=crop",
+      link: "https://focalml.com/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "Lumen5",
+      description: "Marketing de vídeo social simplificado",
+      detailedDescription: "Lumen5 é um criador de vídeos que transforma texto em conteúdo de marketing visual em minutos, ideal para redes sociais e campanhas digitais.",
+      icon: "📱",
+      image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&h=300&fit=crop",
+      link: "https://lumen5.com/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "KLING AI",
+      description: "Plataforma avançada de criação de vídeos IA",
+      detailedDescription: "KLING AI oferece tecnologia de ponta para criação de vídeos com inteligência artificial, com recursos avançados para produção profissional.",
+      icon: "🔮",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop",
+      link: "https://www.klingai.com/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "PixVerse",
+      description: "Crie vídeos impressionantes com IA",
+      detailedDescription: "PixVerse oferece ferramentas para criar vídeos de tirar o fôlego usando inteligência artificial, com qualidade profissional e facilidade de uso.",
+      icon: "✨",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
+      link: "https://app.pixverse.ai/home",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "Tess AI",
+      description: "IA Generativa líder global para empresas",
+      detailedDescription: "Tess AI é uma plataforma de IA generativa líder mundial, oferecendo soluções empresariais para criação de conteúdo visual e vídeos.",
+      icon: "🏢",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
+      link: "https://pareto.io/pt-br/tess-ai/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "Topview AI",
+      description: "Cria vídeos virais a partir de links Amazon e Shopify",
+      detailedDescription: "Topview AI especializa-se em criar vídeos virais automaticamente a partir de links de produtos Amazon e Shopify, otimizado para vendas online.",
+      icon: "🛒",
+      image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&h=300&fit=crop",
+      link: "https://www.topview.ai/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "SmartShort",
+      description: "Criação inteligente de vídeos curtos",
+      detailedDescription: "SmartShort é uma ferramenta especializada na criação inteligente de vídeos curtos, otimizada para redes sociais e engajamento máximo.",
+      icon: "📏",
+      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=400&h=300&fit=crop",
+      link: "https://www.smartshort.co/",
+      category: "Edição de Vídeos com IA",
+      isNew: true
+    },
+    {
+      title: "VideoMax",
+      description: "Ferramenta de texto e imagem para vídeo",
+      detailedDescription: "VideoMax é um gerador de vídeo IA que transforma texto e imagens em vídeos profissionais, oferecendo soluções completas para criação de conteúdo.",
+      icon: "📹",
+      image: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=400&h=300&fit=crop",
+      link: "https://aichatmax.com/pt",
       category: "Edição de Vídeos com IA",
       isNew: true
     },
