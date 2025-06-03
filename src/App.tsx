@@ -25,6 +25,7 @@ import BancosImagens from "./pages/BancosImagens";
 import DesignGeral from "./pages/DesignGeral";
 import IdentidadeMarca from "./pages/IdentidadeMarca";
 import DesignProdutosIA from "./pages/DesignProdutosIA";
+import ImagensProdutoIA from "./pages/ImagensProdutoIA";
 
 const queryClient = new QueryClient();
 
