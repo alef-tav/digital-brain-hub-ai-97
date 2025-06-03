@@ -21,6 +21,7 @@ import { criacaoSaasIATools } from './categories/saas-ia';
 import { mineracaoProdutosOfertasTools } from './categories/mineracao-produtos';
 import { plataformasFreelancersTools } from './categories/plataformas-freelancers';
 import { marketplacesTools } from './categories/marketplaces';
+import { ferramentasFaceSwapTools } from './categories/faceswap';
 
 export const categoriesData: Category[] = [
   {
@@ -174,5 +175,9 @@ export const categoriesData: Category[] = [
   {
     title: "Marketplaces (Facebook, Google, TikTok)",
     tools: marketplacesTools
+  },
+  {
+    title: "Ferramentas de FaceSwap",
+    tools: ferramentasFaceSwapTools
   }
 ];

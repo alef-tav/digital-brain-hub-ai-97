@@ -1,4 +1,5 @@
 
+
 export const categoriesData = [
   {
     id: 1,
@@ -258,13 +259,6 @@ export const categoriesData = [
     description: "Ferramentas para vender e promover produtos nos principais marketplaces digitais.",
     icon: "🛍️",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 39,
-    title: "Vozes Geradas por IA",
-    description: "Tecnologia de clonagem e síntese de voz para criar narrações personalizadas.",
-    icon: "🗣️",
-    image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=400&h=600&fit=crop&auto=format"
   },
   {
     id: 41,
