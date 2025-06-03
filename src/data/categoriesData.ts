@@ -211,115 +211,38 @@ export const categoriesData = [
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=600&fit=crop&auto=format"
   },
   {
-    id: 32,
+    id: 31,
     title: "Trilha Sonora por IA",
     description: "Criação de trilhas sonoras personalizadas para vídeos e projetos multimídia.",
     icon: "🎼",
     image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=600&fit=crop&auto=format"
   },
   {
-    id: 33,
+    id: 32,
     title: "Músicas sem Direitos Autorais",
     description: "Bibliotecas de música livre para uso comercial sem preocupações legais.",
     icon: "🎶",
     image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=600&fit=crop&auto=format"
   },
   {
-    id: 34,
+    id: 33,
     title: "Geração de Conteúdo com IA",
     description: "Ferramentas para criar textos, artigos e conteúdo automaticamente.",
     icon: "✍️",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=600&fit=crop&auto=format"
   },
   {
-    id: 35,
+    id: 34,
     title: "Transcrição de Áudio em Texto",
     description: "Conversão automática de arquivos de áudio e vídeo em texto editável.",
     icon: "🎧",
     image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=400&h=600&fit=crop&auto=format"
   },
   {
-    id: 36,
-    title: "Mineração de Produtos e Ofertas",
-    description: "Ferramentas para encontrar produtos em tendência e oportunidades de mercado.",
-    icon: "💎",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 37,
-    title: "Plataformas de Freelancers",
-    description: "Seleção das melhores plataformas para contratar freelancers especializados.",
-    icon: "👨‍💻",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 38,
-    title: "Marketplaces (Facebook, Google, TikTok)",
-    description: "Ferramentas para vender e promover produtos nos principais marketplaces digitais.",
-    icon: "🛍️",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 39,
-    title: "Vozes Geradas por IA",
-    description: "Tecnologia de clonagem e síntese de voz para criar narrações personalizadas.",
-    icon: "🗣️",
-    image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 40,
-    title: "Plugins para WordPress",
-    description: "Extensões e plugins essenciais para otimizar sites WordPress.",
-    icon: "🔌",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 41,
-    title: "Ferramentas de FaceSwap",
-    description: "Tecnologias para trocar rostos em vídeos e imagens de forma realista.",
-    icon: "🎭",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 42,
-    title: "Ferramentas de SMS",
-    description: "Plataformas para envio em massa e automação de mensagens SMS.",
-    icon: "💬",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 43,
-    title: "Provadores de Roupas Virtuais",
-    description: "Tecnologia de realidade aumentada para experimentar roupas virtualmente.",
-    icon: "👗",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 44,
-    title: "Baixadores Universais",
-    description: "Ferramentas para download de vídeos, áudios e conteúdo de diversas plataformas.",
-    icon: "⬇️",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 45,
-    title: "Criação de Sites por IA",
-    description: "Plataformas que geram sites completos automaticamente usando IA.",
-    icon: "🌐",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 46,
+    id: 35,
     title: "Criação de SaaS por IA",
-    description: "Ferramentas para desenvolver aplicações SaaS completas com auxílio de IA.",
+    description: "Ferramentas para desenvolver aplicações SaaS completas usando inteligência artificial.",
     icon: "⚙️",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 47,
-    title: "Criação de SaaS por IA",
-    description: "Plataformas que permitem criar aplicações SaaS completas utilizando inteligência artificial.",
-    icon: "🏗️",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop&auto=format"
   }
 ];
