@@ -1,5 +1,4 @@
 
-
 export const categoriesData = [
   {
     id: 1,
@@ -254,13 +253,6 @@ export const categoriesData = [
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=600&fit=crop&auto=format"
   },
   {
-    id: 38,
-    title: "Marketplaces (Facebook, Google, TikTok)",
-    description: "Ferramentas para vender e promover produtos nos principais marketplaces digitais.",
-    icon: "🛍️",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=600&fit=crop&auto=format"
-  },
-  {
     id: 41,
     title: "Ferramentas de FaceSwap",
     description: "Tecnologias para trocar rostos em vídeos e imagens de forma realista.",
@@ -273,13 +265,6 @@ export const categoriesData = [
     description: "Plataformas para envio em massa e automação de mensagens SMS.",
     icon: "💬",
     image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=600&fit=crop&auto=format"
-  },
-  {
-    id: 43,
-    title: "Provadores de Roupas Virtuais",
-    description: "Tecnologia de realidade aumentada para experimentar roupas virtualmente.",
-    icon: "👗",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=600&fit=crop&auto=format"
   },
   {
     id: 44,

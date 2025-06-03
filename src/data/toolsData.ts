@@ -23,6 +23,7 @@ import { plataformasFreelancersTools } from './categories/plataformas-freelancer
 import { marketplacesTools } from './categories/marketplaces';
 import { ferramentasFaceSwapTools } from './categories/faceswap';
 import { ferramentasSMSTools } from './categories/sms';
+import { baixadoresUniversaisTools } from './categories/baixadores-universais';
 
 export const categoriesData: Category[] = [
   {
@@ -184,5 +185,9 @@ export const categoriesData: Category[] = [
   {
     title: "Ferramentas de SMS",
     tools: ferramentasSMSTools
+  },
+  {
+    title: "Baixadores Universais",
+    tools: baixadoresUniversaisTools
   }
 ];

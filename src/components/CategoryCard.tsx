@@ -55,6 +55,7 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
       "Marketplaces (Facebook, Google, TikTok)": "/marketplaces-facebook-google-tiktok",
       "Ferramentas de FaceSwap": "/ferramentas-faceswap",
       "Ferramentas de SMS": "/ferramentas-sms",
+      "Baixadores Universais": "/baixadores-universais",
     };
     
     return routes[title] || "/";
