@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -33,6 +34,7 @@ import FerramentasMetaAds from "./pages/FerramentasMetaAds";
 import NarracaoIA from "./pages/NarracaoIA";
 import GeradoresLegendas from "./pages/GeradoresLegendas";
 import EmailMarketingIA from "./pages/EmailMarketingIA";
+import SEO from "./pages/SEO";
 
 const queryClient = new QueryClient();
 
@@ -71,6 +73,7 @@ const App = () => (
             <Route path="/narracao-ia" element={<NarracaoIA />} />
             <Route path="/geradores-legendas" element={<GeradoresLegendas />} />
             <Route path="/email-marketing-ia" element={<EmailMarketingIA />} />
+            <Route path="/seo" element={<SEO />} />
             <Route path="/favoritos" element={<Favoritos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
