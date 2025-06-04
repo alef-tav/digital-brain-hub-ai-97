@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Heart, Star, Grid3X3, Bell, User } from 'lucide-react';
+import { Search, Bell, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -28,12 +28,12 @@ const Header = () => {
             <Button asChild variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
               <Link to="/favoritos">Favoritas</Link>
             </Button>
-            <Button variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
-              Novidades
-            </Button>
-            <Button variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
-              Categorias
-            </Button>
+            <div className="relative">
+              <Button variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
+                Novidades
+                <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+              </Button>
+            </div>
           </nav>
 
           {/* Actions - Direita */}
