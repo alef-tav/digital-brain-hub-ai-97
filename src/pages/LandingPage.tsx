@@ -58,9 +58,9 @@ const LandingPage = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded-lg">
-                  <Link to="/dashboard">
+                  <Link to="/checkout">
                     <Play className="w-5 h-5 mr-2" />
-                    Acessar Agora
+                    Garantir Acesso
                   </Link>
                 </Button>
                 <div className="flex items-center text-gray-400 text-sm">
@@ -380,7 +380,7 @@ const LandingPage = () => {
             </div>
 
             <Button asChild className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-xl font-bold rounded-2xl w-full transform hover:scale-105 transition-transform shadow-lg">
-              <Link to="/dashboard">
+              <Link to="/checkout">
                 ⚡ GARANTIR ACESSO COMPLETO AGORA
               </Link>
             </Button>

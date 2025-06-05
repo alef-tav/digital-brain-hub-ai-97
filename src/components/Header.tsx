@@ -1,14 +1,16 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Search, Bell, User } from 'lucide-react';
+import { Search, Bell, User, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { useAuth } from '@/contexts/AuthContext';
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const location = useLocation();
   const isLandingPage = location.pathname === '/';
+  const { user, signOut } = useAuth();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-800">
@@ -24,7 +26,7 @@ const Header = () => {
 
           {/* Navigation - Centro */}
           <nav className="hidden lg:flex items-center space-x-8">
-            {!isLandingPage && (
+            {!isLandingPage && user && (
               <>
                 <Button asChild variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
                   <Link to="/dashboard">Dashboard</Link>
@@ -42,9 +44,15 @@ const Header = () => {
             )}
             {isLandingPage && (
               <>
-                <Button asChild variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
-                  <Link to="/dashboard">Ver Dashboard</Link>
-                </Button>
+                {user ? (
+                  <Button asChild variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
+                    <Link to="/dashboard">Meu Dashboard</Link>
+                  </Button>
+                ) : (
+                  <Button asChild variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
+                    <Link to="/auth">Entrar</Link>
+                  </Button>
+                )}
                 <Button asChild variant="ghost" className="text-white hover:text-red-500 transition-colors font-medium">
                   <Link to="/privacy-policy">Privacidade</Link>
                 </Button>
@@ -57,7 +65,7 @@ const Header = () => {
 
           {/* Actions - Direita */}
           <div className="flex items-center space-x-2 md:space-x-4">
-            {!isLandingPage && (
+            {!isLandingPage && user && (
               <>
                 {isSearchOpen ? (
                   <div className="flex items-center space-x-2">
@@ -95,18 +103,39 @@ const Header = () => {
                     <Button
                       variant="ghost"
                       size="icon"
+                      onClick={signOut}
                       className="text-white hover:text-red-500"
+                      title="Sair"
                     >
-                      <User className="w-5 h-5" />
+                      <LogOut className="w-5 h-5" />
                     </Button>
                   </>
                 )}
               </>
             )}
             {isLandingPage && (
-              <Button asChild className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg">
-                <Link to="/dashboard">Acessar</Link>
-              </Button>
+              <>
+                {user ? (
+                  <div className="flex items-center space-x-2">
+                    <Button asChild variant="ghost" className="text-white hover:text-red-500">
+                      <Link to="/dashboard">Dashboard</Link>
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={signOut}
+                      className="text-white hover:text-red-500"
+                      title="Sair"
+                    >
+                      <LogOut className="w-5 h-5" />
+                    </Button>
+                  </div>
+                ) : (
+                  <Button asChild className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg">
+                    <Link to="/checkout">Garantir Acesso</Link>
+                  </Button>
+                )}
+              </>
             )}
           </div>
         </div>

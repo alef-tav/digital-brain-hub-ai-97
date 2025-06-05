@@ -1,12 +1,15 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FavoritesProvider } from "@/contexts/FavoritesContext";
+import { AuthProvider } from "@/contexts/AuthContext";
 import Index from "./pages/Index";
 import LandingPage from "./pages/LandingPage";
+import AuthPage from "./pages/AuthPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import PaymentSuccess from "./pages/PaymentSuccess";
 import OrganizacaoProcessoProdutividade from "./pages/OrganizacaoProcessoProdutividade";
 import BuscadoresIAs from "./pages/BuscadoresIAs";
 import IAsCódigosAbertos from "./pages/IAsCódigosAbertos";
@@ -60,64 +63,69 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <FavoritesProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/dashboard" element={<Index />} />
-            <Route path="/organizacao-processo-produtividade" element={<OrganizacaoProcessoProdutividade />} />
-            <Route path="/buscadores-ias" element={<BuscadoresIAs />} />
-            <Route path="/ias-codigos-abertos" element={<IAsCódigosAbertos />} />
-            <Route path="/midias-sociais" element={<MidiasSociais />} />
-            <Route path="/buscadores-interesses" element={<BuscadoresInteresses />} />
-            <Route path="/geradores-mapas-mentais" element={<GeradoresMapasMentais />} />
-            <Route path="/criacao-mapas-mentais" element={<CriacaoMapasMentais />} />
-            <Route path="/geradores-apresentacoes" element={<GeradoresApresentacoes />} />
-            <Route path="/inteligencias-artificiais" element={<InteligenciasArtificiais />} />
-            <Route path="/geradores-nomes-negocios" element={<GeradoresNomesNegocios />} />
-            <Route path="/geradores-logomarcas" element={<GeradoresLogomarcas />} />
-            <Route path="/paletas-cores" element={<PaletasCores />} />
-            <Route path="/ferramentas-textos" element={<FerramentasTextos />} />
-            <Route path="/bancos-imagens" element={<BancosImagens />} />
-            <Route path="/design-geral" element={<DesignGeral />} />
-            <Route path="/identidade-marca" element={<IdentidadeMarca />} />
-            <Route path="/design-produtos-ia" element={<DesignProdutosIA />} />
-            <Route path="/imagens-produto-ia" element={<ImagensProdutoIA />} />
-            <Route path="/geracao-imagens-texto-ia" element={<GeracaoImagensTextoIA />} />
-            <Route path="/edicao-videos-ia" element={<EdicaoVideosIA />} />
-            <Route path="/ferramentas-video" element={<FerramentasVideo />} />
-            <Route path="/bancos-videos" element={<BancosVideos />} />
-            <Route path="/ferramentas-meta-ads" element={<FerramentasMetaAds />} />
-            <Route path="/narracao-ia" element={<NarracaoIA />} />
-            <Route path="/geradores-legendas" element={<GeradoresLegendas />} />
-            <Route path="/email-marketing-ia" element={<EmailMarketingIA />} />
-            <Route path="/seo" element={<SEO />} />
-            <Route path="/rastreamento-eventos" element={<RastreamentoEventos />} />
-            <Route path="/mockups" element={<Mockups />} />
-            <Route path="/automacoes-suporte" element={<AutomacoesSuporte />} />
-            <Route path="/trilha-sonora-ia" element={<TrilhaSonoraIA />} />
-            <Route path="/musicas-sem-direitos-autorais" element={<MusicasSemDireitosAutorais />} />
-            <Route path="/geracao-conteudo-ia" element={<GeracaoConteudoIA />} />
-            <Route path="/transcricao-audio-texto" element={<TranscricaoAudioTexto />} />
-            <Route path="/criacao-saas-ia" element={<CriacaoSaasIA />} />
-            <Route path="/mineracao-produtos-ofertas" element={<MineracaoProdutosOfertas />} />
-            <Route path="/plataformas-freelancers" element={<PlataformasFreelancers />} />
-            <Route path="/marketplaces-facebook-google-tiktok" element={<MarketplacesFacebookGoogleTikTok />} />
-            <Route path="/ferramentas-faceswap" element={<FerramentasFaceSwap />} />
-            <Route path="/ferramentas-sms" element={<FerramentasSMS />} />
-            <Route path="/baixadores-universais" element={<BaixadoresUniversais />} />
-            <Route path="/criacao-sites-ia" element={<CriacaoSitesIA />} />
-            <Route path="/shopify" element={<Shopify />} />
-            <Route path="/favoritos" element={<Favoritos />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </FavoritesProvider>
+      <AuthProvider>
+        <FavoritesProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/auth" element={<AuthPage />} />
+              <Route path="/checkout" element={<CheckoutPage />} />
+              <Route path="/payment-success" element={<PaymentSuccess />} />
+              <Route path="/dashboard" element={<Index />} />
+              <Route path="/organizacao-processo-produtividade" element={<OrganizacaoProcessoProdutividade />} />
+              <Route path="/buscadores-ias" element={<BuscadoresIAs />} />
+              <Route path="/ias-codigos-abertos" element={<IAsCódigosAbertos />} />
+              <Route path="/midias-sociais" element={<MidiasSociais />} />
+              <Route path="/buscadores-interesses" element={<BuscadoresInteresses />} />
+              <Route path="/geradores-mapas-mentais" element={<GeradoresMapasMentais />} />
+              <Route path="/criacao-mapas-mentais" element={<CriacaoMapasMentais />} />
+              <Route path="/geradores-apresentacoes" element={<GeradoresApresentacoes />} />
+              <Route path="/inteligencias-artificiais" element={<InteligenciasArtificiais />} />
+              <Route path="/geradores-nomes-negocios" element={<GeradoresNomesNegocios />} />
+              <Route path="/geradores-logomarcas" element={<GeradoresLogomarcas />} />
+              <Route path="/paletas-cores" element={<PaletasCores />} />
+              <Route path="/ferramentas-textos" element={<FerramentasTextos />} />
+              <Route path="/bancos-imagens" element={<BancosImagens />} />
+              <Route path="/design-geral" element={<DesignGeral />} />
+              <Route path="/identidade-marca" element={<IdentidadeMarca />} />
+              <Route path="/design-produtos-ia" element={<DesignProdutosIA />} />
+              <Route path="/imagens-produto-ia" element={<ImagensProdutoIA />} />
+              <Route path="/geracao-imagens-texto-ia" element={<GeracaoImagensTextoIA />} />
+              <Route path="/edicao-videos-ia" element={<EdicaoVideosIA />} />
+              <Route path="/ferramentas-video" element={<FerramentasVideo />} />
+              <Route path="/bancos-videos" element={<BancosVideos />} />
+              <Route path="/ferramentas-meta-ads" element={<FerramentasMetaAds />} />
+              <Route path="/narracao-ia" element={<NarracaoIA />} />
+              <Route path="/geradores-legendas" element={<GeradoresLegendas />} />
+              <Route path="/email-marketing-ia" element={<EmailMarketingIA />} />
+              <Route path="/seo" element={<SEO />} />
+              <Route path="/rastreamento-eventos" element={<RastreamentoEventos />} />
+              <Route path="/mockups" element={<Mockups />} />
+              <Route path="/automacoes-suporte" element={<AutomacoesSuporte />} />
+              <Route path="/trilha-sonora-ia" element={<TrilhaSonoraIA />} />
+              <Route path="/musicas-sem-direitos-autorais" element={<MusicasSemDireitosAutorais />} />
+              <Route path="/geracao-conteudo-ia" element={<GeracaoConteudoIA />} />
+              <Route path="/transcricao-audio-texto" element={<TranscricaoAudioTexto />} />
+              <Route path="/criacao-saas-ia" element={<CriacaoSaasIA />} />
+              <Route path="/mineracao-produtos-ofertas" element={<MineracaoProdutosOfertas />} />
+              <Route path="/plataformas-freelancers" element={<PlataformasFreelancers />} />
+              <Route path="/marketplaces-facebook-google-tiktok" element={<MarketplacesFacebookGoogleTikTok />} />
+              <Route path="/ferramentas-faceswap" element={<FerramentasFaceSwap />} />
+              <Route path="/ferramentas-sms" element={<FerramentasSMS />} />
+              <Route path="/baixadores-universais" element={<BaixadoresUniversais />} />
+              <Route path="/criacao-sites-ia" element={<CriacaoSitesIA />} />
+              <Route path="/shopify" element={<Shopify />} />
+              <Route path="/favoritos" element={<Favoritos />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </FavoritesProvider>
+      </AuthProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
