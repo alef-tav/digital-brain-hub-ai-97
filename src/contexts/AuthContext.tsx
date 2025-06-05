@@ -35,18 +35,14 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     if (!user) return;
     
     try {
-      const { data, error } = await supabase
-        .from('subscriptions')
-        .select('*')
-        .eq('user_id', user.id)
-        .single();
+      const { data, error } = await supabase.functions.invoke('get-user-subscription');
       
-      if (error && error.code !== 'PGRST116') {
+      if (error) {
         console.error('Error checking subscription:', error);
         return;
       }
       
-      setSubscription(data);
+      setSubscription(data?.subscription || null);
     } catch (error) {
       console.error('Error checking subscription:', error);
     }

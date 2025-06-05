@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FavoritesProvider } from "@/contexts/FavoritesContext";
 import { AuthProvider } from "@/contexts/AuthContext";
+import ProtectedRoute from "@/components/ProtectedRoute";
 import Index from "./pages/Index";
 import LandingPage from "./pages/LandingPage";
 import AuthPage from "./pages/AuthPage";
@@ -73,8 +74,16 @@ const App = () => (
               <Route path="/auth" element={<AuthPage />} />
               <Route path="/checkout" element={<CheckoutPage />} />
               <Route path="/payment-success" element={<PaymentSuccess />} />
-              <Route path="/dashboard" element={<Index />} />
-              <Route path="/organizacao-processo-produtividade" element={<OrganizacaoProcessoProdutividade />} />
+              <Route path="/dashboard" element={
+                <ProtectedRoute requiresSubscription={true}>
+                  <Index />
+                </ProtectedRoute>
+              } />
+              <Route path="/organizacao-processo-produtividade" element={
+                <ProtectedRoute requiresSubscription={true}>
+                  <OrganizacaoProcessoProdutividade />
+                </ProtectedRoute>
+              } />
               <Route path="/buscadores-ias" element={<BuscadoresIAs />} />
               <Route path="/ias-codigos-abertos" element={<IAsCódigosAbertos />} />
               <Route path="/midias-sociais" element={<MidiasSociais />} />
@@ -120,7 +129,6 @@ const App = () => (
               <Route path="/favoritos" element={<Favoritos />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
