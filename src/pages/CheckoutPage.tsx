@@ -31,8 +31,6 @@ const CheckoutPage = () => {
     try {
       const { data, error } = await supabase.functions.invoke('create-payment', {
         body: {
-          amount: 6790, // R$ 67,90 em centavos
-          currency: 'brl',
           user_id: user.id,
           email: user.email
         }

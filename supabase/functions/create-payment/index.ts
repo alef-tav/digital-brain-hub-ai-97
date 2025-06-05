@@ -23,7 +23,7 @@ serve(async (req) => {
 
   try {
     // Parse request body
-    const { amount, currency, user_id, email } = await req.json();
+    const { user_id, email } = await req.json();
 
     // Initialize Stripe
     const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") || "", {
@@ -46,19 +46,12 @@ serve(async (req) => {
       customerId = customer.id;
     }
 
-    // Create a one-time payment session
+    // Create a one-time payment session using the specific price ID
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       line_items: [
         {
-          price_data: {
-            currency: currency || "brl",
-            product_data: { 
-              name: "Cérebro Digital - Acesso Vitalício",
-              description: "+200 ferramentas de IA + FinTrack grátis"
-            },
-            unit_amount: amount || 6790, // R$ 67,90 in centavos
-          },
+          price: "price_1RWTHnJMbeGPi2G1j5aB9TI3", // Cérebro Digital - Vitalício
           quantity: 1,
         },
       ],
@@ -79,8 +72,8 @@ serve(async (req) => {
       stripe_payment_intent_id: session.id,
       status: "pending",
       plan_type: "lifetime",
-      amount_paid: amount || 6790,
-      currency: currency || "brl",
+      amount_paid: 6790,
+      currency: "brl",
     }, { onConflict: 'user_id' });
 
     return new Response(JSON.stringify({ url: session.url }), {
