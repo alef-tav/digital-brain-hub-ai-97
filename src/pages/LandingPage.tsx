@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -71,42 +70,11 @@ const LandingPage = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-gray-900 rounded-2xl p-6 border border-gray-700">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center">
-                      <span className="text-white font-bold">C</span>
-                    </div>
-                    <span className="text-white font-semibold">Cérebro Digital</span>
-                  </div>
-                  <div className="flex space-x-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  </div>
-                </div>
-                
-                <h3 className="text-white text-xl font-bold mb-4">Todas as Categorias</h3>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { title: "Geradores de Mapas Mentais por IA", image: "🧠" },
-                    { title: "Criação de Mapas Mentais", image: "🎨" },
-                    { title: "Geradores de Apresentações", image: "📊" },
-                    { title: "Inteligências Artificiais Gerais", image: "🤖" },
-                    { title: "Geradores de Nomes para Negócios", image: "💼" },
-                    { title: "Paletas de Cores", image: "🎨" },
-                    { title: "Ferramentas de Textos", image: "📝" },
-                    { title: "Bancos de Imagens", image: "🖼️" },
-                    { title: "Design Geral", image: "✨" },
-                  ].map((category, index) => (
-                    <div key={index} className="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition-colors">
-                      <div className="text-2xl mb-2">{category.image}</div>
-                      <h4 className="text-white text-sm font-medium leading-tight">{category.title}</h4>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <img 
+                src="/lovable-uploads/a15fd47a-b562-4964-9026-04e26e266386.png" 
+                alt="Interface do Cérebro Digital - Dashboard com categorias de ferramentas de IA"
+                className="w-full h-auto rounded-2xl shadow-2xl border border-gray-700"
+              />
             </div>
           </div>
         </div>
