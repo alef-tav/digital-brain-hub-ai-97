@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Play, Users, Star, Shield, CheckCircle, Clock, Target, BarChart3, Video, Zap, PenTool, FolderOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -56,9 +57,11 @@ const LandingPage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded-lg">
-                  <Play className="w-5 h-5 mr-2" />
-                  Acessar Agora
+                <Button asChild className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded-lg">
+                  <Link to="/dashboard">
+                    <Play className="w-5 h-5 mr-2" />
+                    Acessar Agora
+                  </Link>
                 </Button>
                 <div className="flex items-center text-gray-400 text-sm">
                   <Users className="w-4 h-4 mr-2" />
@@ -302,8 +305,10 @@ const LandingPage = () => {
               </p>
             </div>
 
-            <Button className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 text-lg font-semibold rounded-lg w-full sm:w-auto">
-              ⚡ Garantir Acesso Agora
+            <Button asChild className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 text-lg font-semibold rounded-lg w-full sm:w-auto">
+              <Link to="/dashboard">
+                ⚡ Garantir Acesso Agora
+              </Link>
             </Button>
           </div>
 
