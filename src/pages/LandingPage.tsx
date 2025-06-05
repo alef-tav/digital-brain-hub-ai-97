@@ -163,37 +163,51 @@ const LandingPage = () => {
 
       {/* Bonus Section */}
       <section className="py-20 px-4 md:px-8 bg-gradient-to-r from-blue-900/20 to-teal-900/20">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto">
           <div className="bg-gray-900 rounded-2xl p-8 border border-gray-700">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              🎁 Bônus Exclusivo: <span className="text-blue-400">FinTrack</span>
-            </h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Ganhe acesso GRATUITO ao nosso aplicativo de controle financeiro!
-            </p>
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                🎁 Bônus Exclusivo: <span className="text-blue-400">FinTrack</span>
+              </h2>
+              <p className="text-xl text-gray-300 mb-8">
+                Ganhe acesso GRATUITO ao nosso aplicativo de controle financeiro!
+              </p>
+            </div>
             
-            <div className="bg-gray-800 rounded-xl p-6 mb-8">
-              <div className="text-6xl mb-4">📊</div>
-              <h3 className="text-xl font-bold text-white mb-2">Dashboard Financeiro</h3>
-              <p className="text-gray-300">Aproveite suas receitas e despesas</p>
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-8">
+              <div>
+                <div className="bg-gray-800 rounded-xl p-6 mb-6">
+                  <div className="text-6xl mb-4">📊</div>
+                  <h3 className="text-xl font-bold text-white mb-2">Dashboard Financeiro</h3>
+                  <p className="text-gray-300">Acompanhe suas receitas e despesas</p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="flex items-center text-green-400">
+                    <CheckCircle className="w-5 h-5 mr-2" />
+                    Totalmente Gratuito
+                  </div>
+                  <div className="flex items-center text-blue-400">
+                    <BarChart3 className="w-5 h-5 mr-2" />
+                    Dashboard Profissional
+                  </div>
+                  <div className="flex items-center text-purple-400">
+                    <Target className="w-5 h-5 mr-2" />
+                    Relatórios Detalhados
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/9362b5a8-32a3-4909-92fd-1f495784b006.png" 
+                  alt="Dashboard FinTrack - Controle Financeiro Completo"
+                  className="w-full h-auto rounded-xl shadow-2xl border border-gray-600"
+                />
+              </div>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="flex items-center text-green-400">
-                <CheckCircle className="w-5 h-5 mr-2" />
-                Totalmente Gratuito
-              </div>
-              <div className="flex items-center text-blue-400">
-                <BarChart3 className="w-5 h-5 mr-2" />
-                Dashboard Profissional
-              </div>
-              <div className="flex items-center text-purple-400">
-                <Target className="w-5 h-5 mr-2" />
-                Relatórios Detalhados
-              </div>
-            </div>
-
-            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4">
+            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 text-center">
               <p className="text-teal-400 font-semibold">
                 🎯 Receba este aplicativo completo como bônus exclusivo!
               </p>
