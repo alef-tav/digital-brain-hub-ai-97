@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useAuth } from '@/contexts/AuthContext';
@@ -511,6 +511,109 @@ const LandingPage = () => {
                 Não ficou satisfeito? Devolvemos 100% do seu investimento.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-gray-900/50 to-transparent">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <span className="text-red-500">Perguntas</span> Frequentes
+            </h2>
+            <p className="text-xl text-gray-300">
+              Tire suas dúvidas sobre o Cérebro Digital
+            </p>
+          </div>
+
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+                O que exatamente está incluso no Cérebro Digital?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Você recebe acesso a mais de 200 ferramentas organizadas em 15 categorias diferentes, incluindo IA, automação, criação de vídeos, copywriting, design e muito mais. Também inclui o dashboard FinTrack como bônus gratuito.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+                Como funciona o acesso vitalício?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Após a compra, você receberá login e senha para acessar a plataforma para sempre. Não há mensalidades ou taxas recorrentes. Uma vez comprado, é seu para sempre.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+                As ferramentas são atualizadas constantemente?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Sim! Adicionamos novas ferramentas quase diariamente. Você sempre terá acesso às últimas inovações sem custo adicional.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+                O que é o FinTrack que vem como bônus?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                O FinTrack é um dashboard financeiro completo para você gerenciar suas finanças pessoais. Acompanhe receitas, despesas, múltiplas contas e defina metas financeiras. Valor individual de R$ 197, mas você recebe grátis.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+                Como é a garantia de 7 dias?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Você tem 7 dias corridos para testar todo o conteúdo. Se por qualquer motivo não ficar satisfeito, devolvemos 100% do seu investimento, sem perguntas.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+                Preciso de conhecimento técnico para usar?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Não! A interface foi desenvolvida para ser intuitiva como um Netflix. Cada ferramenta tem descrição clara e as categorias facilitam encontrar exatamente o que você precisa.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+                Posso acessar de qualquer dispositivo?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Sim! A plataforma é responsiva e funciona perfeitamente em computadores, tablets e smartphones. Acesse de onde estiver.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-8" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+                Como recebo meu acesso após a compra?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Imediatamente após a confirmação do pagamento, você receberá um email com seus dados de acesso. O processo é totalmente automático.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+
+          <div className="text-center mt-16">
+            <Button 
+              asChild 
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-xl font-bold rounded-xl"
+            >
+              <Link to="/checkout">
+                <Zap className="w-6 h-6 mr-3" />
+                Garantir Acesso Agora
+              </Link>
+            </Button>
+            <p className="text-gray-400 mt-4">
+              Última chance de garantir por R$ 67,90
+            </p>
           </div>
         </div>
       </section>
