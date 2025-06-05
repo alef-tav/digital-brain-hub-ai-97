@@ -15,10 +15,19 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
             Cérebro Digital
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed mb-12">
             Sua central definitiva de ferramentas de Inteligência Artificial e automações. 
             Explore uma vasta biblioteca de soluções inovadoras para transformar seu trabalho.
           </p>
+          
+          {/* Hero Image */}
+          <div className="mb-16">
+            <img 
+              src="/lovable-uploads/49778f94-8ba1-41b4-8ca7-61625337fd37.png"
+              alt="Interface Cérebro Digital" 
+              className="w-full max-w-4xl mx-auto rounded-2xl"
+            />
+          </div>
         </div>
       </section>
 
