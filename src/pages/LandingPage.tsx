@@ -106,49 +106,59 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Dashboard Preview Section */}
+      {/* Dashboard Preview Section - Layout Lado a Lado */}
       <section className="py-20 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Interface <span className="text-red-500">Estilo Netflix</span> para suas Ferramentas
-            </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Navegue por centenas de ferramentas organizadas em categorias específicas. 
-              Encontre exatamente o que precisa de forma rápida e intuitiva.
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Interface <span className="text-red-500">Estilo Netflix</span> para suas Ferramentas
+              </h2>
+              <p className="text-xl text-gray-400 leading-relaxed">
+                Navegue por centenas de ferramentas organizadas em categorias específicas. 
+                Encontre exatamente o que precisa de forma rápida e intuitiva.
+              </p>
 
-          <div className="relative">
-            <img 
-              src="/lovable-uploads/3431fd5b-4968-4906-8c33-afc514933b97.png" 
-              alt="Dashboard Cérebro Digital - Interface estilo Netflix com categorias de ferramentas"
-              className="w-full h-auto rounded-2xl shadow-2xl border border-gray-700"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
-          </div>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                    <Target className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">Categorias Específicas</h3>
+                    <p className="text-gray-300">Ferramentas organizadas por área de atuação para encontrar rapidamente o que você precisa</p>
+                  </div>
+                </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white mb-4 mx-auto">
-                <Target className="w-8 h-8" />
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                    <Zap className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">Acesso Rápido</h3>
+                    <p className="text-gray-300">Interface intuitiva e responsiva que se adapta ao seu fluxo de trabalho</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                    <Star className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">Ferramentas Curadas</h3>
+                    <p className="text-gray-300">Apenas as melhores e mais testadas ferramentas do mercado</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Categorias Específicas</h3>
-              <p className="text-gray-300">Ferramentas organizadas por área de atuação</p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white mb-4 mx-auto">
-                <Zap className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Acesso Rápido</h3>
-              <p className="text-gray-300">Interface intuitiva para encontrar o que precisa</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white mb-4 mx-auto">
-                <Star className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Ferramentas Curadas</h3>
-              <p className="text-gray-300">Apenas as melhores e mais testadas</p>
+
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/3431fd5b-4968-4906-8c33-afc514933b97.png" 
+                alt="Dashboard Cérebro Digital - Interface estilo Netflix com categorias de ferramentas"
+                className="w-full h-auto rounded-2xl shadow-2xl border border-gray-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
             </div>
           </div>
         </div>
