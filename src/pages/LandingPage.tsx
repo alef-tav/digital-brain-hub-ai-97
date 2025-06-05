@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -269,43 +268,135 @@ const LandingPage = () => {
       <section className="py-20 px-4 md:px-8 bg-gray-900/50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Quanto vale acelerar seus <span className="text-red-500">resultados</span>?
+            Transforme sua <span className="text-red-500">produtividade</span> hoje mesmo
           </h2>
           <p className="text-xl text-gray-300 mb-12">
             Economize semanas de pesquisa e mais de R$ 5.000 em ferramentas testadas.
           </p>
 
-          <div className="bg-gray-900 rounded-2xl p-8 border border-gray-700 mb-8">
-            <p className="text-gray-300 mb-6">Acesso completo ao Cérebro Digital por apenas</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 border-2 border-red-500/30 shadow-2xl mb-8 relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full -translate-y-16 translate-x-16"></div>
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-red-500/10 rounded-full translate-y-12 -translate-x-12"></div>
             
-            <div className="mb-6">
-              <span className="text-red-500 text-2xl">R$</span>
-              <span className="text-6xl font-bold text-red-500">67</span>
-              <span className="text-red-500 text-2xl">,90</span>
+            {/* Badge de destaque */}
+            <div className="inline-flex items-center space-x-2 bg-red-600 text-white rounded-full px-6 py-2 mb-6 font-semibold">
+              <Star className="w-4 h-4 fill-current" />
+              <span>OFERTA EXCLUSIVA</span>
             </div>
+
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              🧠 Cérebro Digital + 🎁 FinTrack
+            </h3>
             
-            <p className="text-gray-400 mb-8">Pagamento único • Acesso vitalício</p>
+            <p className="text-gray-300 mb-6 text-lg">
+              O combo completo para revolucionar sua produtividade e organizar suas finanças
+            </p>
             
-            <div className="bg-red-600/10 border border-red-600/20 rounded-lg p-4 mb-8">
-              <p className="text-red-400 font-semibold">
-                🎁 Bônus: Atualizações incluídas para sempre
+            {/* Grid de benefícios */}
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              {/* Cérebro Digital */}
+              <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center mr-4">
+                    <Target className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-xl font-bold text-white">Cérebro Digital</h4>
+                </div>
+                <ul className="space-y-3 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 flex-shrink-0" />
+                    +200 ferramentas organizadas
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 flex-shrink-0" />
+                    Interface estilo Netflix
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 flex-shrink-0" />
+                    15 categorias específicas
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 flex-shrink-0" />
+                    Atualizações vitalícias
+                  </li>
+                </ul>
+              </div>
+
+              {/* FinTrack */}
+              <div className="bg-gradient-to-br from-blue-900/30 to-teal-900/30 rounded-2xl p-6 border border-teal-500/30 relative">
+                <div className="absolute top-2 right-2 bg-teal-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                  BÔNUS
+                </div>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-teal-600 rounded-xl flex items-center justify-center mr-4">
+                    <BarChart3 className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-xl font-bold text-white">FinTrack</h4>
+                </div>
+                <ul className="space-y-3 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0" />
+                    Dashboard financeiro completo
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0" />
+                    Controle de receitas/despesas
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0" />
+                    Relatórios detalhados
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0" />
+                    Educação financeira
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Valor */}
+            <div className="mb-6">
+              <div className="flex items-center justify-center mb-2">
+                <span className="text-gray-400 text-lg line-through mr-4">De R$ 297,00</span>
+                <span className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">77% OFF</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <span className="text-red-500 text-3xl">R$</span>
+                <span className="text-6xl font-bold text-red-500">67</span>
+                <span className="text-red-500 text-3xl">,90</span>
+              </div>
+              <p className="text-gray-400 mt-2">Pagamento único • Acesso vitalício garantido</p>
+            </div>
+
+            {/* Call to action especial */}
+            <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-6 mb-6">
+              <p className="text-white font-bold text-xl mb-2">
+                🔥 Menos de R$ 0,34 por ferramenta!
+              </p>
+              <p className="text-red-100">
+                Valor que você economizaria em 1 semana de pesquisa
               </p>
             </div>
 
-            <Button asChild className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 text-lg font-semibold rounded-lg w-full sm:w-auto">
+            <Button asChild className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-xl font-bold rounded-2xl w-full transform hover:scale-105 transition-transform shadow-lg">
               <Link to="/dashboard">
-                ⚡ Garantir Acesso Agora
+                ⚡ GARANTIR ACESSO COMPLETO AGORA
               </Link>
             </Button>
+
+            <p className="text-gray-400 text-sm mt-4">
+              🔒 Pagamento 100% seguro • Acesso imediato após confirmação
+            </p>
           </div>
 
           <div className="bg-teal-900/20 border border-teal-500/30 rounded-xl p-6">
             <div className="flex items-center justify-center mb-4">
               <Shield className="w-6 h-6 text-teal-400 mr-2" />
-              <span className="text-teal-400 font-semibold">Garantia Incondicional</span>
+              <span className="text-teal-400 font-semibold">Garantia Incondicional de 7 Dias</span>
             </div>
-            <p className="text-white font-medium mb-2">7 dias para testar tudo sem riscos.</p>
-            <p className="text-gray-300">Não ficou satisfeito? Devolvemos 100% do seu investimento.</p>
+            <p className="text-white font-medium mb-2">Teste tudo sem riscos por 7 dias completos.</p>
+            <p className="text-gray-300">Não ficou satisfeito? Devolvemos 100% do seu investimento, sem perguntas.</p>
           </div>
         </div>
       </section>
