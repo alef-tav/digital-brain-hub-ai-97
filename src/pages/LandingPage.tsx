@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play } from 'lucide-react';
@@ -199,14 +198,6 @@ const LandingPage = () => {
             </p>
           </div>
 
-          <div className="relative mb-16">
-            <img 
-              src="/lovable-uploads/9454f9d8-a537-42a4-bc9b-b077ae9f507c.png"
-              alt="Categorias do Cérebro Digital" 
-              className="w-full rounded-2xl"
-            />
-          </div>
-
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-gray-800/30 border-gray-700 backdrop-blur-sm">
               <CardHeader>
@@ -304,14 +295,6 @@ const LandingPage = () => {
             </h2>
           </div>
 
-          <div className="relative mb-16">
-            <img 
-              src="/lovable-uploads/280a83b3-0656-4bb9-9331-95ce8b2bb9b8.png"
-              alt="Depoimentos de usuários" 
-              className="w-full rounded-2xl"
-            />
-          </div>
-
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-gray-800/30 border-gray-700 backdrop-blur-sm">
               <CardContent className="pt-6">
@@ -390,14 +373,6 @@ const LandingPage = () => {
             <p className="text-xl text-gray-300">
               Economize semanas de pesquisa e mais de R$ 5.000 em ferramentas testadas.
             </p>
-          </div>
-
-          <div className="relative mb-16">
-            <img 
-              src="/lovable-uploads/b0265393-cc28-4015-86da-405d9db1e1fb.png"
-              alt="Preço e oferta" 
-              className="w-full rounded-2xl"
-            />
           </div>
 
           <div className="text-center">
