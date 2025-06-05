@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play } from 'lucide-react';
@@ -86,7 +87,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <img 
-                  src="/lovable-uploads/9362b5a8-32a3-4909-92fd-1f495784b006.png"
+                  src="/lovable-uploads/ca3a8728-b0f5-4af5-81e3-74736eef9196.png"
                   alt="Interface Cérebro Digital" 
                   className="w-full rounded-lg"
                 />
@@ -105,7 +106,7 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <img 
-                src="/lovable-uploads/f368c8f4-ac1d-47d5-b107-16e4c7731c74.png"
+                src="/lovable-uploads/89d34d07-d75d-4c11-a866-b31a253616db.png"
                 alt="Interface completa" 
                 className="w-full rounded-2xl"
               />
