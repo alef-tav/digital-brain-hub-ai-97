@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -322,36 +323,35 @@ const LandingPage = () => {
               </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-8 items-center mb-8">
-              <div>
-                <div className="bg-gray-800 rounded-xl p-6 mb-6">
-                  <div className="text-6xl mb-4">📊</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Dashboard Financeiro</h3>
-                  <p className="text-gray-300">Acompanhe suas receitas e despesas</p>
-                </div>
+            <div className="flex justify-center mb-8">
+              <img 
+                src="/lovable-uploads/9362b5a8-32a3-4909-92fd-1f495784b006.png" 
+                alt="Dashboard FinTrack - Controle Financeiro Completo"
+                className="max-w-2xl w-full h-auto rounded-xl shadow-2xl border border-gray-600"
+              />
+            </div>
 
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className="flex items-center text-green-400">
-                    <CheckCircle className="w-5 h-5 mr-2" />
-                    Totalmente Gratuito
-                  </div>
-                  <div className="flex items-center text-blue-400">
-                    <BarChart3 className="w-5 h-5 mr-2" />
-                    Dashboard Profissional
-                  </div>
-                  <div className="flex items-center text-purple-400">
-                    <Target className="w-5 h-5 mr-2" />
-                    Relatórios Detalhados
-                  </div>
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center text-white mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8" />
                 </div>
+                <h3 className="text-lg font-bold text-white mb-2">Totalmente Gratuito</h3>
+                <p className="text-gray-300">Sem custos adicionais</p>
               </div>
-
-              <div className="relative">
-                <img 
-                  src="/lovable-uploads/9362b5a8-32a3-4909-92fd-1f495784b006.png" 
-                  alt="Dashboard FinTrack - Controle Financeiro Completo"
-                  className="w-full h-auto rounded-xl shadow-2xl border border-gray-600"
-                />
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center text-white mx-auto mb-4">
+                  <BarChart3 className="w-8 h-8" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Dashboard Profissional</h3>
+                <p className="text-gray-300">Interface moderna e intuitiva</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center text-white mx-auto mb-4">
+                  <Target className="w-8 h-8" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Relatórios Detalhados</h3>
+                <p className="text-gray-300">Análises completas das suas finanças</p>
               </div>
             </div>
 
