@@ -75,20 +75,20 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
         <img
           src={image}
           alt={title}
-          className="w-full h-48 object-cover"
+          className="w-full h-48 lg:h-56 xl:h-64 object-cover"
         />
-        <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-sm rounded-lg p-2">
-          <span className="text-2xl">{icon}</span>
+        <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-sm rounded-lg p-2 lg:p-3">
+          <span className="text-2xl lg:text-3xl xl:text-4xl">{icon}</span>
         </div>
         {title.includes("BÔNUS GRÁTIS") && (
-          <div className="absolute top-4 right-4 bg-red-600 text-white text-xs px-3 py-1 rounded-full font-bold animate-pulse">
+          <div className="absolute top-4 right-4 bg-red-600 text-white text-xs lg:text-sm px-3 py-1 lg:px-4 lg:py-2 rounded-full font-bold animate-pulse">
             BÔNUS GRÁTIS
           </div>
         )}
       </div>
-      <CardContent className="p-6">
-        <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
-        <p className="text-gray-400 text-sm leading-relaxed">
+      <CardContent className="p-6 lg:p-8">
+        <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-white mb-3 lg:mb-4">{title}</h3>
+        <p className="text-gray-400 text-sm lg:text-base xl:text-lg leading-relaxed">
           {description}
         </p>
       </CardContent>

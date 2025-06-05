@@ -17,82 +17,82 @@ const LandingPage = () => {
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
-        <div className="container mx-auto text-center max-w-6xl">
+        <div className="container mx-auto text-center max-w-7xl">
           <div className="mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold mb-8 text-white">
               Sua <span className="text-red-500">central de comando</span> já está pronta
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-300 mb-12 max-w-5xl mx-auto leading-relaxed">
               Interface intuitiva estilo Netflix com mais de 200 ferramentas organizadas por categoria. 
               Acesso imediato, navegação simples e atualizações quase diárias para você sempre estar à frente.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div className="text-left space-y-8">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center mb-20">
+            <div className="text-left space-y-8 lg:space-y-10">
               <div className="flex items-center space-x-3 mb-8">
-                <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
-                  <CheckCircle className="w-5 h-5 text-white" />
+                <div className="w-10 h-10 lg:w-12 lg:h-12 bg-red-600 rounded-full flex items-center justify-center">
+                  <CheckCircle className="w-6 h-6 lg:w-7 lg:h-7 text-white" />
                 </div>
-                <span className="text-red-400 font-semibold text-lg">Veja exatamente o que você receberá</span>
+                <span className="text-red-400 font-semibold text-lg lg:text-xl xl:text-2xl">Veja exatamente o que você receberá</span>
               </div>
 
-              <div className="space-y-6">
-                <p className="text-gray-300 text-lg leading-relaxed">
+              <div className="space-y-6 lg:space-y-8">
+                <p className="text-gray-300 text-lg lg:text-xl xl:text-2xl leading-relaxed">
                   Não é só uma lista de ferramentas... É um ecossistema completo e organizado como os melhores streamings do mundo. Cada categoria foi pensada para otimizar seu tempo e maximizar seus resultados.
                 </p>
                 
-                <div className="space-y-4">
+                <div className="space-y-4 lg:space-y-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-6 h-6 bg-red-600/20 rounded flex items-center justify-center">
-                      <Play className="w-3 h-3 text-red-400" />
+                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-red-600/20 rounded flex items-center justify-center">
+                      <Play className="w-4 h-4 lg:w-5 lg:h-5 text-red-400" />
                     </div>
-                    <span className="text-white">Interface amigável e navegação intuitiva</span>
+                    <span className="text-white text-base lg:text-lg xl:text-xl">Interface amigável e navegação intuitiva</span>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-6 h-6 bg-red-600/20 rounded flex items-center justify-center">
-                      <Users className="w-3 h-3 text-red-400" />
+                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-red-600/20 rounded flex items-center justify-center">
+                      <Users className="w-4 h-4 lg:w-5 lg:h-5 text-red-400" />
                     </div>
-                    <span className="text-white">+200 ferramentas testadas e aprovadas</span>
+                    <span className="text-white text-base lg:text-lg xl:text-xl">+200 ferramentas testadas e aprovadas</span>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-6 h-6 bg-red-600/20 rounded flex items-center justify-center">
-                      <Zap className="w-3 h-3 text-red-400" />
+                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-red-600/20 rounded flex items-center justify-center">
+                      <Zap className="w-4 h-4 lg:w-5 lg:h-5 text-red-400" />
                     </div>
-                    <span className="text-white">Atualizações quase diárias incluídas</span>
+                    <span className="text-white text-base lg:text-lg xl:text-xl">Atualizações quase diárias incluídas</span>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-6 h-6 bg-red-600/20 rounded flex items-center justify-center">
-                      <Shield className="w-3 h-3 text-red-400" />
+                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-red-600/20 rounded flex items-center justify-center">
+                      <Shield className="w-4 h-4 lg:w-5 lg:h-5 text-red-400" />
                     </div>
-                    <span className="text-white">Acesso imediato após a compra</span>
+                    <span className="text-white text-base lg:text-lg xl:text-xl">Acesso imediato após a compra</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="bg-gray-800/50 rounded-2xl p-6 backdrop-blur-sm border border-gray-700">
+              <div className="bg-gray-800/50 rounded-2xl lg:rounded-3xl p-6 lg:p-8 backdrop-blur-sm border border-gray-700">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-red-600 rounded flex items-center justify-center">
-                      <span className="text-white text-xs font-bold">C</span>
+                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-red-600 rounded flex items-center justify-center">
+                      <span className="text-white text-sm lg:text-base font-bold">C</span>
                     </div>
-                    <span className="text-white font-semibold">Cérebro Digital</span>
+                    <span className="text-white font-semibold text-base lg:text-lg">Cérebro Digital</span>
                   </div>
                   <div className="flex space-x-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
+                    <div className="w-3 h-3 lg:w-4 lg:h-4 bg-yellow-500 rounded-full"></div>
+                    <div className="w-3 h-3 lg:w-4 lg:h-4 bg-green-500 rounded-full"></div>
                   </div>
                 </div>
                 <img 
                   src="/lovable-uploads/ca3a8728-b0f5-4af5-81e3-74736eef9196.png"
                   alt="Interface Cérebro Digital" 
-                  className="w-full rounded-lg"
+                  className="w-full rounded-lg lg:rounded-xl"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+              <div className="absolute -top-4 -right-4 bg-red-600 text-white px-4 py-2 lg:px-6 lg:py-3 rounded-full text-sm lg:text-base font-semibold">
                 Acesso Vitalício
               </div>
             </div>
@@ -101,61 +101,61 @@ const LandingPage = () => {
       </section>
 
       {/* Central Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-gray-900/50 to-black/50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-20 lg:py-28 px-4 bg-gradient-to-r from-gray-900/50 to-black/50">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-20 xl:gap-24 items-center">
             <div className="relative">
               <img 
                 src="/lovable-uploads/89d34d07-d75d-4c11-a866-b31a253616db.png"
                 alt="Interface completa" 
-                className="w-full rounded-2xl"
+                className="w-full rounded-2xl lg:rounded-3xl"
               />
-              <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+              <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 lg:px-4 lg:py-2 rounded-full text-sm lg:text-base font-semibold">
                 Ao Vivo
               </div>
             </div>
 
-            <div className="space-y-8">
-              <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <div className="space-y-8 lg:space-y-10">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white">
                 Sua <span className="text-red-500">central completa</span> de ferramentas de IA
               </h2>
-              <p className="text-xl text-gray-300 leading-relaxed">
+              <p className="text-xl lg:text-2xl xl:text-3xl text-gray-300 leading-relaxed">
                 Mais de 200 ferramentas organizadas profissionalmente em categorias específicas. 
                 Interface intuitiva estilo Netflix para você encontrar exatamente o que precisa.
               </p>
 
-              <div className="space-y-4">
+              <div className="space-y-4 lg:space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <span className="text-white">Interface organizada por categorias</span>
+                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
+                  <span className="text-white text-base lg:text-lg xl:text-xl">Interface organizada por categorias</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <span className="text-white">Ferramentas testadas e aprovadas</span>
+                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
+                  <span className="text-white text-base lg:text-lg xl:text-xl">Ferramentas testadas e aprovadas</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <span className="text-white">Atualizações constantes incluídas</span>
+                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
+                  <span className="text-white text-base lg:text-lg xl:text-xl">Atualizações constantes incluídas</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <span className="text-white">Acesso vitalício garantido</span>
+                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
+                  <span className="text-white text-base lg:text-lg xl:text-xl">Acesso vitalício garantido</span>
                 </div>
               </div>
 
               <div className="flex items-center space-x-6">
                 <Button 
                   asChild 
-                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg rounded-full"
+                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 lg:px-12 lg:py-6 text-lg lg:text-xl xl:text-2xl rounded-full"
                 >
                   <Link to="/checkout">
-                    <Play className="w-5 h-5 mr-2" />
+                    <Play className="w-5 h-5 lg:w-6 lg:h-6 mr-2" />
                     Garantir Acesso Agora
                   </Link>
                 </Button>
                 <div className="flex items-center space-x-2 text-gray-400">
-                  <Users className="w-4 h-4" />
-                  <span>+10.000 usuários</span>
+                  <Users className="w-4 h-4 lg:w-5 lg:h-5" />
+                  <span className="text-sm lg:text-base xl:text-lg">+10.000 usuários</span>
                 </div>
               </div>
             </div>
@@ -164,24 +164,24 @@ const LandingPage = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="space-y-2">
-              <div className="text-4xl font-bold text-red-500">200+</div>
-              <div className="text-gray-400">Ferramentas</div>
+      <section className="py-16 lg:py-20 px-4">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 text-center">
+            <div className="space-y-2 lg:space-y-4">
+              <div className="text-4xl lg:text-5xl xl:text-6xl font-bold text-red-500">200+</div>
+              <div className="text-gray-400 text-base lg:text-lg xl:text-xl">Ferramentas</div>
             </div>
-            <div className="space-y-2">
-              <div className="text-4xl font-bold text-red-500">15</div>
-              <div className="text-gray-400">Categorias</div>
+            <div className="space-y-2 lg:space-y-4">
+              <div className="text-4xl lg:text-5xl xl:text-6xl font-bold text-red-500">15</div>
+              <div className="text-gray-400 text-base lg:text-lg xl:text-xl">Categorias</div>
             </div>
-            <div className="space-y-2">
-              <div className="text-4xl font-bold text-red-500">10k+</div>
-              <div className="text-gray-400">Usuários</div>
+            <div className="space-y-2 lg:space-y-4">
+              <div className="text-4xl lg:text-5xl xl:text-6xl font-bold text-red-500">10k+</div>
+              <div className="text-gray-400 text-base lg:text-lg xl:text-xl">Usuários</div>
             </div>
-            <div className="space-y-2">
-              <div className="text-4xl font-bold text-red-500">24h</div>
-              <div className="text-gray-400">Atualizações</div>
+            <div className="space-y-2 lg:space-y-4">
+              <div className="text-4xl lg:text-5xl xl:text-6xl font-bold text-red-500">24h</div>
+              <div className="text-gray-400 text-base lg:text-lg xl:text-xl">Atualizações</div>
             </div>
           </div>
         </div>
