@@ -19,15 +19,6 @@ const Index = () => {
             Sua central definitiva de ferramentas de Inteligência Artificial e automações. 
             Explore uma vasta biblioteca de soluções inovadoras para transformar seu trabalho.
           </p>
-          
-          {/* Hero Image */}
-          <div className="mb-16">
-            <img 
-              src="/lovable-uploads/9362b5a8-32a3-4909-92fd-1f495784b006.png"
-              alt="Interface Cérebro Digital" 
-              className="w-full max-w-4xl mx-auto rounded-2xl"
-            />
-          </div>
         </div>
       </section>
 
