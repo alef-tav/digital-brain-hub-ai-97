@@ -1,3 +1,4 @@
+
 import { Category } from '@/types';
 import { organizacaoTools } from './categories/organizacao';
 import { buscadoresIAsTools, buscadoresInteressesTools } from './categories/buscadores';
@@ -25,8 +26,13 @@ import { ferramentasSMSTools } from './categories/sms';
 import { baixadoresUniversaisTools } from './categories/baixadores-universais';
 import { criacaoSitesIATools } from './categories/criacao-sites-ia';
 import { shopifyTools } from './categories/shopify';
+import { fintrackTools } from './categories/fintrack';
 
 export const categoriesData: Category[] = [
+  {
+    title: "FinTrack - Dashboard Financeira (BÔNUS GRÁTIS)",
+    tools: fintrackTools
+  },
   {
     title: "Organização, Processo e Produtividade",
     tools: organizacaoTools

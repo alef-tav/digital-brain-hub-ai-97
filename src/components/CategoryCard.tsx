@@ -15,6 +15,7 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
   
   const getRouteFromTitle = (title: string) => {
     const routes: { [key: string]: string } = {
+      "FinTrack - Dashboard Financeira (BÔNUS GRÁTIS)": "/fintrack",
       "Organização, Processo e Produtividade": "/organizacao-processo-produtividade",
       "Buscadores de IAs": "/buscadores-ias",
       "IAs de Códigos Abertos": "/ias-codigos-abertos",
@@ -67,7 +68,7 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
 
   return (
     <Card
-      className="bg-zinc-900 border-zinc-800 overflow-hidden hover:border-zinc-700 transition-colors cursor-pointer"
+      className="bg-zinc-900 border-zinc-800 overflow-hidden hover:border-zinc-700 transition-colors cursor-pointer relative"
       onClick={() => navigate(route)}
     >
       <div className="relative">
@@ -79,6 +80,11 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
         <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-sm rounded-lg p-2">
           <span className="text-2xl">{icon}</span>
         </div>
+        {title.includes("BÔNUS GRÁTIS") && (
+          <div className="absolute top-4 right-4 bg-red-600 text-white text-xs px-3 py-1 rounded-full font-bold animate-pulse">
+            BÔNUS GRÁTIS
+          </div>
+        )}
       </div>
       <CardContent className="p-6">
         <h3 className="text-xl font-bold text-white mb-3">{title}</h3>

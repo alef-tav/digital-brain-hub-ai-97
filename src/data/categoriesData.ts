@@ -1,6 +1,13 @@
 
 export const categoriesData = [
   {
+    id: 0,
+    title: "FinTrack - Dashboard Financeira (BÔNUS GRÁTIS)",
+    description: "Dashboard financeira completa para controle de receitas, despesas e investimentos. Bônus exclusivo totalmente gratuito!",
+    icon: "📊",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop&auto=format"
+  },
+  {
     id: 1,
     title: "Organização, Processo e Produtividade",
     description: "Ferramentas para organizar fluxos de trabalho, aumentar produtividade e otimizar processos empresariais.",
