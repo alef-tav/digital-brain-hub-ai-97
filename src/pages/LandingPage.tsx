@@ -1,6 +1,8 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Play, Users, Star, Shield, CheckCircle, Clock, Target, BarChart3, Video, Zap, PenTool, FolderOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -104,8 +106,56 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Dashboard Preview Section */}
       <section className="py-20 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Interface <span className="text-red-500">Estilo Netflix</span> para suas Ferramentas
+            </h2>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              Navegue por centenas de ferramentas organizadas em categorias específicas. 
+              Encontre exatamente o que precisa de forma rápida e intuitiva.
+            </p>
+          </div>
+
+          <div className="relative">
+            <img 
+              src="/lovable-uploads/3431fd5b-4968-4906-8c33-afc514933b97.png" 
+              alt="Dashboard Cérebro Digital - Interface estilo Netflix com categorias de ferramentas"
+              className="w-full h-auto rounded-2xl shadow-2xl border border-gray-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white mb-4 mx-auto">
+                <Target className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Categorias Específicas</h3>
+              <p className="text-gray-300">Ferramentas organizadas por área de atuação</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white mb-4 mx-auto">
+                <Zap className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Acesso Rápido</h3>
+              <p className="text-gray-300">Interface intuitiva para encontrar o que precisa</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white mb-4 mx-auto">
+                <Star className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Ferramentas Curadas</h3>
+              <p className="text-gray-300">Apenas as melhores e mais testadas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 px-4 md:px-8 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -157,61 +207,6 @@ const LandingPage = () => {
                 <p className="text-gray-300 leading-relaxed">{feature.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Bonus Section */}
-      <section className="py-20 px-4 md:px-8 bg-gradient-to-r from-blue-900/20 to-teal-900/20">
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-gray-900 rounded-2xl p-8 border border-gray-700">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                🎁 Bônus Exclusivo: <span className="text-blue-400">FinTrack</span>
-              </h2>
-              <p className="text-xl text-gray-300 mb-8">
-                Ganhe acesso GRATUITO ao nosso aplicativo de controle financeiro!
-              </p>
-            </div>
-            
-            <div className="grid lg:grid-cols-2 gap-8 items-center mb-8">
-              <div>
-                <div className="bg-gray-800 rounded-xl p-6 mb-6">
-                  <div className="text-6xl mb-4">📊</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Dashboard Financeiro</h3>
-                  <p className="text-gray-300">Acompanhe suas receitas e despesas</p>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className="flex items-center text-green-400">
-                    <CheckCircle className="w-5 h-5 mr-2" />
-                    Totalmente Gratuito
-                  </div>
-                  <div className="flex items-center text-blue-400">
-                    <BarChart3 className="w-5 h-5 mr-2" />
-                    Dashboard Profissional
-                  </div>
-                  <div className="flex items-center text-purple-400">
-                    <Target className="w-5 h-5 mr-2" />
-                    Relatórios Detalhados
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative">
-                <img 
-                  src="/lovable-uploads/9362b5a8-32a3-4909-92fd-1f495784b006.png" 
-                  alt="Dashboard FinTrack - Controle Financeiro Completo"
-                  className="w-full h-auto rounded-xl shadow-2xl border border-gray-600"
-                />
-              </div>
-            </div>
-
-            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 text-center">
-              <p className="text-teal-400 font-semibold">
-                🎯 Receba este aplicativo completo como bônus exclusivo!
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -302,6 +297,140 @@ const LandingPage = () => {
             <p className="text-white font-medium mb-2">7 dias para testar tudo sem riscos.</p>
             <p className="text-gray-300">Não ficou satisfeito? Devolvemos 100% do seu investimento.</p>
           </div>
+        </div>
+      </section>
+
+      {/* Bonus Section - Moved after pricing */}
+      <section className="py-20 px-4 md:px-8 bg-gradient-to-r from-blue-900/20 to-teal-900/20">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-gray-900 rounded-2xl p-8 border border-gray-700">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                🎁 Bônus Exclusivo: <span className="text-blue-400">FinTrack</span>
+              </h2>
+              <p className="text-xl text-gray-300 mb-8">
+                Ganhe acesso GRATUITO ao nosso aplicativo de controle financeiro!
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-8">
+              <div>
+                <div className="bg-gray-800 rounded-xl p-6 mb-6">
+                  <div className="text-6xl mb-4">📊</div>
+                  <h3 className="text-xl font-bold text-white mb-2">Dashboard Financeiro</h3>
+                  <p className="text-gray-300">Acompanhe suas receitas e despesas</p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="flex items-center text-green-400">
+                    <CheckCircle className="w-5 h-5 mr-2" />
+                    Totalmente Gratuito
+                  </div>
+                  <div className="flex items-center text-blue-400">
+                    <BarChart3 className="w-5 h-5 mr-2" />
+                    Dashboard Profissional
+                  </div>
+                  <div className="flex items-center text-purple-400">
+                    <Target className="w-5 h-5 mr-2" />
+                    Relatórios Detalhados
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/9362b5a8-32a3-4909-92fd-1f495784b006.png" 
+                  alt="Dashboard FinTrack - Controle Financeiro Completo"
+                  className="w-full h-auto rounded-xl shadow-2xl border border-gray-600"
+                />
+              </div>
+            </div>
+
+            <div className="bg-teal-900/30 border border-teal-500/30 rounded-lg p-4 text-center">
+              <p className="text-teal-400 font-semibold">
+                🎯 Receba este aplicativo completo como bônus exclusivo!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Perguntas <span className="text-red-500">Frequentes</span>
+            </h2>
+            <p className="text-xl text-gray-400">
+              Tire suas dúvidas sobre o Cérebro Digital
+            </p>
+          </div>
+
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="bg-gray-900 rounded-xl border border-gray-700 px-6">
+              <AccordionTrigger className="text-white hover:text-red-500 text-left">
+                O que exatamente está incluso no Cérebro Digital?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Você recebe acesso a mais de 200 ferramentas de IA organizadas em 15 categorias específicas, 
+                incluindo criação de conteúdo, design, vídeo, automação, Meta Ads, Google Ads, e muito mais. 
+                Todas as ferramentas são testadas e aprovadas pela nossa equipe.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="bg-gray-900 rounded-xl border border-gray-700 px-6">
+              <AccordionTrigger className="text-white hover:text-red-500 text-left">
+                As ferramentas são gratuitas ou pagas?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                O Cérebro Digital é uma curadoria profissional. Algumas ferramentas são gratuitas, 
+                outras possuem planos pagos. O valor está na organização, teste e curadoria que fazemos, 
+                economizando horas de pesquisa e garantindo que você acesse apenas as melhores opções.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="bg-gray-900 rounded-xl border border-gray-700 px-6">
+              <AccordionTrigger className="text-white hover:text-red-500 text-left">
+                Recebo atualizações quando novas ferramentas são adicionadas?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Sim! O acesso é vitalício e inclui todas as atualizações. Adicionamos novas ferramentas 
+                constantemente e você sempre terá acesso às novidades sem custo adicional.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="bg-gray-900 rounded-xl border border-gray-700 px-6">
+              <AccordionTrigger className="text-white hover:text-red-500 text-left">
+                Como funciona a garantia de 7 dias?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Você tem 7 dias corridos para testar completamente o Cérebro Digital. Se por qualquer motivo 
+                não ficar satisfeito, devolvemos 100% do seu investimento, sem perguntas ou burocracias.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="bg-gray-900 rounded-xl border border-gray-700 px-6">
+              <AccordionTrigger className="text-white hover:text-red-500 text-left">
+                O bônus FinTrack tem custo adicional?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Não! O FinTrack é um bônus completamente gratuito para quem adquire o Cérebro Digital. 
+                É um aplicativo completo de controle financeiro com dashboard profissional, 
+                relatórios detalhados e acompanhamento de receitas e despesas.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="bg-gray-900 rounded-xl border border-gray-700 px-6">
+              <AccordionTrigger className="text-white hover:text-red-500 text-left">
+                Posso acessar de qualquer dispositivo?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300">
+                Sim! O Cérebro Digital é totalmente responsivo e pode ser acessado de qualquer dispositivo: 
+                computador, tablet ou smartphone. Sua conta fica sempre sincronizada.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
