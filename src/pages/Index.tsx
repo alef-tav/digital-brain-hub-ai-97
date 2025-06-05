@@ -23,7 +23,7 @@ const Index = () => {
           {/* Hero Image */}
           <div className="mb-16">
             <img 
-              src="/lovable-uploads/49778f94-8ba1-41b4-8ca7-61625337fd37.png"
+              src="/lovable-uploads/9362b5a8-32a3-4909-92fd-1f495784b006.png"
               alt="Interface Cérebro Digital" 
               className="w-full max-w-4xl mx-auto rounded-2xl"
             />

@@ -87,7 +87,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 <img 
-                  src="/lovable-uploads/49778f94-8ba1-41b4-8ca7-61625337fd37.png"
+                  src="/lovable-uploads/9362b5a8-32a3-4909-92fd-1f495784b006.png"
                   alt="Interface Cérebro Digital" 
                   className="w-full rounded-lg"
                 />
@@ -148,17 +148,10 @@ const LandingPage = () => {
                   asChild 
                   className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg rounded-full"
                 >
-                  {user ? (
-                    <Link to="/dashboard">
-                      <Play className="w-5 h-5 mr-2" />
-                      Acessar Agora
-                    </Link>
-                  ) : (
-                    <Link to="/checkout">
-                      <Play className="w-5 h-5 mr-2" />
-                      Acessar Agora
-                    </Link>
-                  )}
+                  <Link to="/checkout">
+                    <Play className="w-5 h-5 mr-2" />
+                    Acessar Agora
+                  </Link>
                 </Button>
                 <div className="flex items-center space-x-2 text-gray-400">
                   <Users className="w-4 h-4" />
@@ -431,17 +424,10 @@ const LandingPage = () => {
                 asChild 
                 className="w-full bg-red-600 hover:bg-red-700 text-white py-6 text-xl font-bold rounded-xl"
               >
-                {user ? (
-                  <Link to="/dashboard">
-                    <Zap className="w-6 h-6 mr-3" />
-                    Garantir Acesso Agora
-                  </Link>
-                ) : (
-                  <Link to="/checkout">
-                    <Zap className="w-6 h-6 mr-3" />
-                    Garantir Acesso Agora
-                  </Link>
-                )}
+                <Link to="/checkout">
+                  <Zap className="w-6 h-6 mr-3" />
+                  Garantir Acesso Agora
+                </Link>
               </Button>
             </div>
 
