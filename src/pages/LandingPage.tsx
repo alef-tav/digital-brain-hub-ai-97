@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -147,11 +146,11 @@ const LandingPage = () => {
               <div className="flex items-center space-x-6">
                 <Button 
                   asChild 
-                  className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg rounded-full"
+                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg rounded-full"
                 >
                   <Link to="/checkout">
                     <Play className="w-5 h-5 mr-2" />
-                    Acessar Agora
+                    Garantir Acesso Agora
                   </Link>
                 </Button>
                 <div className="flex items-center space-x-2 text-gray-400">
@@ -352,23 +351,24 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Bonus FinTrack Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-green-900/10 to-transparent">
+      {/* Combined Offer + Bonus Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-green-900/10 via-gray-900/30 to-transparent">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
+          {/* Bonus FinTrack */}
+          <div className="text-center mb-16">
             <div className="inline-block bg-green-600/20 border border-green-500/30 rounded-full px-6 py-2 mb-8">
               <span className="text-green-400 font-bold text-lg">🎁 BÔNUS EXCLUSIVO</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               <span className="text-green-400">FinTrack</span> - Dashboard Financeiro
             </h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
               Ponha em prática tudo que estudou sobre educação financeira de um jeito simples e prático. 
               Faça suas colunas de ativos ficarem maiores que as de passivos e seja próspero!
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
             <div className="relative">
               <div className="bg-gray-800/50 rounded-2xl p-4 backdrop-blur-sm border border-gray-700">
                 <img 
@@ -440,26 +440,20 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Pricing Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-gray-900/30 to-transparent">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          {/* Combined Pricing Section */}
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
               Quanto vale acelerar seus <span className="text-red-500">resultados</span>?
             </h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-gray-300 mb-12">
               Economize semanas de pesquisa e mais de R$ 5.000 em ferramentas testadas.
             </p>
-          </div>
 
-          <div className="text-center">
-            <div className="inline-block bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 mb-8">
+            <div className="inline-block bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 mb-8 max-w-2xl">
               <div className="mb-6">
                 <p className="text-gray-300 text-lg mb-4">
-                  Acesso completo ao Cérebro Digital + FinTrack por apenas
+                  Cérebro Digital + FinTrack Dashboard por apenas
                 </p>
                 <div className="flex items-center justify-center mb-4">
                   <span className="text-red-500 text-3xl font-bold">R$ 67</span>
@@ -468,22 +462,42 @@ const LandingPage = () => {
                 <p className="text-gray-400">Pagamento único • Acesso vitalício</p>
               </div>
 
-              <div className="bg-red-600/10 border border-red-600/20 rounded-xl p-4 mb-6">
-                <div className="flex items-center justify-center mb-2">
-                  <Star className="w-5 h-5 text-red-400 mr-2" />
-                  <span className="text-red-400 font-semibold">Bônus: FinTrack Dashboard (R$ 197) GRÁTIS</span>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center justify-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400" />
+                  <span className="text-white">Cérebro Digital: +200 ferramentas (R$ 297)</span>
+                </div>
+                <div className="flex items-center justify-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400" />
+                  <span className="text-white">BÔNUS: FinTrack Dashboard (R$ 197)</span>
+                </div>
+                <div className="flex items-center justify-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400" />
+                  <span className="text-white">Interface estilo Netflix</span>
+                </div>
+                <div className="flex items-center justify-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-400" />
+                  <span className="text-white">Atualizações vitalícias incluídas</span>
                 </div>
               </div>
 
               <Button 
                 asChild 
-                className="w-full bg-red-600 hover:bg-red-700 text-white py-6 text-xl font-bold rounded-xl"
+                className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-xl font-bold rounded-xl mb-6"
               >
                 <Link to="/checkout">
                   <Zap className="w-6 h-6 mr-3" />
                   Garantir Acesso Agora
                 </Link>
               </Button>
+
+              <div className="bg-red-600/10 border border-red-600/20 rounded-xl p-4 mb-6">
+                <div className="flex items-center justify-center mb-2">
+                  <Star className="w-5 h-5 text-red-400 mr-2" />
+                  <span className="text-red-400 font-semibold text-lg">Valor Total: R$ 494 • Você Paga: R$ 67,90</span>
+                </div>
+                <p className="text-red-300 text-center font-bold">ECONOMIA DE 86%</p>
+              </div>
             </div>
 
             <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6 max-w-lg mx-auto">
@@ -507,4 +521,3 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
-
