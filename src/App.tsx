@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FavoritesProvider } from "@/contexts/FavoritesContext";
 import Index from "./pages/Index";
+import LandingPage from "./pages/LandingPage";
 import OrganizacaoProcessoProdutividade from "./pages/OrganizacaoProcessoProdutividade";
 import BuscadoresIAs from "./pages/BuscadoresIAs";
 import IAsCódigosAbertos from "./pages/IAsCódigosAbertos";
@@ -64,7 +64,8 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/app" element={<Index />} />
             <Route path="/organizacao-processo-produtividade" element={<OrganizacaoProcessoProdutividade />} />
             <Route path="/buscadores-ias" element={<BuscadoresIAs />} />
             <Route path="/ias-codigos-abertos" element={<IAsCódigosAbertos />} />
