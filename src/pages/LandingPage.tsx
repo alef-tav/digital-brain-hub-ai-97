@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -106,10 +105,19 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Dashboard Preview Section - Layout Lado a Lado */}
+      {/* Dashboard Preview Section - Layout Invertido */}
       <section className="py-20 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/3431fd5b-4968-4906-8c33-afc514933b97.png" 
+                alt="Dashboard Cérebro Digital - Interface estilo Netflix com categorias de ferramentas"
+                className="w-full h-auto rounded-2xl shadow-2xl border border-gray-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+            </div>
+
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-white">
                 Interface <span className="text-red-500">Estilo Netflix</span> para suas Ferramentas
@@ -150,15 +158,6 @@ const LandingPage = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/3431fd5b-4968-4906-8c33-afc514933b97.png" 
-                alt="Dashboard Cérebro Digital - Interface estilo Netflix com categorias de ferramentas"
-                className="w-full h-auto rounded-2xl shadow-2xl border border-gray-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
             </div>
           </div>
         </div>
