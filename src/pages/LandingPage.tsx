@@ -5,11 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Footer from '@/components/Footer';
-import { useAuth } from '@/contexts/AuthContext';
 
 const LandingPage = () => {
-  const { user } = useAuth();
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
       {/* Hero Section */}
