@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -69,9 +70,11 @@ const LandingPage = () => {
               <div className="bg-gray-800/50 rounded-2xl lg:rounded-3xl p-6 lg:p-8 backdrop-blur-sm border border-gray-700">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-red-600 rounded flex items-center justify-center">
-                      <span className="text-white text-sm lg:text-base font-bold">C</span>
-                    </div>
+                    <img 
+                      src="/lovable-uploads/f616debe-7a77-425a-ae20-2a4a6321115f.png" 
+                      alt="Cérebro Digital" 
+                      className="w-8 h-8 lg:w-10 lg:h-10"
+                    />
                     <span className="text-white font-semibold text-base lg:text-lg">Cérebro Digital</span>
                   </div>
                   <div className="flex space-x-2">

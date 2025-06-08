@@ -12,9 +12,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">C</span>
-              </div>
+              <img 
+                src="/lovable-uploads/f616debe-7a77-425a-ae20-2a4a6321115f.png" 
+                alt="Cérebro Digital" 
+                className="w-10 h-10"
+              />
               <h3 className="text-2xl font-bold text-white">Cérebro Digital</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">

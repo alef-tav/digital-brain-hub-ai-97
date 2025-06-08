@@ -21,9 +21,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-18 xl:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 lg:space-x-3">
-            <div className="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-red-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm lg:text-base xl:text-lg">C</span>
-            </div>
+            <img 
+              src="/lovable-uploads/f616debe-7a77-425a-ae20-2a4a6321115f.png" 
+              alt="Cérebro Digital" 
+              className="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12"
+            />
             <span className="text-white font-bold text-lg lg:text-xl xl:text-2xl">
               Cérebro Digital
             </span>
