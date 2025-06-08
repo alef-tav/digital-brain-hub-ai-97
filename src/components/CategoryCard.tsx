@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card"
@@ -75,20 +74,20 @@ const CategoryCard = ({ title, description, icon, image }: CategoryCardProps) =>
         <img
           src={image}
           alt={title}
-          className="w-full h-56 md:h-64 lg:h-80 xl:h-96 2xl:h-[28rem] object-cover"
+          className="w-full h-48 md:h-56 lg:h-64 xl:h-72 object-cover"
         />
-        <div className="absolute top-4 left-4 lg:top-6 lg:left-6 xl:top-8 xl:left-8 bg-black/70 backdrop-blur-sm rounded-lg p-3 lg:p-4 xl:p-6">
-          <span className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">{icon}</span>
+        <div className="absolute top-3 left-3 lg:top-4 lg:left-4 xl:top-5 xl:left-5 bg-black/70 backdrop-blur-sm rounded-lg p-2 lg:p-3 xl:p-4">
+          <span className="text-2xl lg:text-3xl xl:text-4xl">{icon}</span>
         </div>
         {title.includes("BÔNUS GRÁTIS") && (
-          <div className="absolute top-4 right-4 lg:top-6 lg:right-6 xl:top-8 xl:right-8 bg-red-600 text-white text-sm lg:text-base xl:text-lg 2xl:text-xl px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-4 rounded-full font-bold animate-pulse">
+          <div className="absolute top-3 right-3 lg:top-4 lg:right-4 xl:top-5 xl:right-5 bg-red-600 text-white text-xs lg:text-sm xl:text-base px-3 py-1 lg:px-4 lg:py-2 xl:px-5 xl:py-2 rounded-full font-bold animate-pulse">
             BÔNUS GRÁTIS
           </div>
         )}
       </div>
-      <CardContent className="p-6 lg:p-8 xl:p-10 2xl:p-12">
-        <h3 className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-white mb-3 lg:mb-4 xl:mb-6">{title}</h3>
-        <p className="text-gray-400 text-base lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed">
+      <CardContent className="p-4 lg:p-5 xl:p-6">
+        <h3 className="text-lg lg:text-xl xl:text-2xl font-bold text-white mb-2 lg:mb-3 xl:mb-4">{title}</h3>
+        <p className="text-gray-400 text-sm lg:text-base xl:text-lg leading-relaxed">
           {description}
         </p>
       </CardContent>

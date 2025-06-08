@@ -18,29 +18,29 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-zinc-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20 xl:h-24">
+        <div className="flex items-center justify-between h-16 lg:h-18 xl:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 lg:space-x-3">
-            <div className="w-8 h-8 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-red-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg lg:text-xl xl:text-2xl">C</span>
+            <div className="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-red-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-sm lg:text-base xl:text-lg">C</span>
             </div>
-            <span className="text-white font-bold text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl">
+            <span className="text-white font-bold text-lg lg:text-xl xl:text-2xl">
               Cérebro Digital
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 xl:space-x-12">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 xl:space-x-10">
             <Link 
               to="/" 
-              className="text-gray-300 hover:text-white transition-colors text-base lg:text-lg xl:text-xl 2xl:text-2xl"
+              className="text-gray-300 hover:text-white transition-colors text-base lg:text-lg xl:text-xl"
             >
               Início
             </Link>
             {user && (
               <Link 
                 to="/favoritos" 
-                className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors text-base lg:text-lg xl:text-xl 2xl:text-2xl"
+                className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors text-base lg:text-lg xl:text-xl"
               >
                 <Heart className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6" />
                 <span>Favoritos</span>
@@ -48,33 +48,33 @@ const Header = () => {
             )}
             
             {user ? (
-              <div className="flex items-center space-x-4 lg:space-x-6">
-                <div className="flex items-center space-x-2 lg:space-x-3 text-gray-300">
-                  <User className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6" />
-                  <span className="text-sm lg:text-base xl:text-lg 2xl:text-xl">{user.email}</span>
+              <div className="flex items-center space-x-4 lg:space-x-5">
+                <div className="flex items-center space-x-2 text-gray-300">
+                  <User className="w-4 h-4 lg:w-5 lg:h-5" />
+                  <span className="text-sm lg:text-base xl:text-lg">{user.email}</span>
                 </div>
                 <Button
                   onClick={handleSignOut}
                   variant="outline"
                   size="sm"
-                  className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white text-sm lg:text-base xl:text-lg px-3 py-1 lg:px-4 lg:py-2 xl:px-6 xl:py-3"
+                  className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white text-sm lg:text-base px-3 py-1 lg:px-4 lg:py-2"
                 >
-                  <LogOut className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 mr-1 lg:mr-2" />
+                  <LogOut className="w-4 h-4 lg:w-5 lg:h-5 mr-1 lg:mr-2" />
                   Sair
                 </Button>
               </div>
             ) : (
-              <div className="flex items-center space-x-4 lg:space-x-6">
+              <div className="flex items-center space-x-4 lg:space-x-5">
                 <Button 
                   asChild 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white hover:text-black text-sm lg:text-base xl:text-lg px-3 py-1 lg:px-4 lg:py-2 xl:px-6 xl:py-3"
+                  className="border-white text-white hover:bg-white hover:text-black text-sm lg:text-base px-3 py-1 lg:px-4 lg:py-2"
                 >
                   <Link to="/auth">Entrar</Link>
                 </Button>
                 <Button 
                   asChild 
-                  className="bg-red-600 hover:bg-red-700 text-white text-sm lg:text-base xl:text-lg px-3 py-1 lg:px-4 lg:py-2 xl:px-6 xl:py-3"
+                  className="bg-red-600 hover:bg-red-700 text-white text-sm lg:text-base px-3 py-1 lg:px-4 lg:py-2"
                 >
                   <Link to="/landing">Adquirir Acesso</Link>
                 </Button>
