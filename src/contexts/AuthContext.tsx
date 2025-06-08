@@ -32,17 +32,26 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [loading, setLoading] = useState(true);
 
   const checkSubscription = async () => {
-    if (!user) return;
+    if (!user) {
+      setSubscription(null);
+      return;
+    }
     
     try {
-      const { data, error } = await supabase.functions.invoke('get-user-subscription');
+      // Check subscription directly from database
+      const { data, error } = await supabase
+        .from('subscriptions')
+        .select('*')
+        .eq('user_id', user.id)
+        .eq('status', 'active')
+        .single();
       
-      if (error) {
+      if (error && error.code !== 'PGRST116') {
         console.error('Error checking subscription:', error);
         return;
       }
       
-      setSubscription(data?.subscription || null);
+      setSubscription(data || null);
     } catch (error) {
       console.error('Error checking subscription:', error);
     }
@@ -52,6 +61,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     // Set up auth state listener
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (event, session) => {
+        console.log('Auth state changed:', event, session?.user?.email);
         setSession(session);
         setUser(session?.user ?? null);
         setLoading(false);

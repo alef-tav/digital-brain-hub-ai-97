@@ -16,6 +16,7 @@ export type Database = {
           currency: string | null
           email: string
           id: string
+          paid_at: string | null
           plan_type: string | null
           status: string
           stripe_customer_id: string | null
@@ -29,6 +30,7 @@ export type Database = {
           currency?: string | null
           email: string
           id?: string
+          paid_at?: string | null
           plan_type?: string | null
           status?: string
           stripe_customer_id?: string | null
@@ -42,6 +44,7 @@ export type Database = {
           currency?: string | null
           email?: string
           id?: string
+          paid_at?: string | null
           plan_type?: string | null
           status?: string
           stripe_customer_id?: string | null

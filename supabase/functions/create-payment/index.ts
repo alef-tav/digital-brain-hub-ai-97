@@ -9,12 +9,10 @@ const corsHeaders = {
 };
 
 serve(async (req) => {
-  // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
 
-  // Create Supabase client using the service role key
   const supabaseClient = createClient(
     Deno.env.get("SUPABASE_URL") ?? "",
     Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "",
@@ -22,10 +20,8 @@ serve(async (req) => {
   );
 
   try {
-    // Parse request body
     const { user_id, email } = await req.json();
 
-    // Initialize Stripe
     const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") || "", {
       apiVersion: "2023-10-16",
     });
@@ -46,7 +42,7 @@ serve(async (req) => {
       customerId = customer.id;
     }
 
-    // Create a one-time payment session using the specific price ID
+    // Create a one-time payment session
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       line_items: [
@@ -56,7 +52,7 @@ serve(async (req) => {
         },
       ],
       mode: "payment",
-      success_url: `${req.headers.get("origin")}/payment-success`,
+      success_url: `${req.headers.get("origin")}/payment-success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${req.headers.get("origin")}/checkout`,
       metadata: {
         user_id: user_id,

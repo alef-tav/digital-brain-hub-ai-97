@@ -1,23 +1,75 @@
 
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Brain, CheckCircle, Gift, ArrowRight } from 'lucide-react';
+import { Brain, CheckCircle, Gift, ArrowRight, Loader } from 'lucide-react';
 import { toast } from 'sonner';
+import { supabase } from '@/integrations/supabase/client';
 
 const PaymentSuccess = () => {
   const navigate = useNavigate();
   const { user, checkSubscription } = useAuth();
+  const [searchParams] = useSearchParams();
+  const [isVerifying, setIsVerifying] = useState(true);
+  const [paymentVerified, setPaymentVerified] = useState(false);
 
   useEffect(() => {
-    if (user) {
-      // Verificar status da assinatura após o pagamento
-      checkSubscription();
-      toast.success('Pagamento realizado com sucesso! Bem-vindo ao Cérebro Digital!');
-    }
-  }, [user, checkSubscription]);
+    const verifyPayment = async () => {
+      const sessionId = searchParams.get('session_id');
+      
+      if (!sessionId || !user) {
+        setIsVerifying(false);
+        return;
+      }
+
+      try {
+        const { data, error } = await supabase.functions.invoke('verify-payment', {
+          body: {
+            session_id: sessionId,
+            user_id: user.id
+          }
+        });
+
+        if (error) {
+          console.error('Error verifying payment:', error);
+          toast.error('Erro ao verificar pagamento');
+        } else if (data?.subscription_active) {
+          setPaymentVerified(true);
+          await checkSubscription();
+          toast.success('Pagamento confirmado! Bem-vindo ao Cérebro Digital!');
+        }
+      } catch (error) {
+        console.error('Error verifying payment:', error);
+        toast.error('Erro ao verificar pagamento');
+      } finally {
+        setIsVerifying(false);
+      }
+    };
+
+    verifyPayment();
+  }, [user, searchParams, checkSubscription]);
+
+  if (isVerifying) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center p-4">
+        <div className="max-w-lg w-full">
+          <Card className="bg-gray-900 border-gray-700 text-center">
+            <CardHeader className="space-y-4">
+              <div className="mx-auto w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+                <Loader className="w-8 h-8 text-white animate-spin" />
+              </div>
+              <CardTitle className="text-2xl text-white">Verificando Pagamento...</CardTitle>
+              <CardDescription className="text-gray-400">
+                Aguarde enquanto confirmamos seu pagamento
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-black flex items-center justify-center p-4">
@@ -27,9 +79,14 @@ const PaymentSuccess = () => {
             <div className="mx-auto w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
               <CheckCircle className="w-8 h-8 text-white" />
             </div>
-            <CardTitle className="text-2xl text-white">Pagamento Confirmado!</CardTitle>
+            <CardTitle className="text-2xl text-white">
+              {paymentVerified ? 'Pagamento Confirmado!' : 'Processando Pagamento'}
+            </CardTitle>
             <CardDescription className="text-gray-400">
-              Seu acesso vitalício ao Cérebro Digital foi ativado com sucesso
+              {paymentVerified 
+                ? 'Seu acesso vitalício ao Cérebro Digital foi ativado com sucesso'
+                : 'Seu pagamento está sendo processado. Você receberá uma confirmação em breve.'
+              }
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
@@ -59,9 +116,16 @@ const PaymentSuccess = () => {
             <Button 
               onClick={() => navigate('/dashboard')}
               className="w-full bg-red-600 hover:bg-red-700 text-white py-4 text-lg font-semibold"
+              disabled={!paymentVerified}
             >
-              Acessar Meu Dashboard
-              <ArrowRight className="w-5 h-5 ml-2" />
+              {paymentVerified ? (
+                <>
+                  Acessar Meu Dashboard
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </>
+              ) : (
+                'Aguardando confirmação...'
+              )}
             </Button>
 
             <p className="text-gray-400 text-sm">
