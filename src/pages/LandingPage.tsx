@@ -4,7 +4,6 @@ import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, Trendi
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useAuth } from '@/contexts/AuthContext';
 
@@ -13,10 +12,8 @@ const LandingPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
-      <Header />
-      
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-20 pb-20 px-4">
         <div className="container mx-auto text-center max-w-7xl">
           <div className="mb-16">
             <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold mb-8 text-white">
