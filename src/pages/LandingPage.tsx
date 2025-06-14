@@ -504,10 +504,10 @@ const LandingPage = () => {
 
                 <Button 
                   onClick={handlePayment}
-                  className="bg-green-600 hover:bg-green-700 text-white px-12 py-6 text-xl font-bold rounded-xl w-full mb-6"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 text-base sm:text-lg md:text-xl font-bold rounded-xl w-full mb-6 whitespace-nowrap"
                 >
-                  <Play className="w-6 h-6 mr-3" />
-                  Garantir Acesso Agora
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 flex-shrink-0" />
+                  <span className="truncate">Garantir Acesso Agora</span>
                 </Button>
               </div>
             </div>
