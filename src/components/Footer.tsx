@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-gradient-to-b from-gray-900 to-black border-t border-gray-700 mt-20">
       <div className="container mx-auto px-6 py-16">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           
           {/* Company Info */}
           <div className="space-y-6">
@@ -33,9 +33,9 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation and Legal Links */}
           <div className="space-y-6">
-            <h4 className="text-xl font-bold text-white">Links Rápidos</h4>
+            <h4 className="text-xl font-bold text-white">Menu</h4>
             <div className="space-y-3">
               <Link 
                 to="/" 
@@ -53,13 +53,6 @@ const Footer = () => {
                 Novidades
                 <span className="ml-2 w-2 h-2 bg-red-500 rounded-full inline-block animate-pulse"></span>
               </div>
-            </div>
-          </div>
-
-          {/* Legal Links */}
-          <div className="space-y-6">
-            <h4 className="text-xl font-bold text-white">Políticas</h4>
-            <div className="space-y-3">
               <Link 
                 to="/privacy-policy" 
                 className="block text-gray-300 hover:text-red-500 transition-colors"
