@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -105,7 +104,7 @@ const LandingPage = () => {
               <img 
                 src="/lovable-uploads/89d34d07-d75d-4c11-a866-b31a253616db.png"
                 alt="Interface completa" 
-                className="w-full rounded-2xl lg:rounded-3xl"
+                className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto rounded-2xl lg:rounded-3xl shadow-2xl"
               />
               <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 lg:px-4 lg:py-2 rounded-full text-sm lg:text-base font-semibold">
                 Ao Vivo
