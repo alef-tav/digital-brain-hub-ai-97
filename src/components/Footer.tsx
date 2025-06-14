@@ -44,16 +44,6 @@ const Footer = () => {
                 Início
               </Link>
               <Link 
-                to="/favoritos" 
-                className="block text-gray-300 hover:text-red-500 transition-colors"
-              >
-                Favoritas
-              </Link>
-              <div className="text-gray-300">
-                Novidades
-                <span className="ml-2 w-2 h-2 bg-red-500 rounded-full inline-block animate-pulse"></span>
-              </div>
-              <Link 
                 to="/privacy-policy" 
                 className="block text-gray-300 hover:text-red-500 transition-colors"
               >
