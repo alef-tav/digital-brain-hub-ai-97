@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -390,14 +391,14 @@ const LandingPage = () => {
 
           <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
             <div className="relative flex justify-center">
-              <div className="bg-gray-800/50 rounded-2xl p-4 backdrop-blur-sm border border-gray-700 w-full max-w-2xl lg:max-w-3xl xl:max-w-5xl">
+              <div className="bg-gray-800/50 rounded-2xl p-6 lg:p-8 backdrop-blur-sm border border-gray-700 w-full max-w-2xl lg:max-w-3xl xl:max-w-5xl">
                 <img 
-                  src="/lovable-uploads/140b43e5-087f-4e7a-987e-9008f275c31c.png"
-                  alt="Dashboard FinTrack" 
-                  className="w-full rounded-xl"
+                  src="/lovable-uploads/b37e3a72-4fc9-45d1-bd9f-02bf73938d72.png"
+                  alt="Dashboard FinTrack - Controle Financeiro Completo" 
+                  className="w-full rounded-xl shadow-2xl"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+              <div className="absolute -top-4 -right-4 bg-green-600 text-white px-4 py-2 lg:px-6 lg:py-3 rounded-full text-sm lg:text-base font-semibold">
                 100% GRÁTIS
               </div>
             </div>
@@ -625,3 +626,4 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
