@@ -9,8 +9,8 @@ const Footer = () => {
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           
-          {/* Company Info */}
-          <div className="space-y-6">
+          {/* Company Info - Hidden on mobile, shown on desktop */}
+          <div className="hidden md:block space-y-6">
             <div className="flex items-center space-x-3">
               <img 
                 src="/lovable-uploads/f616debe-7a77-425a-ae20-2a4a6321115f.png" 
@@ -55,6 +55,30 @@ const Footer = () => {
               >
                 Termos de Serviço
               </Link>
+            </div>
+          </div>
+
+          {/* Company Info - Shown on mobile, hidden on desktop */}
+          <div className="md:hidden space-y-6">
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/f616debe-7a77-425a-ae20-2a4a6321115f.png" 
+                alt="Cérebro Digital" 
+                className="w-10 h-10"
+              />
+              <h3 className="text-2xl font-bold text-white">Cérebro Digital</h3>
+            </div>
+            <p className="text-gray-300 leading-relaxed">
+              Sua central definitiva de ferramentas de Inteligência Artificial e automações. 
+              Explore soluções inovadoras para transformar seu trabalho.
+            </p>
+            <div className="flex items-start space-x-3">
+              <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+              <div className="text-gray-300">
+                <p>Rua Antônio Callado, 23</p>
+                <p>Jardim Santa Marina</p>
+                <p>Jacareí - SP</p>
+              </div>
             </div>
           </div>
         </div>
