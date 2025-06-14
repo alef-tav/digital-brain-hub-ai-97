@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Mobile Layout */}
+          {/* Mobile Layout - Title, Description and Menu only */}
           <div className="md:hidden space-y-6">
             {/* Title and description */}
             <div className="space-y-4">
@@ -100,29 +100,31 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-
-            {/* Address */}
-            <div className="flex items-start space-x-3">
-              <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-              <div className="text-gray-300">
-                <p>Rua Antônio Callado, 23</p>
-                <p>Jardim Santa Marina</p>
-                <p>Jacareí - SP</p>
-              </div>
-            </div>
           </div>
         </div>
 
         {/* Divider */}
         <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-center md:text-left">
-              <p className="text-gray-400 text-sm mb-2">
-                © 2025 BORGES MÍDIA NEGÓCIOS DIGITAIS LTDA
-              </p>
-              <p className="text-gray-500 text-xs">
-                CNPJ: 44.838.666/0001-99
-              </p>
+          <div className="flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0">
+            <div className="text-center md:text-left space-y-4">
+              <div>
+                <p className="text-gray-400 text-sm mb-2">
+                  © 2025 BORGES MÍDIA NEGÓCIOS DIGITAIS LTDA
+                </p>
+                <p className="text-gray-500 text-xs">
+                  CNPJ: 44.838.666/0001-99
+                </p>
+              </div>
+              
+              {/* Address - Now in the bottom section */}
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                <div className="text-gray-300 text-sm">
+                  <p>Rua Antônio Callado, 23</p>
+                  <p>Jardim Santa Marina</p>
+                  <p>Jacareí - SP</p>
+                </div>
+              </div>
             </div>
             
             <div className="text-center md:text-right">
