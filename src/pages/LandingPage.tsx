@@ -368,7 +368,7 @@ const LandingPage = () => {
 
           <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
             <div className="relative flex justify-center">
-              <div className="bg-gray-800/50 rounded-2xl p-4 backdrop-blur-sm border border-gray-700 w-full max-w-md lg:max-w-lg xl:max-w-xl">
+              <div className="bg-gray-800/50 rounded-2xl p-4 backdrop-blur-sm border border-gray-700 w-full max-w-lg lg:max-w-xl xl:max-w-2xl">
                 <img 
                   src="/lovable-uploads/140b43e5-087f-4e7a-987e-9008f275c31c.png"
                   alt="Dashboard FinTrack" 
