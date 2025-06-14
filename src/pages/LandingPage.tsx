@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -368,7 +369,7 @@ const LandingPage = () => {
 
           <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
             <div className="relative flex justify-center">
-              <div className="bg-gray-800/50 rounded-2xl p-4 backdrop-blur-sm border border-gray-700 w-full max-w-lg lg:max-w-xl xl:max-w-2xl">
+              <div className="bg-gray-800/50 rounded-2xl p-4 backdrop-blur-sm border border-gray-700 w-full max-w-xl lg:max-w-2xl xl:max-w-4xl">
                 <img 
                   src="/lovable-uploads/140b43e5-087f-4e7a-987e-9008f275c31c.png"
                   alt="Dashboard FinTrack" 
