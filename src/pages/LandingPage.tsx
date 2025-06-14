@@ -584,21 +584,6 @@ const LandingPage = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-
-          <div className="text-center mt-16">
-            <Button 
-              asChild 
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-xl font-bold rounded-xl"
-            >
-              <Link to="/checkout">
-                <Zap className="w-6 h-6 mr-3" />
-                Garantir Acesso Agora
-              </Link>
-            </Button>
-            <p className="text-gray-400 mt-4">
-              Última chance de garantir por R$ 67,90
-            </p>
-          </div>
         </div>
       </section>
 
