@@ -540,73 +540,73 @@ const LandingPage = () => {
 
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
-              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left text-base md:text-lg lg:text-xl">
                 O que exatamente está incluso no Cérebro Digital?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-300">
+              <AccordionContent className="text-gray-300 text-sm md:text-base lg:text-lg">
                 Você recebe acesso a mais de 200 ferramentas organizadas em 15 categorias diferentes, incluindo IA, automação, criação de vídeos, copywriting, design e muito mais. Também inclui o dashboard FinTrack como bônus gratuito.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
-              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left text-base md:text-lg lg:text-xl">
                 Como funciona o acesso vitalício?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-300">
+              <AccordionContent className="text-gray-300 text-sm md:text-base lg:text-lg">
                 Após a compra, você receberá login e senha para acessar a plataforma para sempre. Não há mensalidades ou taxas recorrentes. Uma vez comprado, é seu para sempre.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
-              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left text-base md:text-lg lg:text-xl">
                 As ferramentas são atualizadas constantemente?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-300">
+              <AccordionContent className="text-gray-300 text-sm md:text-base lg:text-lg">
                 Sim! Adicionamos novas ferramentas quase diariamente. Você sempre terá acesso às últimas inovações sem custo adicional.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
-              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left text-base md:text-lg lg:text-xl">
                 O que é o FinTrack que vem como bônus?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-300">
+              <AccordionContent className="text-gray-300 text-sm md:text-base lg:text-lg">
                 O FinTrack é um dashboard financeiro completo para você gerenciar suas finanças pessoais. Acompanhe receitas, despesas, múltiplas contas e defina metas financeiras. Valor individual de R$ 197, mas você recebe grátis.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
-              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left text-base md:text-lg lg:text-xl">
                 Como é a garantia de 7 dias?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-300">
+              <AccordionContent className="text-gray-300 text-sm md:text-base lg:text-lg">
                 Você tem 7 dias corridos para testar todo o conteúdo. Se por qualquer motivo não ficar satisfeito, devolvemos 100% do seu investimento, sem perguntas.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
-              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left text-base md:text-lg lg:text-xl">
                 Preciso de conhecimento técnico para usar?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-300">
+              <AccordionContent className="text-gray-300 text-sm md:text-base lg:text-lg">
                 Não! A interface foi desenvolvida para ser intuitiva como um Netflix. Cada ferramenta tem descrição clara e as categorias facilitam encontrar exatamente o que você precisa.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-7" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
-              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left text-base md:text-lg lg:text-xl">
                 Posso acessar de qualquer dispositivo?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-300">
+              <AccordionContent className="text-gray-300 text-sm md:text-base lg:text-lg">
                 Sim! A plataforma é responsiva e funciona perfeitamente em computadores, tablets e smartphones. Acesse de onde estiver.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-8" className="bg-gray-800/30 border-gray-700 rounded-xl px-6">
-              <AccordionTrigger className="text-white hover:text-red-400 text-left">
+              <AccordionTrigger className="text-white hover:text-red-400 text-left text-base md:text-lg lg:text-xl">
                 Como recebo meu acesso após a compra?
               </AccordionTrigger>
-              <AccordionContent className="text-gray-300">
+              <AccordionContent className="text-gray-300 text-sm md:text-base lg:text-lg">
                 Imediatamente após a confirmação do pagamento, você receberá um email com seus dados de acesso. O processo é totalmente automático.
               </AccordionContent>
             </AccordionItem>
