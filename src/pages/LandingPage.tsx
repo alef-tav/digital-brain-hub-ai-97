@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -120,8 +121,18 @@ const LandingPage = () => {
       {/* Central Section */}
       <section className="py-20 lg:py-28 px-4 bg-gradient-to-r from-gray-900/50 to-black/50">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid md:grid-cols-2 gap-16 lg:gap-20 xl:gap-24 items-center">
-            <div className="relative flex justify-center">
+          <div className="space-y-16 lg:space-y-20 xl:space-y-24">
+            <div className="space-y-8 lg:space-y-10 text-center">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white">
+                Sua <span className="text-red-500">central completa</span> de ferramentas de IA
+              </h2>
+              <p className="text-xl lg:text-2xl xl:text-3xl text-gray-300 leading-relaxed max-w-5xl mx-auto">
+                Mais de 200 ferramentas organizadas profissionalmente em categorias específicas. 
+                Interface intuitiva estilo Netflix para você encontrar exatamente o que precisa.
+              </p>
+            </div>
+
+            <div className="relative flex justify-center mb-16">
               <div className="w-full max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl">
                 <img 
                   src="/lovable-uploads/89d34d07-d75d-4c11-a866-b31a253616db.png"
@@ -134,16 +145,8 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="space-y-8 lg:space-y-10 text-center md:text-left">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white">
-                Sua <span className="text-red-500">central completa</span> de ferramentas de IA
-              </h2>
-              <p className="text-xl lg:text-2xl xl:text-3xl text-gray-300 leading-relaxed">
-                Mais de 200 ferramentas organizadas profissionalmente em categorias específicas. 
-                Interface intuitiva estilo Netflix para você encontrar exatamente o que precisa.
-              </p>
-
-              <div className="space-y-4 lg:space-y-5">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center">
+              <div className="space-y-4 lg:space-y-5 text-center md:text-left">
                 <div className="flex items-start space-x-3 justify-center md:justify-start">
                   <div className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full mt-2.5 sm:mt-2 flex-shrink-0"></div>
                   <span className="text-white text-base lg:text-lg xl:text-xl leading-relaxed">Interface organizada por categorias</span>
