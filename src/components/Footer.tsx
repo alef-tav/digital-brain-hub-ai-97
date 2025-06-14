@@ -98,7 +98,7 @@ const Footer = () => {
         {/* Divider */}
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0">
-            <div className="text-center md:text-left space-y-4">
+            <div className="text-center md:text-left space-y-4 w-full md:w-auto">
               <div>
                 <p className="text-gray-400 text-sm mb-2">
                   © 2025 BORGES MÍDIA NEGÓCIOS DIGITAIS LTDA
@@ -108,8 +108,8 @@ const Footer = () => {
                 </p>
               </div>
               
-              {/* Address - Now in the bottom section */}
-              <div className="flex items-start space-x-3">
+              {/* Address - Centralized on mobile */}
+              <div className="flex items-start space-x-3 justify-center md:justify-start">
                 <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
                 <div className="text-gray-300 text-sm">
                   <p>Rua Antônio Callado, 23</p>
