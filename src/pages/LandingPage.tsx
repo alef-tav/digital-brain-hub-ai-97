@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -65,8 +66,8 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="bg-gray-800/50 rounded-2xl lg:rounded-3xl p-6 lg:p-8 backdrop-blur-sm border border-gray-700">
+            <div className="relative flex justify-center">
+              <div className="bg-gray-800/50 rounded-2xl lg:rounded-3xl p-6 lg:p-8 backdrop-blur-sm border border-gray-700 w-full max-w-md lg:max-w-lg xl:max-w-xl">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-3">
                     <img 
@@ -100,18 +101,20 @@ const LandingPage = () => {
       <section className="py-20 lg:py-28 px-4 bg-gradient-to-r from-gray-900/50 to-black/50">
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-20 xl:gap-24 items-center">
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/89d34d07-d75d-4c11-a866-b31a253616db.png"
-                alt="Interface completa" 
-                className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto rounded-2xl lg:rounded-3xl shadow-2xl"
-              />
-              <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 lg:px-4 lg:py-2 rounded-full text-sm lg:text-base font-semibold">
-                Ao Vivo
+            <div className="relative flex justify-center">
+              <div className="w-full max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl">
+                <img 
+                  src="/lovable-uploads/89d34d07-d75d-4c11-a866-b31a253616db.png"
+                  alt="Interface completa" 
+                  className="w-full rounded-2xl lg:rounded-3xl shadow-2xl"
+                />
+                <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 lg:px-4 lg:py-2 rounded-full text-sm lg:text-base font-semibold">
+                  Ao Vivo
+                </div>
               </div>
             </div>
 
-            <div className="space-y-8 lg:space-y-10">
+            <div className="space-y-8 lg:space-y-10 text-center md:text-left">
               <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white">
                 Sua <span className="text-red-500">central completa</span> de ferramentas de IA
               </h2>
@@ -121,28 +124,28 @@ const LandingPage = () => {
               </p>
 
               <div className="space-y-4 lg:space-y-6">
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 justify-center md:justify-start">
                   <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
                   <span className="text-white text-base lg:text-lg xl:text-xl">Interface organizada por categorias</span>
                 </div>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 justify-center md:justify-start">
                   <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
                   <span className="text-white text-base lg:text-lg xl:text-xl">Ferramentas testadas e aprovadas</span>
                 </div>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 justify-center md:justify-start">
                   <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
                   <span className="text-white text-base lg:text-lg xl:text-xl">Atualizações constantes incluídas</span>
                 </div>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 justify-center md:justify-start">
                   <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
                   <span className="text-white text-base lg:text-lg xl:text-xl">Acesso vitalício garantido</span>
                 </div>
               </div>
 
-              <div className="flex items-center space-x-6">
+              <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
                 <Button 
                   asChild 
-                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 lg:px-12 lg:py-6 text-lg lg:text-xl xl:text-2xl rounded-full"
+                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 lg:px-12 lg:py-6 text-lg lg:text-xl xl:text-2xl rounded-full w-full sm:w-auto"
                 >
                   <Link to="/checkout">
                     <Play className="w-5 h-5 lg:w-6 lg:h-6 mr-2" />
@@ -365,8 +368,8 @@ const LandingPage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
-            <div className="relative">
-              <div className="bg-gray-800/50 rounded-2xl p-4 backdrop-blur-sm border border-gray-700">
+            <div className="relative flex justify-center">
+              <div className="bg-gray-800/50 rounded-2xl p-4 backdrop-blur-sm border border-gray-700 w-full max-w-md lg:max-w-lg xl:max-w-xl">
                 <img 
                   src="/lovable-uploads/140b43e5-087f-4e7a-987e-9008f275c31c.png"
                   alt="Dashboard FinTrack" 
@@ -378,7 +381,7 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-8 text-center md:text-left">
               <h3 className="text-3xl md:text-4xl font-bold text-white">
                 Controle total das suas <span className="text-green-400">finanças</span>
               </h3>
@@ -426,11 +429,11 @@ const LandingPage = () => {
               </div>
 
               <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center md:justify-start mb-4">
                   <Star className="w-6 h-6 text-green-400 mr-3" />
                   <span className="text-green-400 font-bold text-xl">Valor: R$ 197,00</span>
                 </div>
-                <p className="text-green-100 text-lg">
+                <p className="text-green-100 text-lg text-center md:text-left">
                   Mas hoje você recebe <span className="font-bold text-green-400">TOTALMENTE GRÁTIS</span> junto com o Cérebro Digital!
                 </p>
               </div>
@@ -446,66 +449,70 @@ const LandingPage = () => {
               Economize semanas de pesquisa e mais de R$ 5.000 em ferramentas testadas.
             </p>
 
-            <div className="inline-block bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 mb-8 max-w-2xl">
-              <div className="mb-6">
-                <p className="text-gray-300 text-lg mb-4">
-                  Cérebro Digital + FinTrack Dashboard por apenas
-                </p>
-                <div className="flex items-center justify-center mb-4">
-                  <span className="text-red-500 text-3xl font-bold">R$ 67</span>
-                  <span className="text-red-500 text-2xl">,90</span>
+            <div className="flex justify-center">
+              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 mb-8 w-full max-w-2xl">
+                <div className="mb-6">
+                  <p className="text-gray-300 text-lg mb-4">
+                    Cérebro Digital + FinTrack Dashboard por apenas
+                  </p>
+                  <div className="flex items-center justify-center mb-4">
+                    <span className="text-red-500 text-3xl font-bold">R$ 67</span>
+                    <span className="text-red-500 text-2xl">,90</span>
+                  </div>
+                  <p className="text-gray-400">Pagamento único • Acesso vitalício</p>
                 </div>
-                <p className="text-gray-400">Pagamento único • Acesso vitalício</p>
-              </div>
 
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center justify-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-400" />
-                  <span className="text-white">Cérebro Digital: +200 ferramentas (R$ 297)</span>
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-center justify-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <span className="text-white">Cérebro Digital: +200 ferramentas (R$ 297)</span>
+                  </div>
+                  <div className="flex items-center justify-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <span className="text-white">BÔNUS: FinTrack Dashboard (R$ 197)</span>
+                  </div>
+                  <div className="flex items-center justify-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <span className="text-white">Interface estilo Netflix</span>
+                  </div>
+                  <div className="flex items-center justify-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <span className="text-white">Atualizações vitalícias incluídas</span>
+                  </div>
                 </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-400" />
-                  <span className="text-white">BÔNUS: FinTrack Dashboard (R$ 197)</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-400" />
-                  <span className="text-white">Interface estilo Netflix</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-400" />
-                  <span className="text-white">Atualizações vitalícias incluídas</span>
-                </div>
-              </div>
 
-              <Button 
-                asChild 
-                className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-xl font-bold rounded-xl mb-6"
-              >
-                <Link to="/checkout">
-                  <Zap className="w-6 h-6 mr-3" />
-                  Garantir Acesso Agora
-                </Link>
-              </Button>
+                <Button 
+                  asChild 
+                  className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-xl font-bold rounded-xl mb-6"
+                >
+                  <Link to="/checkout">
+                    <Zap className="w-6 h-6 mr-3" />
+                    Garantir Acesso Agora
+                  </Link>
+                </Button>
 
-              <div className="bg-red-600/10 border border-red-600/20 rounded-xl p-4 mb-6">
-                <div className="flex items-center justify-center mb-2">
-                  <Star className="w-5 h-5 text-red-400 mr-2" />
-                  <span className="text-red-400 font-semibold text-lg">Valor Total: R$ 494 • Você Paga: R$ 67,90</span>
+                <div className="bg-red-600/10 border border-red-600/20 rounded-xl p-4 mb-6">
+                  <div className="flex items-center justify-center mb-2">
+                    <Star className="w-5 h-5 text-red-400 mr-2" />
+                    <span className="text-red-400 font-semibold text-lg">Valor Total: R$ 494 • Você Paga: R$ 67,90</span>
+                  </div>
+                  <p className="text-red-300 text-center font-bold">ECONOMIA DE 86%</p>
                 </div>
-                <p className="text-red-300 text-center font-bold">ECONOMIA DE 86%</p>
               </div>
             </div>
 
-            <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6 max-w-lg mx-auto">
-              <div className="flex items-center justify-center mb-3">
-                <Shield className="w-6 h-6 text-green-400 mr-3" />
-                <span className="text-green-400 font-bold text-lg">Garantia Incondicional</span>
+            <div className="flex justify-center">
+              <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6 max-w-lg">
+                <div className="flex items-center justify-center mb-3">
+                  <Shield className="w-6 h-6 text-green-400 mr-3" />
+                  <span className="text-green-400 font-bold text-lg">Garantia Incondicional</span>
+                </div>
+                <p className="text-green-100 text-center">
+                  7 dias para testar tudo sem riscos.
+                  <br />
+                  Não ficou satisfeito? Devolvemos 100% do seu investimento.
+                </p>
               </div>
-              <p className="text-green-100 text-center">
-                7 dias para testar tudo sem riscos.
-                <br />
-                Não ficou satisfeito? Devolvemos 100% do seu investimento.
-              </p>
             </div>
           </div>
         </div>
