@@ -58,20 +58,50 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company Info - Shown on mobile, hidden on desktop */}
+          {/* Mobile Layout */}
           <div className="md:hidden space-y-6">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/f616debe-7a77-425a-ae20-2a4a6321115f.png" 
-                alt="Cérebro Digital" 
-                className="w-10 h-10"
-              />
-              <h3 className="text-2xl font-bold text-white">Cérebro Digital</h3>
+            {/* Title and description */}
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="/lovable-uploads/f616debe-7a77-425a-ae20-2a4a6321115f.png" 
+                  alt="Cérebro Digital" 
+                  className="w-10 h-10"
+                />
+                <h3 className="text-2xl font-bold text-white">Cérebro Digital</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed">
+                Sua central definitiva de ferramentas de Inteligência Artificial e automações. 
+                Explore soluções inovadoras para transformar seu trabalho.
+              </p>
             </div>
-            <p className="text-gray-300 leading-relaxed">
-              Sua central definitiva de ferramentas de Inteligência Artificial e automações. 
-              Explore soluções inovadoras para transformar seu trabalho.
-            </p>
+
+            {/* Menu */}
+            <div className="space-y-3">
+              <h4 className="text-xl font-bold text-white">Menu</h4>
+              <div className="space-y-3">
+                <Link 
+                  to="/" 
+                  className="block text-gray-300 hover:text-red-500 transition-colors"
+                >
+                  Início
+                </Link>
+                <Link 
+                  to="/privacy-policy" 
+                  className="block text-gray-300 hover:text-red-500 transition-colors"
+                >
+                  Política de Privacidade
+                </Link>
+                <Link 
+                  to="/terms-of-service" 
+                  className="block text-gray-300 hover:text-red-500 transition-colors"
+                >
+                  Termos de Serviço
+                </Link>
+              </div>
+            </div>
+
+            {/* Address */}
             <div className="flex items-start space-x-3">
               <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
               <div className="text-gray-300">
