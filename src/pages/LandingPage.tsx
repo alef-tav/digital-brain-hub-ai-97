@@ -123,22 +123,22 @@ const LandingPage = () => {
                 Interface intuitiva estilo Netflix para você encontrar exatamente o que precisa.
               </p>
 
-              <div className="space-y-4 lg:space-y-6">
-                <div className="flex items-center space-x-4 justify-center md:justify-start">
-                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
-                  <span className="text-white text-base lg:text-lg xl:text-xl">Interface organizada por categorias</span>
+              <div className="space-y-5 lg:space-y-6">
+                <div className="flex items-start space-x-4 justify-center md:justify-start">
+                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-white text-base lg:text-lg xl:text-xl leading-relaxed">Interface organizada por categorias</span>
                 </div>
-                <div className="flex items-center space-x-4 justify-center md:justify-start">
-                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
-                  <span className="text-white text-base lg:text-lg xl:text-xl">Ferramentas testadas e aprovadas</span>
+                <div className="flex items-start space-x-4 justify-center md:justify-start">
+                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-white text-base lg:text-lg xl:text-xl leading-relaxed">Ferramentas testadas e aprovadas</span>
                 </div>
-                <div className="flex items-center space-x-4 justify-center md:justify-start">
-                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
-                  <span className="text-white text-base lg:text-lg xl:text-xl">Atualizações constantes incluídas</span>
+                <div className="flex items-start space-x-4 justify-center md:justify-start">
+                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-white text-base lg:text-lg xl:text-xl leading-relaxed">Atualizações constantes incluídas</span>
                 </div>
-                <div className="flex items-center space-x-4 justify-center md:justify-start">
-                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
-                  <span className="text-white text-base lg:text-lg xl:text-xl">Acesso vitalício garantido</span>
+                <div className="flex items-start space-x-4 justify-center md:justify-start">
+                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-white text-base lg:text-lg xl:text-xl leading-relaxed">Acesso vitalício garantido</span>
                 </div>
               </div>
 
