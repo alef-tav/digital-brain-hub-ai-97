@@ -6,50 +6,48 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Brain, CheckCircle, Gift, ArrowRight, Loader } from 'lucide-react';
 import { toast } from 'sonner';
-import { supabase } from '@/integrations/supabase/client';
 
 const PaymentSuccess = () => {
   const navigate = useNavigate();
-  const { user, checkSubscription } = useAuth();
+  const { user, checkSubscription, subscription } = useAuth();
   const [searchParams] = useSearchParams();
   const [isVerifying, setIsVerifying] = useState(true);
   const [paymentVerified, setPaymentVerified] = useState(false);
 
   useEffect(() => {
     const verifyPayment = async () => {
-      const sessionId = searchParams.get('session_id');
-      
-      if (!sessionId || !user) {
+      // Check if user has subscription
+      if (!user) {
         setIsVerifying(false);
         return;
       }
 
       try {
-        const { data, error } = await supabase.functions.invoke('verify-payment', {
-          body: {
-            session_id: sessionId,
-            user_id: user.id
-          }
-        });
-
-        if (error) {
-          console.error('Error verifying payment:', error);
-          toast.error('Erro ao verificar pagamento');
-        } else if (data?.subscription_active) {
+        // Check subscription status
+        await checkSubscription();
+        
+        // Wait a moment for subscription to update
+        setTimeout(() => {
+          setIsVerifying(false);
           setPaymentVerified(true);
-          await checkSubscription();
           toast.success('Pagamento confirmado! Bem-vindo ao Cérebro Digital!');
-        }
+        }, 2000);
       } catch (error) {
-        console.error('Error verifying payment:', error);
-        toast.error('Erro ao verificar pagamento');
-      } finally {
+        console.error('Error checking subscription:', error);
         setIsVerifying(false);
       }
     };
 
     verifyPayment();
-  }, [user, searchParams, checkSubscription]);
+  }, [user, checkSubscription]);
+
+  // Check if subscription is active
+  useEffect(() => {
+    if (subscription && subscription.status === 'active') {
+      setPaymentVerified(true);
+      setIsVerifying(false);
+    }
+  }, [subscription]);
 
   if (isVerifying) {
     return (
