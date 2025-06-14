@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -167,10 +168,10 @@ const LandingPage = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
                 <Button 
                   onClick={handlePayment}
-                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 lg:px-12 lg:py-6 text-lg lg:text-xl xl:text-2xl rounded-full w-full sm:w-auto"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-4 sm:px-8 sm:py-5 lg:px-12 lg:py-6 text-base sm:text-lg lg:text-xl xl:text-2xl rounded-full w-full sm:w-auto font-bold shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-105"
                 >
-                  <Play className="w-5 h-5 lg:w-6 lg:h-6 mr-2" />
-                  Garantir Acesso Agora
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 mr-2 flex-shrink-0" />
+                  <span className="whitespace-nowrap">Quero Agora</span>
                 </Button>
                 <div className="flex items-center space-x-2 text-gray-400">
                   <Users className="w-4 h-4 lg:w-5 lg:h-5" />
@@ -503,10 +504,12 @@ const LandingPage = () => {
 
                 <Button 
                   onClick={handlePayment}
-                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 text-base sm:text-lg md:text-xl font-bold rounded-xl w-full mb-6 whitespace-nowrap"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-5 sm:px-8 sm:py-6 lg:px-10 lg:py-7 text-lg sm:text-xl lg:text-2xl font-bold rounded-xl w-full mb-6 shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-105 border-2 border-green-500/30"
                 >
-                  <Play className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 flex-shrink-0" />
-                  <span className="truncate">Garantir Acesso Agora</span>
+                  <div className="flex items-center justify-center space-x-2">
+                    <Play className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+                    <span className="whitespace-nowrap">Comprar Agora</span>
+                  </div>
                 </Button>
               </div>
             </div>
