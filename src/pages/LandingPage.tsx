@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -13,10 +12,27 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="pt-20 pb-20 px-4">
         <div className="container mx-auto text-center max-w-7xl">
+          {/* Brand Header */}
+          <div className="mb-12">
+            <div className="flex items-center justify-center space-x-4 mb-8">
+              <img 
+                src="/lovable-uploads/f616debe-7a77-425a-ae20-2a4a6321115f.png" 
+                alt="Cérebro Digital" 
+                className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+              />
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white">
+                <span className="text-red-500">Cérebro</span> Digital
+              </h1>
+            </div>
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
+              A central de comando mais completa de ferramentas de IA do Brasil
+            </p>
+          </div>
+
           <div className="mb-16">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold mb-8 text-white">
+            <h2 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold mb-8 text-white">
               Sua <span className="text-red-500">central de comando</span> já está pronta
-            </h1>
+            </h2>
             <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-300 mb-12 max-w-5xl mx-auto leading-relaxed">
               Interface intuitiva estilo Netflix com mais de 200 ferramentas organizadas por categoria. 
               Acesso imediato, navegação simples e atualizações quase diárias para você sempre estar à frente.
