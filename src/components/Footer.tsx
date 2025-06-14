@@ -23,14 +23,6 @@ const Footer = () => {
               Sua central definitiva de ferramentas de Inteligência Artificial e automações. 
               Explore soluções inovadoras para transformar seu trabalho.
             </p>
-            <div className="flex items-start space-x-3">
-              <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-              <div className="text-gray-300">
-                <p>Rua Antônio Callado, 23</p>
-                <p>Jardim Santa Marina</p>
-                <p>Jacareí - SP</p>
-              </div>
-            </div>
           </div>
 
           {/* Navigation and Legal Links */}
