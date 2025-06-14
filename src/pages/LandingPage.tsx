@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -479,6 +480,16 @@ const LandingPage = () => {
                     <span className="text-white">Atualizações vitalícias incluídas</span>
                   </div>
                 </div>
+
+                <Button 
+                  asChild 
+                  className="bg-green-600 hover:bg-green-700 text-white px-12 py-6 text-xl font-bold rounded-xl w-full mb-6"
+                >
+                  <Link to="/checkout">
+                    <Play className="w-6 h-6 mr-3" />
+                    Garantir Acesso Agora
+                  </Link>
+                </Button>
               </div>
             </div>
 
