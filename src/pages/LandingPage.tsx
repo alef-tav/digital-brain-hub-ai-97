@@ -7,6 +7,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import Footer from '@/components/Footer';
 
 const LandingPage = () => {
+  const handlePayment = () => {
+    window.open('https://pay.cakto.com.br/7rqzr4h_424947', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
       {/* Hero Section */}
@@ -160,13 +164,11 @@ const LandingPage = () => {
 
               <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
                 <Button 
-                  asChild 
+                  onClick={handlePayment}
                   className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 lg:px-12 lg:py-6 text-lg lg:text-xl xl:text-2xl rounded-full w-full sm:w-auto"
                 >
-                  <Link to="/checkout">
-                    <Play className="w-5 h-5 lg:w-6 lg:h-6 mr-2" />
-                    Garantir Acesso Agora
-                  </Link>
+                  <Play className="w-5 h-5 lg:w-6 lg:h-6 mr-2" />
+                  Garantir Acesso Agora
                 </Button>
                 <div className="flex items-center space-x-2 text-gray-400">
                   <Users className="w-4 h-4 lg:w-5 lg:h-5" />
@@ -498,13 +500,11 @@ const LandingPage = () => {
                 </div>
 
                 <Button 
-                  asChild 
+                  onClick={handlePayment}
                   className="bg-green-600 hover:bg-green-700 text-white px-12 py-6 text-xl font-bold rounded-xl w-full mb-6"
                 >
-                  <Link to="/checkout">
-                    <Play className="w-6 h-6 mr-3" />
-                    Garantir Acesso Agora
-                  </Link>
+                  <Play className="w-6 h-6 mr-3" />
+                  Garantir Acesso Agora
                 </Button>
               </div>
             </div>

@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
-import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Brain, Check, Shield, Star, CreditCard, ArrowLeft } from 'lucide-react';
@@ -9,48 +8,18 @@ import { Link } from 'react-router-dom';
 import { toast } from 'sonner';
 
 const CheckoutPage = () => {
-  const [isLoading, setIsLoading] = useState(false);
   const { user, subscription } = useAuth();
   const navigate = useNavigate();
 
-  const handlePayment = async () => {
-    if (!user) {
-      navigate('/auth');
-      return;
-    }
-
+  const handlePayment = () => {
     if (subscription?.status === 'active') {
       toast.info('Você já possui acesso vitalício!');
       navigate('/dashboard');
       return;
     }
 
-    setIsLoading(true);
-    
-    try {
-      const { data, error } = await supabase.functions.invoke('create-payment', {
-        body: {
-          user_id: user.id,
-          email: user.email
-        }
-      });
-
-      if (error) {
-        console.error('Payment error:', error);
-        toast.error('Erro ao processar pagamento. Tente novamente.');
-        return;
-      }
-
-      if (data?.url) {
-        // Abrir checkout do Stripe em nova aba
-        window.open(data.url, '_blank');
-      }
-    } catch (error) {
-      console.error('Payment error:', error);
-      toast.error('Erro ao processar pagamento. Tente novamente.');
-    } finally {
-      setIsLoading(false);
-    }
+    // Redirect to Cakto payment page
+    window.open('https://pay.cakto.com.br/7rqzr4h_424947', '_blank');
   };
 
   return (
@@ -123,10 +92,9 @@ const CheckoutPage = () => {
               <Button 
                 onClick={handlePayment}
                 className="w-full bg-red-600 hover:bg-red-700 text-white py-6 text-lg font-semibold"
-                disabled={isLoading}
               >
                 <CreditCard className="w-5 h-5 mr-2" />
-                {isLoading ? 'Processando...' : 'GARANTIR ACESSO AGORA'}
+                GARANTIR ACESSO AGORA
               </Button>
 
               <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 text-center">
@@ -140,7 +108,7 @@ const CheckoutPage = () => {
               </div>
 
               <p className="text-gray-400 text-sm text-center">
-                🔒 Pagamento 100% seguro processado pelo Stripe
+                🔒 Pagamento 100% seguro processado pela Cakto
               </p>
             </CardContent>
           </Card>
