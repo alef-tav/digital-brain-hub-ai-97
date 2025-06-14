@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -479,24 +478,6 @@ const LandingPage = () => {
                     <CheckCircle className="w-5 h-5 text-green-400" />
                     <span className="text-white">Atualizações vitalícias incluídas</span>
                   </div>
-                </div>
-
-                <Button 
-                  asChild 
-                  className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-xl font-bold rounded-xl mb-6"
-                >
-                  <Link to="/checkout">
-                    <Zap className="w-6 h-6 mr-3" />
-                    Garantir Acesso Agora
-                  </Link>
-                </Button>
-
-                <div className="bg-red-600/10 border border-red-600/20 rounded-xl p-4 mb-6">
-                  <div className="flex items-center justify-center mb-2">
-                    <Star className="w-5 h-5 text-red-400 mr-2" />
-                    <span className="text-red-400 font-semibold text-lg">Valor Total: R$ 494 • Você Paga: R$ 67,90</span>
-                  </div>
-                  <p className="text-red-300 text-center font-bold">ECONOMIA DE 86%</p>
                 </div>
               </div>
             </div>
