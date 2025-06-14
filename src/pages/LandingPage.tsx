@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -123,21 +122,21 @@ const LandingPage = () => {
                 Interface intuitiva estilo Netflix para você encontrar exatamente o que precisa.
               </p>
 
-              <div className="space-y-5 lg:space-y-6">
-                <div className="flex items-start space-x-4 justify-center md:justify-start">
-                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+              <div className="space-y-4 lg:space-y-5">
+                <div className="flex items-start space-x-3 justify-center md:justify-start">
+                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full mt-2.5 sm:mt-2 flex-shrink-0"></div>
                   <span className="text-white text-base lg:text-lg xl:text-xl leading-relaxed">Interface organizada por categorias</span>
                 </div>
-                <div className="flex items-start space-x-4 justify-center md:justify-start">
-                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="flex items-start space-x-3 justify-center md:justify-start">
+                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full mt-2.5 sm:mt-2 flex-shrink-0"></div>
                   <span className="text-white text-base lg:text-lg xl:text-xl leading-relaxed">Ferramentas testadas e aprovadas</span>
                 </div>
-                <div className="flex items-start space-x-4 justify-center md:justify-start">
-                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="flex items-start space-x-3 justify-center md:justify-start">
+                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full mt-2.5 sm:mt-2 flex-shrink-0"></div>
                   <span className="text-white text-base lg:text-lg xl:text-xl leading-relaxed">Atualizações constantes incluídas</span>
                 </div>
-                <div className="flex items-start space-x-4 justify-center md:justify-start">
-                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="flex items-start space-x-3 justify-center md:justify-start">
+                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full mt-2.5 sm:mt-2 flex-shrink-0"></div>
                   <span className="text-white text-base lg:text-lg xl:text-xl leading-relaxed">Acesso vitalício garantido</span>
                 </div>
               </div>
