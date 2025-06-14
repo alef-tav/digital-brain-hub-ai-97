@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
@@ -88,11 +87,11 @@ const CheckoutPage = () => {
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <span className="text-gray-400 text-lg line-through mr-4">De R$ 297,00</span>
-                  <span className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">77% OFF</span>
+                  <span className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">84% OFF</span>
                 </div>
                 <div className="flex items-center justify-center">
                   <span className="text-red-500 text-2xl">R$</span>
-                  <span className="text-5xl font-bold text-red-500">67</span>
+                  <span className="text-5xl font-bold text-red-500">47</span>
                   <span className="text-red-500 text-2xl">,90</span>
                 </div>
                 <p className="text-gray-400 mt-2">Pagamento único • Acesso vitalício</p>

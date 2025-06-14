@@ -472,7 +472,7 @@ const LandingPage = () => {
                     Cérebro Digital + FinTrack Dashboard por apenas
                   </p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-red-500 text-3xl font-bold">R$ 67</span>
+                    <span className="text-red-500 text-3xl font-bold">R$ 47</span>
                     <span className="text-red-500 text-2xl">,90</span>
                   </div>
                   <p className="text-gray-400">Pagamento único • Acesso vitalício</p>
