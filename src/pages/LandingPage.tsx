@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Brain, Shield, Zap, Users, Globe, TrendingUp, Play, DollarSign, PiggyBank, CreditCard } from 'lucide-react';
@@ -136,8 +134,8 @@ const LandingPage = () => {
             <div className="relative flex justify-center mb-16">
               <div className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
                 <img 
-                  src="/lovable-uploads/89d34d07-d75d-4c11-a866-b31a253616db.png"
-                  alt="Interface completa" 
+                  src="/lovable-uploads/3d1a0835-371b-46de-b806-5d112900f654.png"
+                  alt="Interface completa Cérebro Digital - Todas as Categorias" 
                   className="w-full rounded-2xl lg:rounded-3xl shadow-2xl"
                 />
                 <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 lg:px-4 lg:py-2 rounded-full text-sm lg:text-base font-semibold">
@@ -626,4 +624,3 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
-
