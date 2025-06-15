@@ -87,8 +87,8 @@ const LandingPage = () => {
             </div>
 
             <div className="relative flex justify-center">
-              <div className="bg-gray-800/50 rounded-2xl lg:rounded-3xl p-6 lg:p-8 backdrop-blur-sm border border-gray-700 w-full max-w-md lg:max-w-lg xl:max-w-xl">
-                <div className="flex items-center justify-between mb-6">
+              <div className="bg-gray-800/50 rounded-2xl lg:rounded-3xl p-4 lg:p-6 xl:p-8 backdrop-blur-sm border border-gray-700 w-full max-w-xl lg:max-w-2xl xl:max-w-3xl">
+                <div className="flex items-center justify-between mb-4 lg:mb-6">
                   <div className="flex items-center space-x-3">
                     <img 
                       src="/lovable-uploads/f616debe-7a77-425a-ae20-2a4a6321115f.png" 
@@ -132,7 +132,7 @@ const LandingPage = () => {
             </div>
 
             <div className="relative flex justify-center mb-16">
-              <div className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
+              <div className="w-full max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
                 <img 
                   src="/lovable-uploads/3d1a0835-371b-46de-b806-5d112900f654.png"
                   alt="Interface completa Cérebro Digital - Todas as Categorias" 
@@ -389,7 +389,7 @@ const LandingPage = () => {
 
           <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
             <div className="relative flex justify-center">
-              <div className="bg-gray-800/50 rounded-2xl p-6 lg:p-8 backdrop-blur-sm border border-gray-700 w-full max-w-2xl lg:max-w-3xl xl:max-w-5xl">
+              <div className="bg-gray-800/50 rounded-2xl p-4 lg:p-6 xl:p-8 backdrop-blur-sm border border-gray-700 w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl">
                 <img 
                   src="/lovable-uploads/b37e3a72-4fc9-45d1-bd9f-02bf73938d72.png"
                   alt="Dashboard FinTrack - Controle Financeiro Completo" 
