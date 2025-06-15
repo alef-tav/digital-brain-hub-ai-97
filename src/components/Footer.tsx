@@ -115,6 +115,7 @@ const Footer = () => {
                   <p>Rua Antônio Callado, 23</p>
                   <p>Jardim Santa Marina</p>
                   <p>Jacareí - SP</p>
+                  <p>CEP: 12312-575</p>
                 </div>
               </div>
             </div>
