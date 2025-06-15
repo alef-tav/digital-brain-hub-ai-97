@@ -108,10 +108,10 @@ const Footer = () => {
                 </p>
               </div>
               
-              {/* Address - Centralized on mobile */}
+              {/* Address - Aligned with CNPJ on mobile */}
               <div className="flex items-start space-x-3 justify-center md:justify-start">
                 <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-                <div className="text-gray-300 text-sm text-center md:text-left">
+                <div className="text-gray-300 text-sm text-center md:text-left ml-0 md:ml-0 -ml-8">
                   <p>Rua Antônio Callado, 23</p>
                   <p>Jardim Santa Marina</p>
                   <p>Jacareí - SP</p>
