@@ -97,8 +97,8 @@ const Footer = () => {
 
         {/* Divider */}
         <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col items-center space-y-6">
-            <div className="text-center space-y-4">
+          <div className="flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0">
+            <div className="text-center md:text-left space-y-4 w-full md:w-auto">
               <div>
                 <p className="text-gray-400 text-sm mb-2">
                   © 2025 BORGES MÍDIA NEGÓCIOS DIGITAIS LTDA
@@ -108,10 +108,10 @@ const Footer = () => {
                 </p>
               </div>
               
-              {/* Address - Centralized */}
-              <div className="flex items-start space-x-3 justify-center">
+              {/* Address - Centralized on mobile */}
+              <div className="flex items-start space-x-3 justify-center md:justify-start">
                 <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-                <div className="text-gray-300 text-sm text-center">
+                <div className="text-gray-300 text-sm text-center md:text-left">
                   <p>Rua Antônio Callado, 23</p>
                   <p>Jardim Santa Marina</p>
                   <p>Jacareí - SP</p>
@@ -119,7 +119,7 @@ const Footer = () => {
               </div>
             </div>
             
-            <div className="text-center">
+            <div className="text-center md:text-right">
               <p className="text-gray-400 text-sm">
                 Cérebro Digital - Todos os direitos reservados.
               </p>
