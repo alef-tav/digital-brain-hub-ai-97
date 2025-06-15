@@ -78,7 +78,7 @@ const Header = () => {
                   asChild 
                   className="bg-red-600 hover:bg-red-700 text-white text-sm lg:text-base px-3 py-1 lg:px-4 lg:py-2"
                 >
-                  <Link to="/landing">Adquirir Acesso</Link>
+                  <Link to="/checkout">Adquirir Acesso</Link>
                 </Button>
               </div>
             )}
@@ -149,7 +149,7 @@ const Header = () => {
                     className="w-full bg-red-600 hover:bg-red-700 text-white"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    <Link to="/landing">Adquirir Acesso</Link>
+                    <Link to="/checkout">Adquirir Acesso</Link>
                   </Button>
                 </div>
               )}
