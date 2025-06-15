@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Mobile Layout - Title, Description and Menu only */}
+          {/* Mobile Layout - Title and Description only */}
           <div className="md:hidden space-y-6">
             {/* Title and description */}
             <div className="space-y-4">
@@ -66,31 +66,6 @@ const Footer = () => {
                 Sua central definitiva de ferramentas de Inteligência Artificial e automações. 
                 Explore soluções inovadoras para transformar seu trabalho.
               </p>
-            </div>
-
-            {/* Menu */}
-            <div className="space-y-3">
-              <h4 className="text-xl font-bold text-white">Menu</h4>
-              <div className="space-y-3">
-                <Link 
-                  to="/" 
-                  className="block text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Início
-                </Link>
-                <Link 
-                  to="/privacy-policy" 
-                  className="block text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Política de Privacidade
-                </Link>
-                <Link 
-                  to="/terms-of-service" 
-                  className="block text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Termos de Serviço
-                </Link>
-              </div>
             </div>
           </div>
         </div>
