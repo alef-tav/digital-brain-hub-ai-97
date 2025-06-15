@@ -70,7 +70,7 @@ const Header = () => {
                 <Button 
                   asChild 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white hover:text-black text-sm lg:text-base px-3 py-1 lg:px-4 lg:py-2"
+                  className="border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-black text-sm lg:text-base px-3 py-1 lg:px-4 lg:py-2"
                 >
                   <Link to="/auth">Entrar</Link>
                 </Button>
@@ -139,7 +139,7 @@ const Header = () => {
                   <Button 
                     asChild 
                     variant="outline" 
-                    className="w-full border-white text-white hover:bg-white hover:text-black"
+                    className="w-full border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-black"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Link to="/auth">Entrar</Link>
